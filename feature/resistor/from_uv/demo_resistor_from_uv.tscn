@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://bhmdrm4h1rb6h"]
+
+[ext_resource type="PackedScene" uid="uid://di05pfe6k08cd" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/resistor/from_uv/color_resistor_from_uv.glb" id="1_htg8g"]
+[ext_resource type="Texture2D" uid="uid://bcudl23r1acth" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/resistor/from_uv/ColorResistorColorUV.png" id="2_5y20j"]
+[ext_resource type="PackedScene" uid="uid://dha337eb3abrg" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/resistor/from_material/color_resistor_from_material.glb" id="3_rje4i"]
+[ext_resource type="Material" uid="uid://pxwwpqd2ll5f" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/resistor/from_material/mat_resistor_body.tres" id="4_uo3ky"]
+[ext_resource type="Material" uid="uid://ckcwd8s8xyal7" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/resistor/from_material/mat_resistor_line_1.tres" id="5_ji3lk"]
+[ext_resource type="Material" uid="uid://b6eakqo5csvqo" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/resistor/from_material/mat_resistor_line_2.tres" id="6_02nnx"]
+[ext_resource type="Material" uid="uid://d15dsu1tbpm37" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/resistor/from_material/mat_resistor_line_3.tres" id="7_uddk1"]
+[ext_resource type="Material" uid="uid://denhsdj1hcvh5" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/resistor/from_material/mat_resistor_line_4.tres" id="8_668sl"]
+[ext_resource type="Material" uid="uid://3i5x7gil3mdi" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/resistor/from_material/mat_resistor_line_5.tres" id="9_cwkvo"]
+[ext_resource type="Material" uid="uid://cibhvhyuejnqv" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/resistor/from_material/mat_resistor_line_6.tres" id="10_koyow"]
+[ext_resource type="Material" uid="uid://dvwruefxteaoy" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/resistor/from_material/mat_resistor_cable.tres" id="11_s21sa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_62ybi"]
+albedo_texture = ExtResource("2_5y20j")
+
+[node name="DemoResistorFromUv" type="Node3D" unique_id=109911121]
+
+[node name="color_resistor_from_uv" parent="." unique_id=1513142937 instance=ExtResource("1_htg8g")]
+
+[node name="ColorResistorUV" parent="color_resistor_from_uv" index="0" unique_id=2138567786]
+surface_material_override/0 = SubResource("StandardMaterial3D_62ybi")
+
+[node name="color_resistor_from_material" parent="." unique_id=1238136183 instance=ExtResource("3_rje4i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29833984, 0)
+
+[node name="ColorResistorBody" parent="color_resistor_from_material" index="0" unique_id=577197920]
+material_override = ExtResource("4_uo3ky")
+
+[node name="ColorResistorLine1" parent="color_resistor_from_material" index="1" unique_id=364228549]
+material_override = ExtResource("5_ji3lk")
+
+[node name="ColorResistorLine2" parent="color_resistor_from_material" index="2" unique_id=706628045]
+material_override = ExtResource("6_02nnx")
+
+[node name="ColorResistorLine3" parent="color_resistor_from_material" index="3" unique_id=527681529]
+material_override = ExtResource("7_uddk1")
+
+[node name="ColorResistorLine4" parent="color_resistor_from_material" index="4" unique_id=1530921030]
+material_override = ExtResource("8_668sl")
+
+[node name="ColorResistorLine6" parent="color_resistor_from_material" index="5" unique_id=1720469246]
+material_override = ExtResource("9_cwkvo")
+
+[node name="ColorResistorLine7" parent="color_resistor_from_material" index="6" unique_id=2139416391]
+material_override = ExtResource("10_koyow")
+
+[node name="ColorResistorMetal" parent="color_resistor_from_material" index="7" unique_id=798247577]
+material_override = ExtResource("11_s21sa")
+
+[editable path="color_resistor_from_uv"]
+[editable path="color_resistor_from_material"]
