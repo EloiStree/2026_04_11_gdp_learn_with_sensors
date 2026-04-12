@@ -176,7 +176,7 @@ _Create areas with scripts on them that give information_
 	- Keyestudio one
 	- Classic square one on Amazon
 	- Watch one
-
+- [Rails and motor](https://github.com/EloiStree/2026_03_23_doc_micro_bit_sensor/issues/42)
 **Won't do:**  
 _But graybox could be there_
 - Lithium battery
@@ -251,3 +251,5 @@ _But graybox could be there_
 - Measure 150 mm
 - Bubble bar
 - Bubble level 4-6 degrees
+- Nema bi polar step motor
+- OLED display 128x64

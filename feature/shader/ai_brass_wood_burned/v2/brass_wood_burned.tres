@@ -1,0 +1,33 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://o671mr0ltewj"]
+
+[ext_resource type="Shader" uid="uid://d1fawximvr8yj" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/shader/ai_brass_wood_burned/v2/brass_wood_burned.gdshader" id="1_14lgt"]
+[ext_resource type="Texture2D" uid="uid://bc2b2oxegm4ws" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/shader/ai_brass_wood_burned/2d/BurnPartSeamless.jpg" id="2_lc2ml"]
+[ext_resource type="Texture2D" uid="uid://demx34u6hqqai" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/shader/ai_brass_wood_burned/2d/BrassWoodTop.png" id="4_cejea"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_14lgt")
+shader_parameter/texture_up = ExtResource("4_cejea")
+shader_parameter/texture_other = ExtResource("2_lc2ml")
+shader_parameter/detail_texture = ExtResource("2_lc2ml")
+shader_parameter/noise_texture = ExtResource("2_lc2ml")
+shader_parameter/uv_scale_up = Vector2(1, 1)
+shader_parameter/uv_offset_up = Vector2(0, 0)
+shader_parameter/uv_scale_other = Vector2(1, 0.73)
+shader_parameter/uv_offset_other = Vector2(0, 0)
+shader_parameter/uv_scale_detail = Vector2(4, 3.97)
+shader_parameter/uv_offset_detail = Vector2(0, 0.17)
+shader_parameter/threshold = 0.18500005628750005
+shader_parameter/blend_zone = 0.2530000120175
+shader_parameter/detail_strength = 0.254000012065
+shader_parameter/warp_strength = 0.2350000111625
+shader_parameter/warp_scale = 0.11500000476398001
+shader_parameter/scale_a = 1.2830000371925
+shader_parameter/scale_b = 0.84000001615
+shader_parameter/scale_c = 1.1570000312075
+shader_parameter/rotation_b = 164.64800782078
+shader_parameter/rotation_c = 280.0000133
+shader_parameter/offset_b = Vector2(0.34, 0.17)
+shader_parameter/offset_c = Vector2(0.61, 0.43)
+shader_parameter/noise_blend_scale = 0.05000000167648
+shader_parameter/unlit = true

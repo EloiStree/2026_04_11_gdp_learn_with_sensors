@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://c1tt4304wfvhw"]
+
+[ext_resource type="Material" uid="uid://dqfaanrju0u2h" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/shader/ai_brass_wood_burned/v1/brass_wood_burned.tres" id="1_o0el5"]
+[ext_resource type="Material" uid="uid://o671mr0ltewj" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/shader/ai_brass_wood_burned/v2/brass_wood_burned.tres" id="2_fhjpa"]
+[ext_resource type="Material" uid="uid://cfebj3hxswx3k" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/shader/ai_brass_wood_burned/v3/brass_wood_burned_v3.tres" id="3_1x4hc"]
+[ext_resource type="Material" uid="uid://b1e8em21sdidq" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/shader/ai_brass_wood_burned/v4/brass_wood_burned_v4.tres" id="4_0ddvv"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_fhjpa"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_fhjpa"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_fhjpa"]
+
+[node name="Node3D" type="Node3D" unique_id=334115651]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1524347062]
+transform = Transform3D(3.2856839, 0, 0, 0, 1, 0, 0, 0, 3.4068334, 0, 0, 0)
+mesh = SubResource("CylinderMesh_fhjpa")
+surface_material_override/0 = ExtResource("1_o0el5")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=479302519]
+transform = Transform3D(3.2135093, 0, 0, 0, 0.20072994, 0, 0, 0, 3.4181151, -4.523013, 0, 0)
+mesh = SubResource("CylinderMesh_fhjpa")
+surface_material_override/0 = ExtResource("2_fhjpa")
+
+[node name="MeshInstance3D7" type="MeshInstance3D" parent="." unique_id=213933810]
+transform = Transform3D(3.2135093, 0, 0, 0, 0.20072994, 0, 0, 0, 3.4181151, -4.523013, 0, -9.509841)
+mesh = SubResource("CylinderMesh_fhjpa")
+surface_material_override/0 = ExtResource("2_fhjpa")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="." unique_id=465927678]
+transform = Transform3D(3.2135093, 0, 0, 0, 2.839916, 0, 0, 0, 3.4181151, -8.370976, 0, 0)
+mesh = SubResource("CapsuleMesh_fhjpa")
+surface_material_override/0 = ExtResource("2_fhjpa")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="." unique_id=699499223]
+transform = Transform3D(3.2135093, 0, 0, 0, 2.839916, 0, 0, 0, 3.4181151, -8.370976, 0, -7.803111)
+mesh = SubResource("CapsuleMesh_fhjpa")
+surface_material_override/0 = ExtResource("3_1x4hc")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="." unique_id=870849282]
+transform = Transform3D(3.2108572, -0.11535763, 0, 0.13053302, 2.837572, 0, 0, 0, 3.4181151, -13.148838, 0, 0.18223333)
+mesh = SubResource("BoxMesh_fhjpa")
+surface_material_override/0 = ExtResource("2_fhjpa")
+
+[node name="MeshInstance3D6" type="MeshInstance3D" parent="." unique_id=22631773]
+transform = Transform3D(3.2108572, -0.11535763, 0, 0.13053302, 2.837572, 0, 0, 0, 3.4181151, -13.148838, 0, -8.7192955)
+mesh = SubResource("BoxMesh_fhjpa")
+surface_material_override/0 = ExtResource("3_1x4hc")
+
+[node name="MeshInstance3D8" type="MeshInstance3D" parent="." unique_id=1390698975]
+transform = Transform3D(2.2899132, -0.14082834, 0, 2.2545376, 0.14303806, 0, 0, 0, 3.4181151, -5.718045, 2.917125, -16.940166)
+mesh = SubResource("CylinderMesh_fhjpa")
+surface_material_override/0 = ExtResource("4_0ddvv")
+
+[node name="MeshInstance3D9" type="MeshInstance3D" parent="." unique_id=422995859]
+transform = Transform3D(2.2899132, -1.9924316, 0, 2.2545376, 2.0236945, 0, 0, 0, 3.4181151, -8.460064, 0.21746637, -15.233437)
+mesh = SubResource("CapsuleMesh_fhjpa")
+surface_material_override/0 = ExtResource("4_0ddvv")
+
+[node name="MeshInstance3D10" type="MeshInstance3D" parent="." unique_id=739665720]
+transform = Transform3D(2.1964438, -2.0729897, 0, 2.3456933, 1.9410914, 0, 0, 0, 3.418115, -11.864718, -3.1345913, -16.14962)
+mesh = SubResource("BoxMesh_fhjpa")
+surface_material_override/0 = ExtResource("4_0ddvv")

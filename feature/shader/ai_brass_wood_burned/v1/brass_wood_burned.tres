@@ -1,0 +1,12 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://dqfaanrju0u2h"]
+
+[ext_resource type="Shader" uid="uid://c7m7tnpo2qhq0" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/shader/ai_brass_wood_burned/v1/brass_wood_burned.gdshader" id="1_etgk7"]
+[ext_resource type="Texture2D" uid="uid://ty5estwfvkd" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/shader/ai_brass_wood_burned/2d/Burned.jpg" id="2_xy8c1"]
+[ext_resource type="Texture2D" uid="uid://cjvo56fhehxof" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/shader/ai_brass_wood_burned/2d/WoodTop.jpg" id="3_6hkvw"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_etgk7")
+shader_parameter/texture_up = ExtResource("3_6hkvw")
+shader_parameter/texture_other = ExtResource("2_xy8c1")
+shader_parameter/threshold = 0.5250000249375
