@@ -73,7 +73,6 @@ offset_right = -31.576004
 offset_bottom = 0.11999893
 text = "Random"
 
-[connection signal="on_texture_updated_in_material" from="color_resistor_from_uv/SensorResistorByTexture" to="color_resistor_from_uv/ColorResistorUV" method="set_surface_override_material"]
 [connection signal="button_down" from="CanvasLayer/Button" to="color_resistor_from_uv/SensorResistorByTexture" method="set_random_lines"]
 
 [editable path="color_resistor_from_uv"]
