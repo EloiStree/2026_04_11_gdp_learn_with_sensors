@@ -15,6 +15,14 @@ Add to Git project:
 git submodule add https://github.com/EloiStree/2026_04_11_gdp_learn_with_sensors.git addons/2026_04_11_gdp_learn_with_sensors
 ```
 
+Add to a none-git project
+```bash
+git clone https://github.com/EloiStree/2026_04_11_gdp_learn_with_sensors.git addons/2026_04_11_gdp_learn_with_sensors
+```
+
+Add by using zip release:  
+https://github.com/EloiStree/2026_04_11_gdp_learn_with_sensors/releases  
+  
 See:
 
 * Micro Bit Package: [https://github.com/EloiStree/2026_03_20_gdp_hello_micro_bit](https://github.com/EloiStree/2026_03_20_gdp_hello_micro_bit)
