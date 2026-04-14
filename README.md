@@ -3,6 +3,9 @@
 
 > This package **teaches you the basics of Godot by illustrating it using sensors.**
 
+<img width="573" height="328" alt="image" src="https://github.com/user-attachments/assets/bb82885e-329d-4fe4-b266-ed35b55ca1e4" />
+<img width="487" height="237" alt="image" src="https://github.com/user-attachments/assets/20ab0d3f-7d12-43b0-aaec-10f70ab9dce0" />
+
 
 By mocking or simulating Internet of Things (IoT) sensors in Godot, you can learn about: Meshes, Materials, Translation, Animation, Rotation, Collision, Raycasting, Math, and more.    
 
