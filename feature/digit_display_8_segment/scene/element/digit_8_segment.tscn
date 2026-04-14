@@ -1,0 +1,69 @@
+[gd_scene format=3 uid="uid://ccd25l5dy5exi"]
+
+[ext_resource type="Script" uid="uid://vurkhl0y1k4s" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/script/sensor_facade_digit_8.gd" id="1_1iaet"]
+[ext_resource type="PackedScene" uid="uid://0ggcqa20hblr" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/3d/digit8.glb" id="1_stvtw"]
+[ext_resource type="Material" uid="uid://b34ho78yd1x65" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/material/mat_red_digit_8.tres" id="2_1iaet"]
+[ext_resource type="Material" uid="uid://bw7rxb68n68bg" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/material/mat_body_digit_8.tres" id="3_rbwy7"]
+[ext_resource type="Script" uid="uid://bohimatfg30bv" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/script/sensor_set_digit_8_segment_on_off.gd" id="4_565ym"]
+[ext_resource type="Script" uid="uid://dmosv7f4daaer" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/script/sensor_set_digit_8_segment_with_letter.gd" id="5_gr3rx"]
+
+[node name="Digit8Segment" type="Node3D" unique_id=1093780275 node_paths=PackedStringArray("set_segment_one_by_one", "set_segment_with_char")]
+script = ExtResource("1_1iaet")
+set_segment_one_by_one = NodePath("Code/SensorSetDigit8SegmentOnOff")
+set_segment_with_char = NodePath("Code/SensorSetDigit8SegmentWithLetter")
+
+[node name="Mesh" type="Node3D" parent="." unique_id=1703005617]
+
+[node name="digit8" parent="Mesh" unique_id=238620264 instance=ExtResource("1_stvtw")]
+
+[node name="0" parent="Mesh/digit8/Digit8" parent_id_path=PackedInt32Array(238620264, 1392761100) index="0" unique_id=663727107]
+material_override = ExtResource("2_1iaet")
+surface_material_override/0 = ExtResource("2_1iaet")
+
+[node name="1" parent="Mesh/digit8/Digit8" parent_id_path=PackedInt32Array(238620264, 1392761100) index="1" unique_id=190643490]
+surface_material_override/0 = ExtResource("2_1iaet")
+
+[node name="2" parent="Mesh/digit8/Digit8" parent_id_path=PackedInt32Array(238620264, 1392761100) index="2" unique_id=107067808]
+surface_material_override/0 = ExtResource("2_1iaet")
+
+[node name="3" parent="Mesh/digit8/Digit8" parent_id_path=PackedInt32Array(238620264, 1392761100) index="3" unique_id=401409079]
+surface_material_override/0 = ExtResource("2_1iaet")
+
+[node name="5" parent="Mesh/digit8/Digit8" parent_id_path=PackedInt32Array(238620264, 1392761100) index="4" unique_id=334916391]
+surface_material_override/0 = ExtResource("2_1iaet")
+
+[node name="7" parent="Mesh/digit8/Digit8" parent_id_path=PackedInt32Array(238620264, 1392761100) index="5" unique_id=1933181449]
+surface_material_override/0 = ExtResource("2_1iaet")
+
+[node name="8" parent="Mesh/digit8/Digit8" parent_id_path=PackedInt32Array(238620264, 1392761100) index="6" unique_id=2057671142]
+surface_material_override/0 = ExtResource("2_1iaet")
+
+[node name="9" parent="Mesh/digit8/Digit8" parent_id_path=PackedInt32Array(238620264, 1392761100) index="7" unique_id=979367693]
+surface_material_override/0 = ExtResource("2_1iaet")
+
+[node name="Body" parent="Mesh/digit8/Digit8" parent_id_path=PackedInt32Array(238620264, 1392761100) index="8" unique_id=1324680877]
+surface_material_override/0 = ExtResource("3_rbwy7")
+
+[node name="Pins" parent="Mesh/digit8/Digit8" parent_id_path=PackedInt32Array(238620264, 1392761100) index="9" unique_id=491676701]
+surface_material_override/0 = ExtResource("3_rbwy7")
+
+[node name="Code" type="Node" parent="." unique_id=751922684]
+
+[node name="SensorSetDigit8SegmentOnOff" type="Node" parent="Code" unique_id=1706339412 node_paths=PackedStringArray("segment_0", "segment_1", "segment_2", "segment_3", "segment_5", "segment_7", "segment_8", "segment_9")]
+script = ExtResource("4_565ym")
+segment_0 = NodePath("../../Mesh/digit8/Digit8/0")
+segment_1 = NodePath("../../Mesh/digit8/Digit8/1")
+segment_2 = NodePath("../../Mesh/digit8/Digit8/2")
+segment_3 = NodePath("../../Mesh/digit8/Digit8/3")
+segment_5 = NodePath("../../Mesh/digit8/Digit8/5")
+segment_7 = NodePath("../../Mesh/digit8/Digit8/7")
+segment_8 = NodePath("../../Mesh/digit8/Digit8/8")
+segment_9 = NodePath("../../Mesh/digit8/Digit8/9")
+metadata/_custom_type_script = "uid://bohimatfg30bv"
+
+[node name="SensorSetDigit8SegmentWithLetter" type="Node" parent="Code" unique_id=1063128245 node_paths=PackedStringArray("digit8")]
+script = ExtResource("5_gr3rx")
+digit8 = NodePath("../SensorSetDigit8SegmentOnOff")
+text_image_load_at_ready = "res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/char_to_image_digit_8.txt"
+
+[editable path="Mesh/digit8"]

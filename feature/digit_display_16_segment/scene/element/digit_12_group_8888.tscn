@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bkly0ej3qsd8i"]
+
+[ext_resource type="Script" uid="uid://drrkow075rt0l" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_16_segment/script/sensor_several_digit_16.gd" id="1_6xr5b"]
+[ext_resource type="PackedScene" uid="uid://bheiy4pxievpf" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_16_segment/scene/element/digit_segment_16.tscn" id="2_a85ts"]
+
+[node name="Digit12Group8888" type="Node3D" unique_id=88145442 node_paths=PackedStringArray("digit16_left_right")]
+script = ExtResource("1_6xr5b")
+digit16_left_right = [NodePath("DigitSegmentLR0"), NodePath("DigitSegmentLR1"), NodePath("DigitSegmentLR2"), NodePath("DigitSegmentLR3")]
+
+[node name="DigitSegmentLR0" parent="." unique_id=1672593417 instance=ExtResource("2_a85ts")]
+
+[node name="DigitSegmentLR1" parent="." unique_id=1197372459 instance=ExtResource("2_a85ts")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8356323, 0, 0)
+
+[node name="DigitSegmentLR2" parent="." unique_id=2032341559 instance=ExtResource("2_a85ts")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2353344, 0, 0)
+
+[node name="DigitSegmentLR3" parent="." unique_id=1053709664 instance=ExtResource("2_a85ts")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1021013, 0, 0)

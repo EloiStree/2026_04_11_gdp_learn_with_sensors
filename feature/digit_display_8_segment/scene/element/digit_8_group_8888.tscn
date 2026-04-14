@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://xv0v0itladxo"]
+
+[ext_resource type="Script" uid="uid://ffcngk6kxk7b" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/script/sensor_several_digit_8.gd" id="1_803ss"]
+[ext_resource type="PackedScene" uid="uid://ccd25l5dy5exi" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/scene/element/digit_8_segment.tscn" id="2_cncjg"]
+
+[node name="Digit8Group8888" type="Node3D" unique_id=1593668451 node_paths=PackedStringArray("digit8_left_right")]
+script = ExtResource("1_803ss")
+digit8_left_right = [NodePath("Digit8Segment"), NodePath("Digit8Segment2"), NodePath("Digit8Segment3"), NodePath("Digit8Segment4")]
+
+[node name="Digit8Segment" parent="." unique_id=1093780275 instance=ExtResource("2_cncjg")]
+
+[node name="Digit8Segment2" parent="." unique_id=2095261847 instance=ExtResource("2_cncjg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63427734, 0, 0)
+
+[node name="Digit8Segment3" parent="." unique_id=50327751 instance=ExtResource("2_cncjg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5565491, 0, 0)
+
+[node name="Digit8Segment4" parent="." unique_id=270262901 instance=ExtResource("2_cncjg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.205719, 0, 0)

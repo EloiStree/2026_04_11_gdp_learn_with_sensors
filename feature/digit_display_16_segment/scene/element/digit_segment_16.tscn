@@ -144,6 +144,6 @@ metadata/_custom_type_script = "uid://dnqeyqvdeff6d"
 [node name="SensorSetDigit16SegmentWithLetter" type="Node" parent="Code" unique_id=455666358 node_paths=PackedStringArray("digit16")]
 script = ExtResource("4_ihyp5")
 digit16 = NodePath("../SensorSetDigit16SegmentOnOff")
-text_image_load_at_ready = "res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_16_segment/text/char_to_image.txt"
+text_image_load_at_ready = "res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_16_segment/text/char_to_image_digit_16.txt"
 
 [editable path="Mesh/digit_seg_16"]

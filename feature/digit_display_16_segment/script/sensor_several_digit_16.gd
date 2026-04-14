@@ -52,7 +52,3 @@ func clear_and_load_char_images_from_text(text_to_load:String):
 
 
 	
-# Not that we are not trying to designa  display that know what it display.
-# not reading here just obeying. The reading and knowing part should be in the other developer code.
-
-#if you pout the model (data) in the view. Your class can become complexe very fast.
