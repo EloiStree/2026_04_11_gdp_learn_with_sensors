@@ -1,0 +1,149 @@
+[gd_scene format=3 uid="uid://bheiy4pxievpf"]
+
+[ext_resource type="Script" uid="uid://bwavohyn1phbe" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_16_segment/script/sensor_facade_digit_16.gd" id="1_ihyp5"]
+[ext_resource type="PackedScene" uid="uid://dk5hachef1w8w" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_16_segment/3d/digit_seg_16.glb" id="1_wd6cc"]
+[ext_resource type="Texture2D" uid="uid://ggn23frm0mat" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_16_segment/3d/digit_seg_16_red_uv.png" id="2_8t5a5"]
+[ext_resource type="Script" uid="uid://dnqeyqvdeff6d" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_16_segment/script/sensor_set_digit_16_segment_on_off.gd" id="3_jifg4"]
+[ext_resource type="Script" uid="uid://djq1yeyex6j38" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_16_segment/script/sensor_set_digit_16_segment_with_letter.gd" id="4_ihyp5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_npwuv"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b248j"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jvflq"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jw1ub"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_78n75"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_28tf6"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dahwo"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rjow5"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uuwah"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l3002"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2oif7"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aacty"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jifg4"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ihyp5"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x7ny8"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_482e8"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_76t0i"]
+albedo_texture = ExtResource("2_8t5a5")
+
+[node name="DigitSegment16" type="Node3D" unique_id=1672593417 node_paths=PackedStringArray("set_segment_one_by_one", "set_segment_with_char")]
+script = ExtResource("1_ihyp5")
+set_segment_one_by_one = NodePath("Code/SensorSetDigit16SegmentOnOff")
+set_segment_with_char = NodePath("Code/SensorSetDigit16SegmentWithLetter")
+
+[node name="Mesh" type="Node3D" parent="." unique_id=1808116136]
+
+[node name="digit_seg_16" parent="Mesh" unique_id=1893983504 instance=ExtResource("1_wd6cc")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="9" parent="Mesh/digit_seg_16" index="0" unique_id=2073127448]
+material_override = SubResource("StandardMaterial3D_npwuv")
+
+[node name="7" parent="Mesh/digit_seg_16" index="1" unique_id=1007614228]
+material_override = SubResource("StandardMaterial3D_b248j")
+
+[node name="RT" parent="Mesh/digit_seg_16" index="2" unique_id=1122485160]
+material_override = SubResource("StandardMaterial3D_jvflq")
+
+[node name="TR" parent="Mesh/digit_seg_16" index="3" unique_id=1412429402]
+material_override = SubResource("StandardMaterial3D_jw1ub")
+
+[node name="TL" parent="Mesh/digit_seg_16" index="4" unique_id=41389149]
+material_override = SubResource("StandardMaterial3D_78n75")
+
+[node name="LT" parent="Mesh/digit_seg_16" index="5" unique_id=279489911]
+material_override = SubResource("StandardMaterial3D_28tf6")
+
+[node name="LD" parent="Mesh/digit_seg_16" index="6" unique_id=1140349777]
+material_override = SubResource("StandardMaterial3D_dahwo")
+
+[node name="DL" parent="Mesh/digit_seg_16" index="7" unique_id=1411642349]
+material_override = SubResource("StandardMaterial3D_rjow5")
+
+[node name="1" parent="Mesh/digit_seg_16" index="8" unique_id=1296295616]
+material_override = SubResource("StandardMaterial3D_uuwah")
+
+[node name="2" parent="Mesh/digit_seg_16" index="9" unique_id=2097216478]
+material_override = SubResource("StandardMaterial3D_l3002")
+
+[node name="DR" parent="Mesh/digit_seg_16" index="10" unique_id=624026183]
+material_override = SubResource("StandardMaterial3D_2oif7")
+
+[node name="3" parent="Mesh/digit_seg_16" index="11" unique_id=507074480]
+material_override = SubResource("StandardMaterial3D_aacty")
+
+[node name="RD" parent="Mesh/digit_seg_16" index="12" unique_id=1948986577]
+material_override = SubResource("StandardMaterial3D_jifg4")
+
+[node name="0" parent="Mesh/digit_seg_16" index="13" unique_id=1143712268]
+material_override = SubResource("StandardMaterial3D_ihyp5")
+
+[node name="6" parent="Mesh/digit_seg_16" index="14" unique_id=1308451757]
+material_override = SubResource("StandardMaterial3D_x7ny8")
+
+[node name="4" parent="Mesh/digit_seg_16" index="15" unique_id=1393470293]
+material_override = SubResource("StandardMaterial3D_482e8")
+
+[node name="8" parent="Mesh/digit_seg_16" index="16" unique_id=550989973]
+material_override = SubResource("StandardMaterial3D_76t0i")
+
+[node name="Code" type="Node" parent="." unique_id=1098260672]
+
+[node name="SensorSetDigit16SegmentOnOff" type="Node" parent="Code" unique_id=893555458 node_paths=PackedStringArray("segment_0", "segment_1", "segment_2", "segment_3", "segment_4", "segment_6", "segment_7", "segment_8", "segment_9", "segment_TL", "segment_TR", "segment_RT", "segment_RD", "segment_DR", "segment_DL", "segment_LD", "segment_LT")]
+script = ExtResource("3_jifg4")
+segment_0 = NodePath("../../Mesh/digit_seg_16/0")
+segment_1 = NodePath("../../Mesh/digit_seg_16/1")
+segment_2 = NodePath("../../Mesh/digit_seg_16/2")
+segment_3 = NodePath("../../Mesh/digit_seg_16/3")
+segment_4 = NodePath("../../Mesh/digit_seg_16/4")
+segment_6 = NodePath("../../Mesh/digit_seg_16/6")
+segment_7 = NodePath("../../Mesh/digit_seg_16/7")
+segment_8 = NodePath("../../Mesh/digit_seg_16/8")
+segment_9 = NodePath("../../Mesh/digit_seg_16/9")
+segment_TL = NodePath("../../Mesh/digit_seg_16/TL")
+segment_TR = NodePath("../../Mesh/digit_seg_16/TR")
+segment_RT = NodePath("../../Mesh/digit_seg_16/RT")
+segment_RD = NodePath("../../Mesh/digit_seg_16/RD")
+segment_DR = NodePath("../../Mesh/digit_seg_16/DR")
+segment_DL = NodePath("../../Mesh/digit_seg_16/DL")
+segment_LD = NodePath("../../Mesh/digit_seg_16/LD")
+segment_LT = NodePath("../../Mesh/digit_seg_16/LT")
+metadata/_custom_type_script = "uid://dnqeyqvdeff6d"
+
+[node name="SensorSetDigit16SegmentWithLetter" type="Node" parent="Code" unique_id=455666358 node_paths=PackedStringArray("digit16")]
+script = ExtResource("4_ihyp5")
+digit16 = NodePath("../SensorSetDigit16SegmentOnOff")
+text_image_load_at_ready = "res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_16_segment/text/char_to_image.txt"
+
+[editable path="Mesh/digit_seg_16"]

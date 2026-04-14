@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://baax2ho8sn154"]
+
+[ext_resource type="Script" uid="uid://dveacwluinajq" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_text_edit_to_signal.gd" id="1_g1dld"]
+[ext_resource type="PackedScene" uid="uid://bheiy4pxievpf" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_16_segment/scene/element/digit_segment_16.tscn" id="1_xinfo"]
+[ext_resource type="Script" uid="uid://drrkow075rt0l" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_16_segment/script/sensor_several_digit_16.gd" id="3_npwuv"]
+
+[node name="DemoDigitSeg16" type="Node3D" unique_id=2082136092]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1136937406]
+
+[node name="TextEdit" type="TextEdit" parent="CanvasLayer" unique_id=589406103]
+anchors_preset = -1
+anchor_right = 0.106000006
+anchor_bottom = 0.142
+offset_right = -0.11200714
+offset_bottom = -0.01600647
+
+[node name="SensorTextEditToSignal" type="Node" parent="CanvasLayer/TextEdit" unique_id=841508498 node_paths=PackedStringArray("text_edit_to_observed")]
+script = ExtResource("1_g1dld")
+text_edit_to_observed = NodePath("..")
+metadata/_custom_type_script = "uid://dveacwluinajq"
+
+[node name="DigitSegment16 Single" parent="." unique_id=1672593417 instance=ExtResource("1_xinfo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.3840332)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1495204635]
+transform = Transform3D(1, 0, 0, 0, 0.44871077, 0.89367706, 0, -0.89367706, 0.44871077, 1.3292236, 2.0637279, 1.0032442)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1472639185]
+transform = Transform3D(1, 0, 0, 0, 0.4465883, 0.89473957, 0, -0.89473957, 0.4465883, 0, 0, 0)
+
+[node name="Node3D 88_88" type="Node3D" parent="." unique_id=2039329454 node_paths=PackedStringArray("digit16_left_right")]
+script = ExtResource("3_npwuv")
+digit16_left_right = [NodePath("DigitSegmentLR0"), NodePath("DigitSegmentLR1"), NodePath("DigitSegmentLR2"), NodePath("DigitSegmentLR3")]
+
+[node name="DigitSegmentLR0" parent="Node3D 88_88" unique_id=311146191 instance=ExtResource("1_xinfo")]
+
+[node name="DigitSegmentLR1" parent="Node3D 88_88" unique_id=1065025501 instance=ExtResource("1_xinfo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8356323, 0, 0)
+
+[node name="DigitSegmentLR2" parent="Node3D 88_88" unique_id=717136841 instance=ExtResource("1_xinfo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2353344, 0, 0)
+
+[node name="DigitSegmentLR3" parent="Node3D 88_88" unique_id=856875826 instance=ExtResource("1_xinfo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1021013, 0, 0)
+
+[connection signal="on_text_changed" from="CanvasLayer/TextEdit/SensorTextEditToSignal" to="DigitSegment16 Single" method="set_with_loaded_char"]
+[connection signal="on_text_changed" from="CanvasLayer/TextEdit/SensorTextEditToSignal" to="Node3D 88_88" method="set_digit_text"]
+
+[editable path="DigitSegment16 Single"]
+[editable path="DigitSegment16 Single/Mesh/digit_seg_16"]
