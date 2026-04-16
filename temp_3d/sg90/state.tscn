@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://b5nmox4i4p7x6"]
+
+[ext_resource type="PackedScene" uid="uid://o4lbnmsom8lw" path="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/sg90/glb/sg_90.glb" id="1_jpimc"]
+[ext_resource type="PackedScene" uid="uid://b54q1w5gavxgl" path="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/sg90/glb/sg_90_blade_big_1.glb" id="2_deckh"]
+[ext_resource type="PackedScene" uid="uid://dy0c268rk2ct6" path="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/sg90/glb/sg_90_blade_big_2.glb" id="3_1g5hd"]
+[ext_resource type="PackedScene" uid="uid://c03j8hid37n1j" path="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/sg90/glb/sg_90_blade_big_cross_4.glb" id="4_qvj2i"]
+[ext_resource type="PackedScene" uid="uid://tst5mx57o674" path="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/sg90/glb/sg_90_blade_mix_cross_4.glb" id="5_gnduc"]
+[ext_resource type="PackedScene" uid="uid://dyhvt2rnx2sgg" path="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/sg90/glb/sg_90_blade_small_4.glb" id="6_h1jxf"]
+
+[node name="Demo" type="Node3D" unique_id=787737167]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1311627008]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 8.718384)
+
+[node name="LightmapGI" type="LightmapGI" parent="." unique_id=2067380339]
+transform = Transform3D(1, 0, 0, 0, 0.93069875, 0.3657866, 0, -0.3657866, 0.93069875, 0, 0, 0)
+
+[node name="sg_90" parent="." unique_id=2086105086 instance=ExtResource("1_jpimc")]
+
+[node name="sg_90_blade_big_1" parent="." unique_id=1172984939 instance=ExtResource("2_deckh")]
+visible = false
+
+[node name="sg_90_blade_big_2" parent="." unique_id=1074649405 instance=ExtResource("3_1g5hd")]
+visible = false
+
+[node name="sg_90_blade_big_cross_4" parent="." unique_id=500783567 instance=ExtResource("4_qvj2i")]
+visible = false
+
+[node name="sg_90_blade_mix_cross_4" parent="." unique_id=136579596 instance=ExtResource("5_gnduc")]
+visible = false
+
+[node name="sg_90_blade_small_4" parent="." unique_id=1377942930 instance=ExtResource("6_h1jxf")]
+visible = false

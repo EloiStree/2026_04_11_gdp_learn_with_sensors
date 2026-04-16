@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bgn6at8oj8oo2"
+path="res://.godot/imported/SM_28BYJ_Bit (1).obj-bf875190a7abe57ae865bdad581b0115.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SM_28BYJ_Bit (1).obj-bf875190a7abe57ae865bdad581b0115.mesh"]
+
+source_file="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/SM_28BYJ_Bit (1).obj"
+dest_files=["res://.godot/imported/SM_28BYJ_Bit (1).obj-bf875190a7abe57ae865bdad581b0115.mesh", "res://.godot/imported/SM_28BYJ_Bit (1).obj-bf875190a7abe57ae865bdad581b0115.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

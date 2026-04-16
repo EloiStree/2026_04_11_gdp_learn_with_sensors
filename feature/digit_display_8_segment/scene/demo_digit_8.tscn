@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ccd25l5dy5exi" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/scene/element/digit_8_segment.tscn" id="1_o3x51"]
 [ext_resource type="Script" uid="uid://dveacwluinajq" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_text_edit_to_signal.gd" id="2_p0qn8"]
-[ext_resource type="Script" uid="uid://ffcngk6kxk7b" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/script/sensor_several_digit_8.gd" id="3_p0qn8"]
+[ext_resource type="PackedScene" uid="uid://xv0v0itladxo" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/scene/element/digit_8_group_8888.tscn" id="3_p0qn8"]
 
 [node name="DemoDigit8" type="Node3D" unique_id=2092905389]
 
@@ -27,27 +27,14 @@ metadata/_custom_type_script = "uid://dveacwluinajq"
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=73362325]
 transform = Transform3D(1, 0, 0, 0, 0.9337117, 0.35802573, 0, -0.35802573, 0.9337117, 0, 1.9408189, 2.3383553)
+visible = false
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=167326162]
 transform = Transform3D(-0.7419523, 0.64929587, -0.16709748, 0, 0.24923086, 0.9684441, 0.6704526, 0.7185394, -0.18491745, 0, 0, 0)
 
-[node name="Digit8Group8888" type="Node3D" parent="." unique_id=375776515 node_paths=PackedStringArray("digit8_left_right")]
-script = ExtResource("3_p0qn8")
-digit8_left_right = [NodePath("Digit8Segment"), NodePath("Digit8Segment2"), NodePath("Digit8Segment3"), NodePath("Digit8Segment4")]
-
-[node name="Digit8Segment" parent="Digit8Group8888" unique_id=394820726 instance=ExtResource("1_o3x51")]
-
-[node name="Digit8Segment2" parent="Digit8Group8888" unique_id=1976597579 instance=ExtResource("1_o3x51")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63427734, 0, 0)
-
-[node name="Digit8Segment3" parent="Digit8Group8888" unique_id=61158262 instance=ExtResource("1_o3x51")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5565491, 0, 0)
-
-[node name="Digit8Segment4" parent="Digit8Group8888" unique_id=1427030138 instance=ExtResource("1_o3x51")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.205719, 0, 0)
+[node name="Digit8Group8888" parent="." unique_id=1593668451 instance=ExtResource("3_p0qn8")]
 
 [connection signal="on_text_changed" from="CanvasLayer/TextEdit/SensorTextEditToSignal" to="Digit8Segment/Code/SensorSetDigit8SegmentWithLetter" method="set_digit_from_char"]
-[connection signal="on_text_changed" from="CanvasLayer/TextEdit/SensorTextEditToSignal" to="Digit8Group8888" method="set_digit_text"]
 
 [editable path="Digit8Segment"]
 [editable path="Digit8Segment/Mesh/digit8"]

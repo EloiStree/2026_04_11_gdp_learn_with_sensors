@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cs7nex7c2c4ly"
+path="res://.godot/imported/ToggleButton1C25BodyButton.obj-df181f64d49bfec9ddfc33bc97559bd7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ToggleButton1C25BodyButton.obj-df181f64d49bfec9ddfc33bc97559bd7.mesh"]
+
+source_file="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/ToggleButton1C25BodyButton.obj"
+dest_files=["res://.godot/imported/ToggleButton1C25BodyButton.obj-df181f64d49bfec9ddfc33bc97559bd7.mesh", "res://.godot/imported/ToggleButton1C25BodyButton.obj-df181f64d49bfec9ddfc33bc97559bd7.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
