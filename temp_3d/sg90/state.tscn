@@ -18,7 +18,6 @@ transform = Transform3D(1, 0, 0, 0, 0.93069875, 0.3657866, 0, -0.3657866, 0.9306
 [node name="sg_90" parent="." unique_id=2086105086 instance=ExtResource("1_jpimc")]
 
 [node name="sg_90_blade_big_1" parent="." unique_id=1172984939 instance=ExtResource("2_deckh")]
-visible = false
 
 [node name="sg_90_blade_big_2" parent="." unique_id=1074649405 instance=ExtResource("3_1g5hd")]
 visible = false

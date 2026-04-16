@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://ccd25l5dy5exi" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/scene/element/digit_8_segment.tscn" id="1_o3x51"]
 [ext_resource type="Script" uid="uid://dveacwluinajq" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_text_edit_to_signal.gd" id="2_p0qn8"]
 [ext_resource type="PackedScene" uid="uid://xv0v0itladxo" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/scene/element/digit_8_group_8888.tscn" id="3_p0qn8"]
+[ext_resource type="ArrayMesh" uid="uid://3x477l67on4j" path="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/SquareLedRGB.obj" id="4_pn601"]
 
 [node name="DemoDigit8" type="Node3D" unique_id=2092905389]
 
@@ -33,6 +34,10 @@ visible = false
 transform = Transform3D(-0.7419523, 0.64929587, -0.16709748, 0, 0.24923086, 0.9684441, 0.6704526, 0.7185394, -0.18491745, 0, 0, 0)
 
 [node name="Digit8Group8888" parent="." unique_id=1593668451 instance=ExtResource("3_p0qn8")]
+
+[node name="SquareLedRgb" type="MeshInstance3D" parent="." unique_id=593544360]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5146484, 0, -1.4117432)
+mesh = ExtResource("4_pn601")
 
 [connection signal="on_text_changed" from="CanvasLayer/TextEdit/SensorTextEditToSignal" to="Digit8Segment/Code/SensorSetDigit8SegmentWithLetter" method="set_digit_from_char"]
 
