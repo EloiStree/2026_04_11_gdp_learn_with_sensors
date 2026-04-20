@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://ccd25l5dy5exi" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/scene/element/digit_8_segment.tscn" id="1_o3x51"]
 [ext_resource type="Script" uid="uid://dveacwluinajq" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_text_edit_to_signal.gd" id="2_p0qn8"]
 [ext_resource type="PackedScene" uid="uid://xv0v0itladxo" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/scene/element/digit_8_group_8888.tscn" id="3_p0qn8"]
-[ext_resource type="ArrayMesh" uid="uid://3x477l67on4j" path="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/SquareLedRGB.obj" id="4_pn601"]
+[ext_resource type="ArrayMesh" uid="uid://3x477l67on4j" path="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/led_rgb/SquareLedRGB.obj" id="4_pn601"]
 
 [node name="DemoDigit8" type="Node3D" unique_id=2092905389]
 

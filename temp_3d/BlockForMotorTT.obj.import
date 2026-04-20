@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c65yoo0il3c4f"
+path="res://.godot/imported/BlockForMotorTT.obj-5384780dd82a43d61703bc8b376b729b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/BlockForMotorTT.obj-5384780dd82a43d61703bc8b376b729b.mesh"]
+
+source_file="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/BlockForMotorTT.obj"
+dest_files=["res://.godot/imported/BlockForMotorTT.obj-5384780dd82a43d61703bc8b376b729b.mesh", "res://.godot/imported/BlockForMotorTT.obj-5384780dd82a43d61703bc8b376b729b.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
