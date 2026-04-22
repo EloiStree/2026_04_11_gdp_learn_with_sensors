@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://d4he0w3i5qk17"]
+
+[ext_resource type="Material" uid="uid://baitvrnjcr30d" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/mz996/material/mat_mz966_black_body.tres" id="1_5tdfk"]
+[ext_resource type="ArrayMesh" uid="uid://br3oiodlhwdpb" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/step_motor/item/nema/glb/to_convert/12VStepMotorBody.obj" id="2_5tdfk"]
+[ext_resource type="Material" uid="uid://cl5hvfxsen0rt" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/mz996/material/mat_mz966_white_blade.tres" id="3_800kn"]
+[ext_resource type="ArrayMesh" uid="uid://doot3vhpq1qvj" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/step_motor/item/nema/glb/to_convert/12VStepMotorBit.obj" id="4_e1fnk"]
+
+[node name="DemoServoMotorContinus" type="Node3D" unique_id=1075167778]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2063632347]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.801052, -45.796875, 0)
+material_override = ExtResource("1_5tdfk")
+mesh = ExtResource("2_5tdfk")
+surface_material_override/0 = ExtResource("1_5tdfk")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=1225448670]
+transform = Transform3D(1, 0, 0, 0, -0.9978998, 0.06477606, 0, -0.06477606, -0.9978998, -28.311531, 3.6254263, -41.723064)
+material_override = ExtResource("3_800kn")
+mesh = ExtResource("4_e1fnk")
+
+[node name="Node3D" type="Node3D" parent="." unique_id=1350917670]
+
+[node name="MZ996Blade1View" type="Node3D" parent="." unique_id=1213004695]

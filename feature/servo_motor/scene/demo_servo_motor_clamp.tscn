@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bcnvsjtbrcqwa"]
+
+[ext_resource type="PackedScene" uid="uid://d3is0luwveujp" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/view/sg_90_blade_1_view.tscn" id="1_1gv0q"]
+
+[node name="DemoServoMotorClamp" type="Node3D" unique_id=979149046]
+
+[node name="Sg90Blade1View" parent="." unique_id=1467626730 instance=ExtResource("1_1gv0q")]
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=2029353259]
+transform = Transform3D(1, 0, 0, 0, 0.8848088, 0.4659543, 0, -0.4659543, 0.8848088, 0, 0.048461914, 0.0785704)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=675722043]
+transform = Transform3D(1, 0, 0, 0, 0.78449506, 0.6201351, 0, -0.6201351, 0.78449506, 0, 0, 0.06133134)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=258879917]
+
+[node name="HSlider" type="HSlider" parent="CanvasLayer" unique_id=1892536418]
+anchors_preset = -1
+anchor_right = 0.407
+anchor_bottom = 0.060000002
+offset_right = 0.13598633
+offset_bottom = 0.11999893
+min_value = -1.0
+max_value = 1.0
+step = 0.001
+
+[connection signal="value_changed" from="CanvasLayer/HSlider" to="Sg90Blade1View" method="set_with_percent11"]

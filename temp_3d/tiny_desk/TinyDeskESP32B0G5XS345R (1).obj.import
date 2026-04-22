@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ds1oehlg7ht62"
+path="res://.godot/imported/TinyDeskESP32B0G5XS345R (1).obj-41060db7fd72c2b662327a63a3a8eb49.mesh"
+
+[deps]
+
+files=["res://.godot/imported/TinyDeskESP32B0G5XS345R (1).obj-41060db7fd72c2b662327a63a3a8eb49.mesh"]
+
+source_file="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/tiny_desk/TinyDeskESP32B0G5XS345R (1).obj"
+dest_files=["res://.godot/imported/TinyDeskESP32B0G5XS345R (1).obj-41060db7fd72c2b662327a63a3a8eb49.mesh", "res://.godot/imported/TinyDeskESP32B0G5XS345R (1).obj-41060db7fd72c2b662327a63a3a8eb49.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

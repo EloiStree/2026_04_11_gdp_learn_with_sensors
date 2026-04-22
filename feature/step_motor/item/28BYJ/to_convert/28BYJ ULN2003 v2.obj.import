@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b5y3tipq04x4i"
+path="res://.godot/imported/28BYJ ULN2003 v2.obj-a978321301e6d05b78901bf0871fb454.mesh"
+
+[deps]
+
+files=["res://.godot/imported/28BYJ ULN2003 v2.obj-a978321301e6d05b78901bf0871fb454.mesh"]
+
+source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/step_motor/item/28BYJ/to_convert/28BYJ ULN2003 v2.obj"
+dest_files=["res://.godot/imported/28BYJ ULN2003 v2.obj-a978321301e6d05b78901bf0871fb454.mesh", "res://.godot/imported/28BYJ ULN2003 v2.obj-a978321301e6d05b78901bf0871fb454.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

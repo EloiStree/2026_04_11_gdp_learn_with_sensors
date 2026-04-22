@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://d3is0luwveujp"]
+
+[ext_resource type="Script" uid="uid://bfr1anuhljifw" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/script/sensor_view_servo_motor_local_clamp_angle.gd" id="1_u2rrp"]
+[ext_resource type="PackedScene" uid="uid://o4lbnmsom8lw" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/glb_sg_90.glb" id="2_hwg1s"]
+[ext_resource type="Material" uid="uid://lixuieuv6sqa" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/mat_sg_90_blue.tres" id="3_du187"]
+[ext_resource type="PackedScene" uid="uid://b54q1w5gavxgl" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/glb_sg_90_blade_big_1.glb" id="4_dpudl"]
+
+[node name="Sg90Blade1View" type="Node3D" unique_id=1467626730 node_paths=PackedStringArray("pivot_node_to_rotate")]
+script = ExtResource("1_u2rrp")
+pivot_node_to_rotate = NodePath("BladeAnchor/RotationPivot")
+rotation_axis = Vector3(0, 1, 0)
+
+[node name="glb_sg_90" parent="." unique_id=245339774 instance=ExtResource("2_hwg1s")]
+
+[node name="sg_90" parent="glb_sg_90" index="0" unique_id=818834068]
+surface_material_override/0 = ExtResource("3_du187")
+
+[node name="BladeAnchor" type="Node3D" parent="." unique_id=372054956]
+
+[node name="RotationPivot" type="Node3D" parent="BladeAnchor" unique_id=210464216]
+
+[node name="glb_sg_90_blade_big_1" parent="BladeAnchor/RotationPivot" unique_id=507235743 instance=ExtResource("4_dpudl")]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 0, 0, 0)
+
+[editable path="glb_sg_90"]

@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://de17vv2loi2mn"
+path="res://.godot/imported/TinyDeskN20AngleShaft.obj-2cdf1660ee5feaa7e45ccfea9701e20b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/TinyDeskN20AngleShaft.obj-2cdf1660ee5feaa7e45ccfea9701e20b.mesh"]
+
+source_file="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/tiny_desk/TinyDeskN20AngleShaft.obj"
+dest_files=["res://.godot/imported/TinyDeskN20AngleShaft.obj-2cdf1660ee5feaa7e45ccfea9701e20b.mesh", "res://.godot/imported/TinyDeskN20AngleShaft.obj-2cdf1660ee5feaa7e45ccfea9701e20b.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

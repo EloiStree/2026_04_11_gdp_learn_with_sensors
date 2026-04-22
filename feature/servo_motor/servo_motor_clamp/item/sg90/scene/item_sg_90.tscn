@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://queo2xoc3qjh"]
+
+[ext_resource type="Material" uid="uid://c0aqgg7rjdyet" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/mat_sg_90_head_white.tres" id="1_es5q3"]
+[ext_resource type="PackedScene" uid="uid://o4lbnmsom8lw" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/glb_sg_90.glb" id="2_qg5rb"]
+[ext_resource type="Material" uid="uid://lixuieuv6sqa" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/mat_sg_90_blue.tres" id="3_sm538"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_xrrh2"]
+
+[node name="ItemSg90" type="Node3D" unique_id=368480442]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1754698511]
+transform = Transform3D(0.005, 0, 0, 0, 0.0025, 0, 0, 0, 0.005, 0, 0, 0)
+mesh = SubResource("CylinderMesh_xrrh2")
+surface_material_override/0 = ExtResource("1_es5q3")
+
+[node name="glb_sg_90" parent="." unique_id=415467261 instance=ExtResource("2_qg5rb")]
+
+[node name="sg_90" parent="glb_sg_90" index="0" unique_id=982782000]
+surface_material_override/0 = ExtResource("3_sm538")
+
+[editable path="glb_sg_90"]
