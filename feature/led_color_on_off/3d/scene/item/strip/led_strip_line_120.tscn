@@ -1,0 +1,748 @@
+[gd_scene format=3 uid="uid://sju3rlygtgdj"]
+
+[ext_resource type="PackedScene" uid="uid://d2w8mc2iahomx" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/code/rgb/square_led_rgb.tscn" id="1_gk24u"]
+[ext_resource type="Script" uid="uid://ghxor3w1yc48" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/code/rgb/sensor_view_strip_of_leds_rgb_color.gd" id="2_xs7ec"]
+
+[node name="LineStripLed120" type="Node3D" unique_id=529918825]
+
+[node name="Code" type="Node" parent="." unique_id=550000555]
+
+[node name="StripOfLEDs" type="Node" parent="Code" unique_id=1306515849 node_paths=PackedStringArray("parent_node_of_leds")]
+script = ExtResource("2_xs7ec")
+parent_node_of_leds = NodePath("../../LEDs")
+metadata/_custom_type_script = "uid://ghxor3w1yc48"
+
+[node name="LEDs" type="Node3D" parent="." unique_id=352221838]
+
+[node name="SquareLedRGB1" parent="LEDs" unique_id=2056367459 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.033452332, -0.00017928332, 0)
+
+[node name="SquareLedRGB2" parent="LEDs" unique_id=1078169407 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.10479529, -0.00017928332, 0)
+
+[node name="SquareLedRGB3" parent="LEDs" unique_id=231961779 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.17572528, -0.00017928332, 0)
+
+[node name="SquareLedRGB4" parent="LEDs" unique_id=1898677558 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.24706824, -0.00017928332, 0)
+
+[node name="SquareLedRGB5" parent="LEDs" unique_id=1527284830 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.31805927, -0.00017928332, 0)
+
+[node name="SquareLedRGB6" parent="LEDs" unique_id=1818442373 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.3894022, -0.00017928332, 0)
+
+[node name="SquareLedRGB7" parent="LEDs" unique_id=843284408 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.4603322, -0.00017928332, 0)
+
+[node name="SquareLedRGB8" parent="LEDs" unique_id=1612877670 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.53167516, -0.00017928332, 0)
+
+[node name="SquareLedRGB9" parent="LEDs" unique_id=1628543752 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.6041467, -0.00017928332, 0)
+
+[node name="SquareLedRGB10" parent="LEDs" unique_id=115182458 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.67548966, -0.00017928332, 0)
+
+[node name="SquareLedRGB11" parent="LEDs" unique_id=813724247 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.74641967, -0.00017928332, 0)
+
+[node name="SquareLedRGB12" parent="LEDs" unique_id=869647744 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.8177626, -0.00017928332, 0)
+
+[node name="SquareLedRGB13" parent="LEDs" unique_id=1214811580 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.88875365, -0.00017928332, 0)
+
+[node name="SquareLedRGB14" parent="LEDs" unique_id=700904770 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.9600966, -0.00017928332, 0)
+
+[node name="SquareLedRGB15" parent="LEDs" unique_id=2013923959 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.0310266, -0.00017928332, 0)
+
+[node name="SquareLedRGB16" parent="LEDs" unique_id=1222076862 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.1023695, -0.00017928332, 0)
+
+[node name="SquareLedRGB17" parent="LEDs" unique_id=1956217888 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.1761248, -0.00017928332, 0)
+
+[node name="SquareLedRGB18" parent="LEDs" unique_id=1868503952 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.2474679, -0.00017928332, 0)
+
+[node name="SquareLedRGB19" parent="LEDs" unique_id=1613271776 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.3183978, -0.00017928332, 0)
+
+[node name="SquareLedRGB20" parent="LEDs" unique_id=596441467 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.3897408, -0.00017928332, 0)
+
+[node name="SquareLedRGB21" parent="LEDs" unique_id=1980683356 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.4607317, -0.00017928332, 0)
+
+[node name="SquareLedRGB22" parent="LEDs" unique_id=447219005 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.5320747, -0.00017928332, 0)
+
+[node name="SquareLedRGB23" parent="LEDs" unique_id=519931409 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.6030047, -0.00017928332, 0)
+
+[node name="SquareLedRGB24" parent="LEDs" unique_id=1919638775 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.6743476, -0.00017928332, 0)
+
+[node name="SquareLedRGB25" parent="LEDs" unique_id=1350612968 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.7468193, -0.00017928332, 0)
+
+[node name="SquareLedRGB26" parent="LEDs" unique_id=454992810 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.8181622, -0.00017928332, 0)
+
+[node name="SquareLedRGB27" parent="LEDs" unique_id=114148102 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.8890922, -0.00017928332, 0)
+
+[node name="SquareLedRGB28" parent="LEDs" unique_id=521787098 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 1.9604352, -0.00017928332, 0)
+
+[node name="SquareLedRGB29" parent="LEDs" unique_id=1103062330 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.0314262, -0.00017928332, 0)
+
+[node name="SquareLedRGB30" parent="LEDs" unique_id=381537492 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.1027691, -0.00017928332, 0)
+
+[node name="SquareLedRGB31" parent="LEDs" unique_id=1266750160 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.1736991, -0.00017928332, 0)
+
+[node name="SquareLedRGB32" parent="LEDs" unique_id=319285465 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.245042, -0.00017928332, 0)
+
+[node name="SquareLedRGB33" parent="LEDs" unique_id=130541472 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.3184977, -0.00017928332, 0)
+
+[node name="SquareLedRGB34" parent="LEDs" unique_id=560891426 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.3898406, -0.00017928332, 0)
+
+[node name="SquareLedRGB35" parent="LEDs" unique_id=1648580109 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.4607706, -0.00017928332, 0)
+
+[node name="SquareLedRGB36" parent="LEDs" unique_id=568496163 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.5321136, -0.00017928332, 0)
+
+[node name="SquareLedRGB37" parent="LEDs" unique_id=906656876 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.6031046, -0.00017928332, 0)
+
+[node name="SquareLedRGB38" parent="LEDs" unique_id=1703715306 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.6744475, -0.00017928332, 0)
+
+[node name="SquareLedRGB39" parent="LEDs" unique_id=776688836 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.7453775, -0.00017928332, 0)
+
+[node name="SquareLedRGB40" parent="LEDs" unique_id=1319180916 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.8167205, -0.00017928332, 0)
+
+[node name="SquareLedRGB41" parent="LEDs" unique_id=811566149 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.889192, -0.00017928332, 0)
+
+[node name="SquareLedRGB42" parent="LEDs" unique_id=744566971 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 2.960535, -0.00017928332, 0)
+
+[node name="SquareLedRGB43" parent="LEDs" unique_id=1608875193 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.031465, -0.00017928332, 0)
+
+[node name="SquareLedRGB44" parent="LEDs" unique_id=12508644 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.102808, -0.00017928332, 0)
+
+[node name="SquareLedRGB45" parent="LEDs" unique_id=1378329980 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.173799, -0.00017928332, 0)
+
+[node name="SquareLedRGB46" parent="LEDs" unique_id=988068195 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.245142, -0.00017928332, 0)
+
+[node name="SquareLedRGB47" parent="LEDs" unique_id=1679417910 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.316072, -0.00017928332, 0)
+
+[node name="SquareLedRGB48" parent="LEDs" unique_id=245869762 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.387415, -0.00017928332, 0)
+
+[node name="SquareLedRGB49" parent="LEDs" unique_id=1910586140 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.4611702, -0.00017928332, 0)
+
+[node name="SquareLedRGB50" parent="LEDs" unique_id=1879628282 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.5325131, -0.00017928332, 0)
+
+[node name="SquareLedRGB51" parent="LEDs" unique_id=2009133514 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.6034431, -0.00017928332, 0)
+
+[node name="SquareLedRGB52" parent="LEDs" unique_id=1403403153 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.674786, -0.00017928332, 0)
+
+[node name="SquareLedRGB53" parent="LEDs" unique_id=1526434768 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.7457771, -0.00017928332, 0)
+
+[node name="SquareLedRGB54" parent="LEDs" unique_id=1898102118 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.81712, -0.00017928332, 0)
+
+[node name="SquareLedRGB55" parent="LEDs" unique_id=1571948189 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.88805, -0.00017928332, 0)
+
+[node name="SquareLedRGB56" parent="LEDs" unique_id=2113708071 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 3.959393, -0.00017928332, 0)
+
+[node name="SquareLedRGB57" parent="LEDs" unique_id=412274817 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.0318646, -0.00017928332, 0)
+
+[node name="SquareLedRGB58" parent="LEDs" unique_id=1686721725 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.1032076, -0.00017928332, 0)
+
+[node name="SquareLedRGB59" parent="LEDs" unique_id=555564091 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.1741376, -0.00017928332, 0)
+
+[node name="SquareLedRGB60" parent="LEDs" unique_id=1571978114 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.2454805, -0.00017928332, 0)
+
+[node name="SquareLedRGB61" parent="LEDs" unique_id=1109816715 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.3164716, -0.00017928332, 0)
+
+[node name="SquareLedRGB62" parent="LEDs" unique_id=1443550787 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.3878145, -0.00017928332, 0)
+
+[node name="SquareLedRGB63" parent="LEDs" unique_id=1220011427 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.4587445, -0.00017928332, 0)
+
+[node name="SquareLedRGB64" parent="LEDs" unique_id=1347812381 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.5300875, -0.00017928332, 0)
+
+[node name="SquareLedRGB65" parent="LEDs" unique_id=2122527093 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.603059, -0.00017928332, 0)
+
+[node name="SquareLedRGB66" parent="LEDs" unique_id=894412984 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.6744018, -0.00017928332, 0)
+
+[node name="SquareLedRGB67" parent="LEDs" unique_id=700694276 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.745332, -0.00017928332, 0)
+
+[node name="SquareLedRGB68" parent="LEDs" unique_id=1853011235 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.8166747, -0.00017928332, 0)
+
+[node name="SquareLedRGB69" parent="LEDs" unique_id=1654231650 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.8876657, -0.00017928332, 0)
+
+[node name="SquareLedRGB70" parent="LEDs" unique_id=1302057854 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 4.9590087, -0.00017928332, 0)
+
+[node name="SquareLedRGB71" parent="LEDs" unique_id=1043269342 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.0299387, -0.00017928332, 0)
+
+[node name="SquareLedRGB72" parent="LEDs" unique_id=895987014 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.1012816, -0.00017928332, 0)
+
+[node name="SquareLedRGB73" parent="LEDs" unique_id=997658709 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.1737533, -0.00017928332, 0)
+
+[node name="SquareLedRGB74" parent="LEDs" unique_id=1195157490 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.245096, -0.00017928332, 0)
+
+[node name="SquareLedRGB75" parent="LEDs" unique_id=956454251 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.316026, -0.00017928332, 0)
+
+[node name="SquareLedRGB76" parent="LEDs" unique_id=1972901696 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.387369, -0.00017928332, 0)
+
+[node name="SquareLedRGB77" parent="LEDs" unique_id=293733794 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.45836, -0.00017928332, 0)
+
+[node name="SquareLedRGB78" parent="LEDs" unique_id=1720522047 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.529703, -0.00017928332, 0)
+
+[node name="SquareLedRGB79" parent="LEDs" unique_id=1099003590 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.600633, -0.00017928332, 0)
+
+[node name="SquareLedRGB80" parent="LEDs" unique_id=785257182 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.671976, -0.00017928332, 0)
+
+[node name="SquareLedRGB81" parent="LEDs" unique_id=57294917 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.7457314, -0.00017928332, 0)
+
+[node name="SquareLedRGB82" parent="LEDs" unique_id=1426448765 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.8170743, -0.00017928332, 0)
+
+[node name="SquareLedRGB83" parent="LEDs" unique_id=765264808 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.8880043, -0.00017928332, 0)
+
+[node name="SquareLedRGB84" parent="LEDs" unique_id=1197231655 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 5.9593472, -0.00017928332, 0)
+
+[node name="SquareLedRGB85" parent="LEDs" unique_id=1981188119 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.0303383, -0.00017928332, 0)
+
+[node name="SquareLedRGB86" parent="LEDs" unique_id=953977064 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.101681, -0.00017928332, 0)
+
+[node name="SquareLedRGB87" parent="LEDs" unique_id=2131426886 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.172611, -0.00017928332, 0)
+
+[node name="SquareLedRGB88" parent="LEDs" unique_id=198251685 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.243954, -0.00017928332, 0)
+
+[node name="SquareLedRGB89" parent="LEDs" unique_id=182076973 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.316426, -0.00017928332, 0)
+
+[node name="SquareLedRGB90" parent="LEDs" unique_id=1700691548 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.3877687, -0.00017928332, 0)
+
+[node name="SquareLedRGB91" parent="LEDs" unique_id=775514961 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.4586987, -0.00017928332, 0)
+
+[node name="SquareLedRGB92" parent="LEDs" unique_id=1620295437 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.5300417, -0.00017928332, 0)
+
+[node name="SquareLedRGB93" parent="LEDs" unique_id=1077879566 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.6010327, -0.00017928332, 0)
+
+[node name="SquareLedRGB94" parent="LEDs" unique_id=303318401 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.6723757, -0.00017928332, 0)
+
+[node name="SquareLedRGB95" parent="LEDs" unique_id=750268254 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.7433057, -0.00017928332, 0)
+
+[node name="SquareLedRGB96" parent="LEDs" unique_id=1705187777 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.8146486, -0.00017928332, 0)
+
+[node name="SquareLedRGB97" parent="LEDs" unique_id=1213285325 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.886711, -0.00017928332, 0)
+
+[node name="SquareLedRGB98" parent="LEDs" unique_id=436393771 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 6.957702, -0.00017928332, 0)
+
+[node name="SquareLedRGB99" parent="LEDs" unique_id=254362620 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.029045, -0.00017928332, 0)
+
+[node name="SquareLedRGB100" parent="LEDs" unique_id=1867966333 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.099975, -0.00017928332, 0)
+
+[node name="SquareLedRGB102" parent="LEDs" unique_id=1516985655 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.2459908, -0.00017928332, 0)
+
+[node name="SquareLedRGB103" parent="LEDs" unique_id=922257262 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.319746, -0.00017928332, 0)
+
+[node name="SquareLedRGB104" parent="LEDs" unique_id=1414709733 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.391089, -0.00017928332, 0)
+
+[node name="SquareLedRGB105" parent="LEDs" unique_id=1325528696 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.462019, -0.00017928332, 0)
+
+[node name="SquareLedRGB106" parent="LEDs" unique_id=1638649735 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.533362, -0.00017928332, 0)
+
+[node name="SquareLedRGB107" parent="LEDs" unique_id=1193156232 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.604353, -0.00017928332, 0)
+
+[node name="SquareLedRGB108" parent="LEDs" unique_id=1814373843 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.675696, -0.00017928332, 0)
+
+[node name="SquareLedRGB109" parent="LEDs" unique_id=1968242159 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.746626, -0.00017928332, 0)
+
+[node name="SquareLedRGB110" parent="LEDs" unique_id=692854721 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.817969, -0.00017928332, 0)
+
+[node name="SquareLedRGB111" parent="LEDs" unique_id=1812642011 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.8904405, -0.00017928332, 0)
+
+[node name="SquareLedRGB112" parent="LEDs" unique_id=669793884 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.9617834, -0.00017928332, 0)
+
+[node name="SquareLedRGB113" parent="LEDs" unique_id=1506774868 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 8.032713, -0.00017928332, 0)
+
+[node name="SquareLedRGB114" parent="LEDs" unique_id=1051941787 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 8.104056, -0.00017928332, 0)
+
+[node name="SquareLedRGB115" parent="LEDs" unique_id=1165217463 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 8.175047, -0.00017928332, 0)
+
+[node name="SquareLedRGB116" parent="LEDs" unique_id=815269209 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 8.24639, -0.00017928332, 0)
+
+[node name="SquareLedRGB117" parent="LEDs" unique_id=149353559 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 8.31732, -0.00017928332, 0)
+
+[node name="SquareLedRGB118" parent="LEDs" unique_id=1751912274 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 8.388663, -0.00017928332, 0)
+
+[node name="SquareLedRGB119" parent="LEDs" unique_id=715578507 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 8.460726, -0.00017928332, 0)
+
+[node name="SquareLedRGB120" parent="LEDs" unique_id=1150726004 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 8.531717, -0.00017928332, 0)
+
+[node name="SquareLedRGB121" parent="LEDs" unique_id=1716515945 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 8.60306, -0.00017928332, 0)
+
+[node name="SquareLedRGB122" parent="LEDs" unique_id=1062838468 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 8.67399, -0.00017928332, 0)
+
+[node name="SquareLedRGB101" parent="LEDs" unique_id=161985205 instance=ExtResource("1_gk24u")]
+transform = Transform3D(0.99999994, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 7.171318, -0.00017928332, 0)
+
+[editable path="LEDs/SquareLedRGB1"]
+[editable path="LEDs/SquareLedRGB1/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB1/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB2"]
+[editable path="LEDs/SquareLedRGB2/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB2/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB3"]
+[editable path="LEDs/SquareLedRGB3/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB3/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB4"]
+[editable path="LEDs/SquareLedRGB4/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB4/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB5"]
+[editable path="LEDs/SquareLedRGB5/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB5/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB6"]
+[editable path="LEDs/SquareLedRGB6/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB6/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB7"]
+[editable path="LEDs/SquareLedRGB7/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB7/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB8"]
+[editable path="LEDs/SquareLedRGB8/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB8/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB9"]
+[editable path="LEDs/SquareLedRGB9/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB9/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB10"]
+[editable path="LEDs/SquareLedRGB10/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB10/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB11"]
+[editable path="LEDs/SquareLedRGB11/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB11/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB12"]
+[editable path="LEDs/SquareLedRGB12/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB12/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB13"]
+[editable path="LEDs/SquareLedRGB13/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB13/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB14"]
+[editable path="LEDs/SquareLedRGB14/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB14/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB15"]
+[editable path="LEDs/SquareLedRGB15/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB15/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB16"]
+[editable path="LEDs/SquareLedRGB16/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB16/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB17"]
+[editable path="LEDs/SquareLedRGB17/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB17/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB18"]
+[editable path="LEDs/SquareLedRGB18/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB18/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB19"]
+[editable path="LEDs/SquareLedRGB19/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB19/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB20"]
+[editable path="LEDs/SquareLedRGB20/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB20/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB21"]
+[editable path="LEDs/SquareLedRGB21/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB21/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB22"]
+[editable path="LEDs/SquareLedRGB22/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB22/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB23"]
+[editable path="LEDs/SquareLedRGB23/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB23/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB24"]
+[editable path="LEDs/SquareLedRGB24/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB24/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB25"]
+[editable path="LEDs/SquareLedRGB25/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB25/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB26"]
+[editable path="LEDs/SquareLedRGB26/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB26/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB27"]
+[editable path="LEDs/SquareLedRGB27/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB27/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB28"]
+[editable path="LEDs/SquareLedRGB28/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB28/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB29"]
+[editable path="LEDs/SquareLedRGB29/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB29/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB30"]
+[editable path="LEDs/SquareLedRGB30/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB30/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB31"]
+[editable path="LEDs/SquareLedRGB31/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB31/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB32"]
+[editable path="LEDs/SquareLedRGB32/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB32/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB33"]
+[editable path="LEDs/SquareLedRGB33/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB33/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB34"]
+[editable path="LEDs/SquareLedRGB34/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB34/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB35"]
+[editable path="LEDs/SquareLedRGB35/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB35/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB36"]
+[editable path="LEDs/SquareLedRGB36/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB36/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB37"]
+[editable path="LEDs/SquareLedRGB37/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB37/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB38"]
+[editable path="LEDs/SquareLedRGB38/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB38/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB39"]
+[editable path="LEDs/SquareLedRGB39/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB39/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB40"]
+[editable path="LEDs/SquareLedRGB40/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB40/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB41"]
+[editable path="LEDs/SquareLedRGB41/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB41/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB42"]
+[editable path="LEDs/SquareLedRGB42/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB42/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB43"]
+[editable path="LEDs/SquareLedRGB43/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB43/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB44"]
+[editable path="LEDs/SquareLedRGB44/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB44/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB45"]
+[editable path="LEDs/SquareLedRGB45/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB45/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB46"]
+[editable path="LEDs/SquareLedRGB46/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB46/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB47"]
+[editable path="LEDs/SquareLedRGB47/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB47/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB48"]
+[editable path="LEDs/SquareLedRGB48/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB48/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB49"]
+[editable path="LEDs/SquareLedRGB49/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB49/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB50"]
+[editable path="LEDs/SquareLedRGB50/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB50/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB51"]
+[editable path="LEDs/SquareLedRGB51/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB51/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB52"]
+[editable path="LEDs/SquareLedRGB52/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB52/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB53"]
+[editable path="LEDs/SquareLedRGB53/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB53/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB54"]
+[editable path="LEDs/SquareLedRGB54/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB54/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB55"]
+[editable path="LEDs/SquareLedRGB55/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB55/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB56"]
+[editable path="LEDs/SquareLedRGB56/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB56/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB57"]
+[editable path="LEDs/SquareLedRGB57/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB57/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB58"]
+[editable path="LEDs/SquareLedRGB58/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB58/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB59"]
+[editable path="LEDs/SquareLedRGB59/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB59/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB60"]
+[editable path="LEDs/SquareLedRGB60/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB60/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB61"]
+[editable path="LEDs/SquareLedRGB61/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB61/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB62"]
+[editable path="LEDs/SquareLedRGB62/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB62/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB63"]
+[editable path="LEDs/SquareLedRGB63/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB63/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB64"]
+[editable path="LEDs/SquareLedRGB64/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB64/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB65"]
+[editable path="LEDs/SquareLedRGB65/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB65/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB66"]
+[editable path="LEDs/SquareLedRGB66/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB66/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB67"]
+[editable path="LEDs/SquareLedRGB67/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB67/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB68"]
+[editable path="LEDs/SquareLedRGB68/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB68/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB69"]
+[editable path="LEDs/SquareLedRGB69/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB69/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB70"]
+[editable path="LEDs/SquareLedRGB70/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB70/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB71"]
+[editable path="LEDs/SquareLedRGB71/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB71/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB72"]
+[editable path="LEDs/SquareLedRGB72/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB72/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB73"]
+[editable path="LEDs/SquareLedRGB73/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB73/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB74"]
+[editable path="LEDs/SquareLedRGB74/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB74/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB75"]
+[editable path="LEDs/SquareLedRGB75/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB75/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB76"]
+[editable path="LEDs/SquareLedRGB76/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB76/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB77"]
+[editable path="LEDs/SquareLedRGB77/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB77/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB78"]
+[editable path="LEDs/SquareLedRGB78/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB78/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB79"]
+[editable path="LEDs/SquareLedRGB79/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB79/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB80"]
+[editable path="LEDs/SquareLedRGB80/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB80/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB81"]
+[editable path="LEDs/SquareLedRGB81/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB81/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB82"]
+[editable path="LEDs/SquareLedRGB82/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB82/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB83"]
+[editable path="LEDs/SquareLedRGB83/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB83/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB84"]
+[editable path="LEDs/SquareLedRGB84/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB84/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB85"]
+[editable path="LEDs/SquareLedRGB85/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB85/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB86"]
+[editable path="LEDs/SquareLedRGB86/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB86/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB87"]
+[editable path="LEDs/SquareLedRGB87/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB87/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB88"]
+[editable path="LEDs/SquareLedRGB88/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB88/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB89"]
+[editable path="LEDs/SquareLedRGB89/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB89/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB90"]
+[editable path="LEDs/SquareLedRGB90/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB90/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB91"]
+[editable path="LEDs/SquareLedRGB91/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB91/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB92"]
+[editable path="LEDs/SquareLedRGB92/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB92/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB93"]
+[editable path="LEDs/SquareLedRGB93/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB93/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB94"]
+[editable path="LEDs/SquareLedRGB94/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB94/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB95"]
+[editable path="LEDs/SquareLedRGB95/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB95/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB96"]
+[editable path="LEDs/SquareLedRGB96/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB96/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB97"]
+[editable path="LEDs/SquareLedRGB97/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB97/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB98"]
+[editable path="LEDs/SquareLedRGB98/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB98/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB99"]
+[editable path="LEDs/SquareLedRGB99/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB99/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB100"]
+[editable path="LEDs/SquareLedRGB100/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB100/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB102"]
+[editable path="LEDs/SquareLedRGB102/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB102/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB103"]
+[editable path="LEDs/SquareLedRGB103/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB103/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB104"]
+[editable path="LEDs/SquareLedRGB104/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB104/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB105"]
+[editable path="LEDs/SquareLedRGB105/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB105/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB106"]
+[editable path="LEDs/SquareLedRGB106/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB106/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB107"]
+[editable path="LEDs/SquareLedRGB107/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB107/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB108"]
+[editable path="LEDs/SquareLedRGB108/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB108/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB109"]
+[editable path="LEDs/SquareLedRGB109/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB109/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB110"]
+[editable path="LEDs/SquareLedRGB110/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB110/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB111"]
+[editable path="LEDs/SquareLedRGB111/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB111/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB112"]
+[editable path="LEDs/SquareLedRGB112/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB112/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB113"]
+[editable path="LEDs/SquareLedRGB113/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB113/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB114"]
+[editable path="LEDs/SquareLedRGB114/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB114/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB115"]
+[editable path="LEDs/SquareLedRGB115/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB115/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB116"]
+[editable path="LEDs/SquareLedRGB116/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB116/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB117"]
+[editable path="LEDs/SquareLedRGB117/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB117/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB118"]
+[editable path="LEDs/SquareLedRGB118/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB118/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB119"]
+[editable path="LEDs/SquareLedRGB119/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB119/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB120"]
+[editable path="LEDs/SquareLedRGB120/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB120/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB121"]
+[editable path="LEDs/SquareLedRGB121/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB121/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB122"]
+[editable path="LEDs/SquareLedRGB122/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB122/Mesh/LedStripRGB/Size/led_strip_rgb"]
+[editable path="LEDs/SquareLedRGB101"]
+[editable path="LEDs/SquareLedRGB101/Mesh/LedStripRGB"]
+[editable path="LEDs/SquareLedRGB101/Mesh/LedStripRGB/Size/led_strip_rgb"]

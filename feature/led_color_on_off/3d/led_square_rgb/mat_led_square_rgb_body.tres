@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://q3qdkod78s4s"]
+
+[ext_resource type="Texture2D" uid="uid://cdjmwgkjddggb" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_square_rgb/led_square_rgb_uv_color.png" id="1_782c0"]
+
+[resource]
+albedo_color = Color(0.66656864, 0.6665687, 0.66656864, 1)
+albedo_texture = ExtResource("1_782c0")

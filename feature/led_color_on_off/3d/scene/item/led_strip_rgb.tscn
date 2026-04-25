@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://swtaoiwe1p18"]
+
+[ext_resource type="PackedScene" uid="uid://dqn8wymgevpny" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_strip_rgb/led_strip_rgb.glb" id="1_cn34t"]
+[ext_resource type="Material" uid="uid://djsca8afwk1co" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_strip_rgb/mat_led_strip_rgb.tres" id="2_80qtg"]
+[ext_resource type="Material" uid="uid://comxejabe2fkb" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_strip_rgb/mat_led_strip_rgb_unlit.tres" id="3_q4u5t"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_4qooo"]
+
+[node name="LedStripRGB" type="Node3D" unique_id=683696970]
+
+[node name="Size" type="Node3D" parent="." unique_id=280299705]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+
+[node name="led_strip_rgb" parent="Size" unique_id=616761647 instance=ExtResource("1_cn34t")]
+
+[node name="lod0_led_rgb_of_strip_cube" parent="Size/led_strip_rgb" index="0" unique_id=1400780361]
+surface_material_override/0 = ExtResource("2_80qtg")
+
+[node name="lod3_led_rgb_of_strip_high" parent="Size/led_strip_rgb" index="1" unique_id=925670343]
+visible = false
+surface_material_override/0 = ExtResource("2_80qtg")
+
+[node name="lod4_led_rgb_of_strip_high_observed" parent="Size/led_strip_rgb" index="2" unique_id=120206188]
+visible = false
+surface_material_override/0 = ExtResource("2_80qtg")
+
+[node name="lod1_led_rgb_of_strip_low" parent="Size/led_strip_rgb" index="3" unique_id=1205194018]
+visible = false
+surface_material_override/0 = ExtResource("2_80qtg")
+
+[node name="lod2_led_rgb_of_strip_medium" parent="Size/led_strip_rgb" index="4" unique_id=1145011192]
+visible = false
+surface_material_override/0 = ExtResource("2_80qtg")
+
+[node name="LedAnchor" type="Node3D" parent="Size" unique_id=1211128980]
+transform = Transform3D(0.055, 0, 0, 0, 0.055, 0, 0, 0, 0.055, 4.5551355e-05, 0.0013282507, -4.5550623e-05)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Size/LedAnchor" unique_id=1071139161]
+transform = Transform3D(0.053, 0, 0, 0, 0.010069789, 0, 0, 0, 0.053, 0, -0.009938262, 0)
+material_override = ExtResource("3_q4u5t")
+mesh = SubResource("CylinderMesh_4qooo")
+
+[editable path="Size/led_strip_rgb"]

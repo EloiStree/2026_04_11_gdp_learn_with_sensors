@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dds68brnlyurs"]
+
+[ext_resource type="Script" uid="uid://covepukka7ksd" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/code/on_off/sensor_view_led_on_off_material.gd" id="1_mpovy"]
+[ext_resource type="Material" uid="uid://ca1gqr7cii32w" path="res://addons/2026_04_11_gdp_learn_with_sensors/materials/mat_sensor_led_red.tres" id="2_4o7yi"]
+[ext_resource type="Material" uid="uid://baiecprvb3ryi" path="res://addons/2026_04_11_gdp_learn_with_sensors/materials/mat_sensor_led_transparent.tres" id="3_20ji6"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_gxkl3"]
+
+[node name="CylinderLedOnOff" type="Node3D" unique_id=697450420]
+
+[node name="Node" type="Node" parent="." unique_id=1338336811]
+
+[node name="LedOnOff" type="Node" parent="Node" unique_id=219092514 node_paths=PackedStringArray("mesh_instance")]
+script = ExtResource("1_mpovy")
+mesh_instance = [NodePath("../../Mesh/MeshInstance3D")]
+material_on = ExtResource("2_4o7yi")
+material_off = ExtResource("3_20ji6")
+metadata/_custom_type_script = "uid://covepukka7ksd"
+
+[node name="Mesh" type="Node3D" parent="." unique_id=2096353399]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesh" unique_id=412565593]
+transform = Transform3D(0.11, 0, 0, 0, -3.496911e-09, -0.11, 0, 0.08, -4.808253e-09, 0, 0, 0)
+mesh = SubResource("CylinderMesh_gxkl3")

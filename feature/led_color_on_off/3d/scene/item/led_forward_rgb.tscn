@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ci1k7efgn2smr"]
+
+[ext_resource type="PackedScene" uid="uid://u7nicjpurj4o" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_forward_rgb/led_forward_rgb_head.glb" id="1_dybkj"]
+[ext_resource type="Material" uid="uid://dhp78c0jpgv0y" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_forward_rgb/mat_led_forward_head_rgb.tres" id="2_55n1n"]
+[ext_resource type="PackedScene" uid="uid://ddsqy5snj5kaq" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_forward_rgb/led_forward_rgb_pin_2.glb" id="3_mneny"]
+[ext_resource type="Material" uid="uid://ceqxpjqfc61a0" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_forward_rgb/mat_led_forward_pin_rgb.tres" id="4_ejjnl"]
+[ext_resource type="PackedScene" uid="uid://chjnys4fr6vlg" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_forward_rgb/led_forward_rgb_pin_4.glb" id="5_arcnh"]
+
+[node name="LedForwardRGB" type="Node3D" unique_id=1560995008]
+
+[node name="Size" type="Node3D" parent="." unique_id=1653904442]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+
+[node name="led_forward_rgb_head" parent="Size" unique_id=1603614073 instance=ExtResource("1_dybkj")]
+
+[node name="led_forward_rgb" parent="Size/led_forward_rgb_head" index="0" unique_id=35827503]
+surface_material_override/0 = ExtResource("2_55n1n")
+
+[node name="led_forward_rgb_pin_2" parent="Size" unique_id=190430872 instance=ExtResource("3_mneny")]
+
+[node name="led_forward_rgb_pin_2" parent="Size/led_forward_rgb_pin_2" index="0" unique_id=857047626]
+surface_material_override/0 = ExtResource("4_ejjnl")
+
+[node name="led_forward_rgb_pin_4" parent="Size" unique_id=677747446 instance=ExtResource("5_arcnh")]
+
+[node name="led_forward_rgb_pin_4" parent="Size/led_forward_rgb_pin_4" index="0" unique_id=1989448069]
+surface_material_override/0 = ExtResource("4_ejjnl")
+
+[editable path="Size/led_forward_rgb_head"]
+[editable path="Size/led_forward_rgb_pin_2"]
+[editable path="Size/led_forward_rgb_pin_4"]

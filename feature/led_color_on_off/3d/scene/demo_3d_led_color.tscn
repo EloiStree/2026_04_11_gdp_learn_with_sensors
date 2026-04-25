@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dl6eorjne7dgg"]
+
+[ext_resource type="PackedScene" uid="uid://co4vjd03cbo23" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/reality_check_cube/scene/reality_check_cube_meter.tscn" id="1_t1oig"]
+[ext_resource type="PackedScene" uid="uid://cdgfp3ribnq1j" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/scene/item/led_cylinder_rgb.tscn" id="2_03b3o"]
+[ext_resource type="PackedScene" uid="uid://cn0xcxatoupjl" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/scene/item/led_square_rgb.tscn" id="3_8701i"]
+[ext_resource type="PackedScene" uid="uid://swtaoiwe1p18" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/scene/item/led_strip_rgb.tscn" id="4_8701i"]
+[ext_resource type="PackedScene" uid="uid://ci1k7efgn2smr" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/scene/item/led_forward_rgb.tscn" id="5_nbquo"]
+[ext_resource type="PackedScene" uid="uid://cubl2k58rp0qh" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/scene/item/led_on_off_color.tscn" id="6_h2xkm"]
+
+[node name="Demo3dLedColor" type="Node3D" unique_id=325801200]
+
+[node name="RealityCheckCubeMeter" parent="." unique_id=434684744 instance=ExtResource("1_t1oig")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00012207031, 0.00048828125, -0.0004272461)
+
+[node name="LedCylinderRGB" parent="." unique_id=1998644153 instance=ExtResource("2_03b3o")]
+visible = false
+
+[node name="LedSquareRGB" parent="." unique_id=740933912 instance=ExtResource("3_8701i")]
+visible = false
+
+[node name="LedStripRGB" parent="." unique_id=683696970 instance=ExtResource("4_8701i")]
+visible = false
+
+[node name="LedForwardRGB" parent="." unique_id=1560995008 instance=ExtResource("5_nbquo")]
+visible = false
+
+[node name="LedOnOffColor" parent="." unique_id=227175962 instance=ExtResource("6_h2xkm")]
+visible = false
+
+[editable path="LedStripRGB"]
+[editable path="LedStripRGB/Size/led_strip_rgb"]

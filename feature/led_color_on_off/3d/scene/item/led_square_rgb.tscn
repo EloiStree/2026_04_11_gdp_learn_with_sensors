@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cn0xcxatoupjl"]
+
+[ext_resource type="PackedScene" uid="uid://dpdq54pb52i2" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_square_rgb/led_square_rgb.glb" id="1_4usik"]
+[ext_resource type="Material" uid="uid://q3qdkod78s4s" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_square_rgb/mat_led_square_rgb_body.tres" id="2_jgah6"]
+[ext_resource type="Material" uid="uid://3y47v41qu33l" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_square_rgb/mat_led_square_rgb_quad.tres" id="3_4emyc"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_4qooo"]
+
+[node name="LedSquareRGB" type="Node3D" unique_id=740933912]
+
+[node name="Size" type="Node3D" parent="." unique_id=305437507]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
+
+[node name="Mesh" type="Node3D" parent="Size" unique_id=108844589]
+
+[node name="LedQuad" type="Node3D" parent="Size/Mesh" unique_id=486821076]
+transform = Transform3D(0.37, 0, 0, 0, 0.37, 0, 0, 0, 0.37, 9.110123e-06, 4.5776356e-05, -1.8220282e-05)
+
+[node name="MeshQuad" type="MeshInstance3D" parent="Size/Mesh/LedQuad" unique_id=313063825]
+transform = Transform3D(0.0009999999, 0, 0, 0, -4.3711385e-11, 0.0009999999, 0, -0.0009999999, -4.3711385e-11, 0, 0.00012573242, 0)
+mesh = SubResource("QuadMesh_4qooo")
+surface_material_override/0 = ExtResource("3_4emyc")
+
+[node name="led_square_rgb2" parent="Size/Mesh" unique_id=327693488 instance=ExtResource("1_4usik")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0)
+
+[node name="led_square_rgb" parent="Size/Mesh/led_square_rgb2" index="0" unique_id=1693303115]
+surface_material_override/0 = ExtResource("2_jgah6")
+
+[editable path="Size/Mesh/led_square_rgb2"]

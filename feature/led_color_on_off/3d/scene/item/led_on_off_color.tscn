@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://cubl2k58rp0qh"]
+
+[ext_resource type="PackedScene" uid="uid://dpwpby4j2hb5l" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_on_off_color/led_on_off_rgb.glb" id="1_exb7v"]
+[ext_resource type="Material" uid="uid://djnfsj0rkejnd" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_on_off_color/mat_led_on_off_head_on_rgb.tres" id="2_xoxd3"]
+[ext_resource type="Material" uid="uid://s2avsmvfu3j6" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_on_off_color/mat_led_on_off_pin_rgb.tres" id="3_hrn6j"]
+
+[node name="LedOnOffColor" type="Node3D" unique_id=227175962]
+
+[node name="Size" type="Node3D" parent="." unique_id=350090221]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+
+[node name="led_forward_rgb" parent="Size" unique_id=1848639744 instance=ExtResource("1_exb7v")]
+
+[node name="led_mono_head" parent="Size/led_forward_rgb" index="0" unique_id=1277026265]
+surface_material_override/0 = ExtResource("2_xoxd3")
+
+[node name="led_mono_minus" parent="Size/led_forward_rgb" index="1" unique_id=43405480]
+surface_material_override/0 = ExtResource("3_hrn6j")
+
+[node name="led_mono_plus" parent="Size/led_forward_rgb" index="2" unique_id=1151585299]
+surface_material_override/0 = ExtResource("3_hrn6j")
+
+[editable path="Size/led_forward_rgb"]

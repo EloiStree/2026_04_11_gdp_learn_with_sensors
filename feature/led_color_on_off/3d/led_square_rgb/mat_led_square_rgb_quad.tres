@@ -1,0 +1,7 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://3y47v41qu33l"]
+
+[ext_resource type="Texture2D" uid="uid://c6w372x2780ag" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_square_rgb/led_square_rgb_face.png" id="1_sgbtl"]
+
+[resource]
+shading_mode = 0
+albedo_texture = ExtResource("1_sgbtl")

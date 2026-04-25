@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cdgfp3ribnq1j"]
+
+[ext_resource type="PackedScene" uid="uid://b7vp4k175v5se" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_cylinder_rgb/led_cylinder_rgb_parts.glb" id="1_gecnt"]
+[ext_resource type="Material" uid="uid://djn33p544hmoq" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_cylinder_rgb/mat_led_cylinder_rgb_head.tres" id="2_do41x"]
+[ext_resource type="Material" uid="uid://bi588vse2dndm" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_cylinder_rgb/mat_led_cylinder_rgb_pin.tres" id="3_cp4hv"]
+
+[node name="LedCylinderRGB" type="Node3D" unique_id=1998644153]
+
+[node name="Size" type="Node3D" parent="." unique_id=1550458975]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
+
+[node name="led_cylinder_rgb_parts" parent="Size" unique_id=1752415593 instance=ExtResource("1_gecnt")]
+
+[node name="led_cylinder_rgb_head" parent="Size/led_cylinder_rgb_parts" index="0" unique_id=202689977]
+surface_material_override/0 = ExtResource("2_do41x")
+
+[node name="led_cylinder_rgb_red" parent="Size/led_cylinder_rgb_parts" index="1" unique_id=616962743]
+surface_material_override/0 = ExtResource("3_cp4hv")
+
+[node name="led_cylinder_rgb_ground" parent="Size/led_cylinder_rgb_parts" index="2" unique_id=908874733]
+surface_material_override/0 = ExtResource("3_cp4hv")
+
+[node name="led_cylinder_rgb_green" parent="Size/led_cylinder_rgb_parts" index="3" unique_id=291032733]
+surface_material_override/0 = ExtResource("3_cp4hv")
+
+[node name="led_cylinder_rgb_blue" parent="Size/led_cylinder_rgb_parts" index="4" unique_id=2137358956]
+surface_material_override/0 = ExtResource("3_cp4hv")
+
+[editable path="Size/led_cylinder_rgb_parts"]
