@@ -9,7 +9,7 @@ extends Node
 
 
 func _ready() -> void:
-	if use_duplicate_at_ready and mesh_instance and mesh_instance.mesh and mesh_instance.mesh.surface_get_material_count(0)>0:
+	if use_duplicate_at_ready and mesh_instance and mesh_instance.mesh:
 		var material = mesh_instance.mesh.surface_get_material(0) as StandardMaterial3D
 		if material:
 			material_to_duplicated = material.duplicate() as StandardMaterial3D
@@ -19,5 +19,3 @@ func set_color(color:Color)->void:
 	if material_to_duplicated:
 		material_to_duplicated.albedo_color = color
 		mesh_instance.mesh.surface_set_material(0, material_to_duplicated)
-
-		

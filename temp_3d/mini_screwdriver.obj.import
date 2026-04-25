@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c2810fuyov511"
+path="res://.godot/imported/mini_screwdriver.obj-e27d638d74797f61ac555b8e21ff2185.mesh"
+
+[deps]
+
+files=["res://.godot/imported/mini_screwdriver.obj-e27d638d74797f61ac555b8e21ff2185.mesh"]
+
+source_file="res://addons/2026_04_11_gdp_learn_with_sensors/temp_3d/mini_screwdriver.obj"
+dest_files=["res://.godot/imported/mini_screwdriver.obj-e27d638d74797f61ac555b8e21ff2185.mesh", "res://.godot/imported/mini_screwdriver.obj-e27d638d74797f61ac555b8e21ff2185.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
