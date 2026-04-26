@@ -1,5 +1,5 @@
 class_name SensorTestDisplay128x64CPU
-extends Node3D
+extends Node
 
 
 @export var sensor_model: SensorModelBoolDisplay128x64CPU
@@ -17,6 +17,9 @@ func wait_next_frame() -> void:
 
 func _ready():
 
+	await wait_seconds(0.001)
+	sensor_model.set_boolean_array_to_clear()
+	sensor_model.emit_boolean_array_as_updated()
 	#await wait_seconds(10)
 
 

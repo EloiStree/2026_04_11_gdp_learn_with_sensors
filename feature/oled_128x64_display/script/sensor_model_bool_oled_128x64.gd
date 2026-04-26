@@ -1,5 +1,5 @@
 class_name SensorModelBoolDisplay128x64CPU
-extends Node3D
+extends Node
 
 enum QueenDirection {
 	UP,

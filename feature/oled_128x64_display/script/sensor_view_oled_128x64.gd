@@ -1,5 +1,5 @@
 class_name SensorViewDisplay128x64CPU
-extends Node3D
+extends Node
 
 
 signal on_texture_material_updated(index:int, material_surface:Material)
@@ -33,6 +33,8 @@ func _ready():
 	var image = Image.create(SCREEN_WIDTH, SCREEN_HEIGHT, false, Image.FORMAT_RGB8)
 	texture_2d = ImageTexture.create_from_image(image)
 	material_duplicated.albedo_texture = texture_2d
+	
+	set_texture_with_boolean_array(bool_array_clear)
 
 func set_boolean_array_to_full():
 	for i in range(SCREEN_SIZE):

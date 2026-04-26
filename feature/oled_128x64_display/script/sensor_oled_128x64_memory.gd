@@ -1,5 +1,5 @@
 class_name SensorDisplay128x64Memory
-extends Node3D
+extends Node
 
 
 signal on_memory_saved(display_as_boolean_array: Array[bool])
