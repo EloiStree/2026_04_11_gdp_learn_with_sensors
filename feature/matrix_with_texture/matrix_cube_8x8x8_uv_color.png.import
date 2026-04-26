@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://j4dn6y6aoq51"
-path.s3tc="res://.godot/imported/matrix_cube_8x8x8_uv_color.png-c42dd439efe28eecce8e259086bbccc0.s3tc.ctex"
+path.etc2="res://.godot/imported/matrix_cube_8x8x8_uv_color.png-c42dd439efe28eecce8e259086bbccc0.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/matrix_with_texture/matrix_cube_8x8x8_uv_color.png"
-dest_files=["res://.godot/imported/matrix_cube_8x8x8_uv_color.png-c42dd439efe28eecce8e259086bbccc0.s3tc.ctex"]
+dest_files=["res://.godot/imported/matrix_cube_8x8x8_uv_color.png-c42dd439efe28eecce8e259086bbccc0.etc2.ctex"]
 
 [params]
 

@@ -3,9 +3,9 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d3dy4etbbdhqj"
-path.s3tc="res://.godot/imported/color_resistor_from_uv_ColorResistorColorUV.png-4352da6cb537422783881ba2c8c8550f.s3tc.ctex"
+path.etc2="res://.godot/imported/color_resistor_from_uv_ColorResistorColorUV.png-4352da6cb537422783881ba2c8c8550f.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 generator_parameters={
@@ -15,7 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/resistor/from_uv/color_resistor_from_uv_ColorResistorColorUV.png"
-dest_files=["res://.godot/imported/color_resistor_from_uv_ColorResistorColorUV.png-4352da6cb537422783881ba2c8c8550f.s3tc.ctex"]
+dest_files=["res://.godot/imported/color_resistor_from_uv_ColorResistorColorUV.png-4352da6cb537422783881ba2c8c8550f.etc2.ctex"]
 
 [params]
 

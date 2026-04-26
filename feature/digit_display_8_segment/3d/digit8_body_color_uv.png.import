@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c25axkfs68dd7"
-path.s3tc="res://.godot/imported/digit8_body_color_uv.png-39b84388f7b4f607530c15b7f36aa87c.s3tc.ctex"
+path.etc2="res://.godot/imported/digit8_body_color_uv.png-39b84388f7b4f607530c15b7f36aa87c.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/digit_display_8_segment/3d/digit8_body_color_uv.png"
-dest_files=["res://.godot/imported/digit8_body_color_uv.png-39b84388f7b4f607530c15b7f36aa87c.s3tc.ctex"]
+dest_files=["res://.godot/imported/digit8_body_color_uv.png-39b84388f7b4f607530c15b7f36aa87c.etc2.ctex"]
 
 [params]
 

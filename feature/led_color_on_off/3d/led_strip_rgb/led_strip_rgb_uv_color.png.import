@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnin332hfxkea"
-path.s3tc="res://.godot/imported/led_strip_rgb_uv_color.png-a1f59e0302715acb41619bbf40c03fb7.s3tc.ctex"
+path.etc2="res://.godot/imported/led_strip_rgb_uv_color.png-a1f59e0302715acb41619bbf40c03fb7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/3d/led_strip_rgb/led_strip_rgb_uv_color.png"
-dest_files=["res://.godot/imported/led_strip_rgb_uv_color.png-a1f59e0302715acb41619bbf40c03fb7.s3tc.ctex"]
+dest_files=["res://.godot/imported/led_strip_rgb_uv_color.png-a1f59e0302715acb41619bbf40c03fb7.etc2.ctex"]
 
 [params]
 

@@ -3,16 +3,16 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d363tdb6vh22o"
-path.s3tc="res://.godot/imported/ssd_1306_128x64_dispaly_uv_colored.png-dd36a0f921888defca99b8253a8ec0d3.s3tc.ctex"
+path.etc2="res://.godot/imported/ssd_1306_128x64_dispaly_uv_colored.png-dd36a0f921888defca99b8253a8ec0d3.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/oled_128x64_display/3d/ssd_1306_128x64_dispaly_uv_colored.png"
-dest_files=["res://.godot/imported/ssd_1306_128x64_dispaly_uv_colored.png-dd36a0f921888defca99b8253a8ec0d3.s3tc.ctex"]
+dest_files=["res://.godot/imported/ssd_1306_128x64_dispaly_uv_colored.png-dd36a0f921888defca99b8253a8ec0d3.etc2.ctex"]
 
 [params]
 
