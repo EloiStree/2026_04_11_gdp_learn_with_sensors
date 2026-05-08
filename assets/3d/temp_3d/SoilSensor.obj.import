@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://hcl7uupk8ruo"
+path="res://.godot/imported/SoilSensor.obj-ae7605d1a8d3fff5ca0386c0a0b4fd3f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/SoilSensor.obj-ae7605d1a8d3fff5ca0386c0a0b4fd3f.mesh"]
+
+source_file="res://addons/2026_04_11_gdp_learn_with_sensors/assets/3d/temp_3d/SoilSensor.obj"
+dest_files=["res://.godot/imported/SoilSensor.obj-ae7605d1a8d3fff5ca0386c0a0b4fd3f.mesh", "res://.godot/imported/SoilSensor.obj-ae7605d1a8d3fff5ca0386c0a0b4fd3f.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

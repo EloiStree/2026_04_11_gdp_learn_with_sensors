@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cg8fcax74vw2c"
+path="res://.godot/imported/CR2025_3V.obj-390213450e167ab5372207e5bcc37535.mesh"
+
+[deps]
+
+files=["res://.godot/imported/CR2025_3V.obj-390213450e167ab5372207e5bcc37535.mesh"]
+
+source_file="res://addons/2026_04_11_gdp_learn_with_sensors/assets/3d/temp_3d/CR2025_3V.obj"
+dest_files=["res://.godot/imported/CR2025_3V.obj-390213450e167ab5372207e5bcc37535.mesh", "res://.godot/imported/CR2025_3V.obj-390213450e167ab5372207e5bcc37535.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

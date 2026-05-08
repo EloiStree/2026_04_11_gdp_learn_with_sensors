@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dds68brnlyurs"]
 
 [ext_resource type="Script" uid="uid://covepukka7ksd" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color_on_off/code/on_off/sensor_view_led_on_off_material.gd" id="1_mpovy"]
-[ext_resource type="Material" uid="uid://ca1gqr7cii32w" path="res://addons/2026_04_11_gdp_learn_with_sensors/materials/mat_sensor_led_red.tres" id="2_4o7yi"]
-[ext_resource type="Material" uid="uid://baiecprvb3ryi" path="res://addons/2026_04_11_gdp_learn_with_sensors/materials/mat_sensor_led_transparent.tres" id="3_20ji6"]
+[ext_resource type="Material" uid="uid://ca1gqr7cii32w" path="res://addons/2026_04_11_gdp_learn_with_sensors/assets/material/led_color/mat_sensor_led_red.tres" id="2_4o7yi"]
+[ext_resource type="Material" uid="uid://baiecprvb3ryi" path="res://addons/2026_04_11_gdp_learn_with_sensors/assets/material/led_color/mat_sensor_led_transparent.tres" id="3_20ji6"]
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_gxkl3"]
 
