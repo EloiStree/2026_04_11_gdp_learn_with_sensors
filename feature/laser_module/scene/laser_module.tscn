@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://3dj30wc08s0n"]
+
+[ext_resource type="Script" uid="uid://b8j6q6ckcskdo" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/laser_module/script/sensor_view_laser_3d.gd" id="1_jnaao"]
+[ext_resource type="Material" uid="uid://cnwe1ugu2k7yu" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/laser_module/mat_sensor_red_laser_default.tres" id="2_dcfgc"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_8djok"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_h8kor"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_yyw4y"]
+
+[node name="LaserModule" type="Node3D" unique_id=898768969]
+
+[node name="Code" type="Node" parent="." unique_id=1265951628]
+
+[node name="SensorViewLaser3D" type="Node" parent="Code" unique_id=628242228 node_paths=PackedStringArray("ray_cast_3d", "sphere_point_start_node", "sphere_point_end_node", "cylinder_ray_node")]
+script = ExtResource("1_jnaao")
+ray_cast_3d = NodePath("../../RayCast3D")
+sphere_point_start_node = NodePath("../../SpherePointStart")
+sphere_point_end_node = NodePath("../../SpherePointEnd")
+cylinder_ray_node = NodePath("../../CylinderRay")
+laser_radius = 0.01
+mod_disable_ray_point_when_no_collision = false
+to_point = Vector3(-2, -2, -2)
+metadata/_custom_type_script = "uid://b8j6q6ckcskdo"
+
+[node name="Mesh" type="Node3D" parent="." unique_id=1307375479]
+
+[node name="RayCast3D" type="RayCast3D" parent="." unique_id=1419889535]
+target_position = Vector3(0, 0, -20)
+debug_shape_custom_color = Color(0.676088, 0, 0.102993585, 1)
+debug_shape_thickness = 1
+
+[node name="CylinderRay" type="Node3D" parent="." unique_id=1439296865]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+
+[node name="MeshInstanceCube" type="MeshInstance3D" parent="CylinderRay" unique_id=1548043034]
+visible = false
+mesh = SubResource("BoxMesh_8djok")
+surface_material_override/0 = ExtResource("2_dcfgc")
+
+[node name="MeshInstanceCylinder" type="MeshInstance3D" parent="CylinderRay" unique_id=451014011]
+transform = Transform3D(1, 0, 0, 0, -2.1855694e-08, -1, 0, 0.5, -4.371139e-08, 0, 0, 0)
+mesh = SubResource("CylinderMesh_h8kor")
+surface_material_override/0 = ExtResource("2_dcfgc")
+
+[node name="SpherePointEnd" type="Node3D" parent="." unique_id=1350055696]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0.9108887, 0)
+
+[node name="MeshInstanceSphere" type="MeshInstance3D" parent="SpherePointEnd" unique_id=2050903215]
+mesh = SubResource("SphereMesh_yyw4y")
+surface_material_override/0 = ExtResource("2_dcfgc")
+
+[node name="SpherePointStart" type="Node3D" parent="." unique_id=1267807805]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0.9108887, 0)
+
+[node name="MeshInstanceSphere" type="MeshInstance3D" parent="SpherePointStart" unique_id=302347855]
+mesh = SubResource("SphereMesh_yyw4y")
+surface_material_override/0 = ExtResource("2_dcfgc")

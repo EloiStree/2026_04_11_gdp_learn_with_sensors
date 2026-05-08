@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://xlcd2yy3rtvx"]
+
+[ext_resource type="PackedScene" uid="uid://dhmcaqji5db7v" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/scene/basic_ks_4036_character.tscn" id="1_fim5i"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_kh3r6"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_vpdw4"]
+
+[node name="DemoKs4036WheelMove" type="Node3D" unique_id=23239508]
+
+[node name="Size" type="Node3D" parent="." unique_id=731204862]
+
+[node name="KS4036" parent="." unique_id=606764428 instance=ExtResource("1_fim5i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1843089612]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1751157148]
+shape = SubResource("WorldBoundaryShape3D_kh3r6")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=70886104]
+transform = Transform3D(1, 0, 0, 0, 0.95276755, 0.30370048, 0, -0.30370048, 0.95276755, 0, 0.5354973, 1.3020788)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=177718544]
+transform = Transform3D(1, 0, 0, 0, 0.9017948, 0.43216443, 0, -0.43216443, 0.9017948, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=358807930]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.1750793)
+mesh = SubResource("BoxMesh_vpdw4")
+
+[editable path="KS4036"]

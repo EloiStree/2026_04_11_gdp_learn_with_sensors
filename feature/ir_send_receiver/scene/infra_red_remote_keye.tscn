@@ -1,0 +1,41 @@
+[gd_scene format=3 uid="uid://bhntv5148n7tp"]
+
+[ext_resource type="ArrayMesh" uid="uid://bru3547v4chfu" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/remote_controller_ir.obj" id="1_7llxf"]
+[ext_resource type="Script" uid="uid://cce3dvjbebln4" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/script/sensor_ir_sender.gd" id="1_j6s3k"]
+[ext_resource type="Script" uid="uid://crouqdqdltk2t" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/script/sensor_ir_sender_cone.gd" id="1_uirap"]
+[ext_resource type="Material" uid="uid://o37jnmpoqecj" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/mat_remote_controlelr_ir.tres" id="2_uirap"]
+
+[node name="InfraRedRemote" type="Node3D" unique_id=241128567]
+
+[node name="Code" type="Node" parent="." unique_id=47105424]
+
+[node name="Send IR Integer" type="Node" parent="Code" unique_id=1128103753]
+script = ExtResource("1_j6s3k")
+send_to_all_receiver_in_scene = false
+
+[node name="Cone Sender" type="Node" parent="Code" unique_id=1459616460 node_paths=PackedStringArray("light_cone_start_point", "light_cone_distance_point", "light_cone_angle_point")]
+script = ExtResource("1_uirap")
+light_cone_start_point = NodePath("../../AnchorPointLight/ConeDirection")
+light_cone_distance_point = NodePath("../../AnchorPointLight/ConeDirection/ConeDistancePoint")
+light_cone_angle_point = NodePath("../../AnchorPointLight/ConeDirection/ConeAnglePoint")
+metadata/_custom_type_script = "uid://crouqdqdltk2t"
+
+[node name="AnchorPointLight" type="Node3D" parent="." unique_id=123380662]
+
+[node name="ConeDirection" type="Node3D" parent="AnchorPointLight" unique_id=811115527]
+
+[node name="ConeAnglePoint" type="Node3D" parent="AnchorPointLight/ConeDirection" unique_id=1205759617]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5819092, -0.00012207031, -1.5374451)
+
+[node name="ConeDistancePoint" type="Node3D" parent="AnchorPointLight/ConeDirection" unique_id=2068444822]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.4020004)
+
+[node name="Mesh" type="Node3D" parent="." unique_id=1851379418]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesh" unique_id=1176711097]
+mesh = ExtResource("1_7llxf")
+surface_material_override/0 = ExtResource("2_uirap")
+
+[node name="Area3D" type="Node3D" parent="." unique_id=1814466684]
+
+[connection signal="on_ir_integer_message_pushed" from="Code/Send IR Integer" to="Code/Cone Sender" method="push_ir_integer_message"]

@@ -1,16 +1,7 @@
 [gd_scene format=3 uid="uid://bnlunfl01tc3c"]
 
 [ext_resource type="Script" uid="uid://bxa4yxo11gfur" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_tool_quick_rotate_for_debug.gd" id="1_3u3a1"]
-[ext_resource type="Script" uid="uid://b8j6q6ckcskdo" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/laser_module/script/sensor_view_laser_3d.gd" id="2_8djok"]
-[ext_resource type="Material" uid="uid://cnwe1ugu2k7yu" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/laser_module/mat_sensor_red_laser_default.tres" id="3_8djok"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_8djok"]
-
-[sub_resource type="CylinderMesh" id="CylinderMesh_h8kor"]
-
-[sub_resource type="SphereMesh" id="SphereMesh_yyw4y"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_h8kor"]
+[ext_resource type="PackedScene" uid="uid://3dj30wc08s0n" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/laser_module/scene/laser_module.tscn" id="2_3u3a1"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_3u3a1"]
 
@@ -25,60 +16,7 @@ script = ExtResource("1_3u3a1")
 what_to_rotate = NodePath("..")
 metadata/_custom_type_script = "uid://bxa4yxo11gfur"
 
-[node name="LaserModule" type="Node3D" parent="Node3D" unique_id=1877671010]
-
-[node name="Code" type="Node" parent="Node3D/LaserModule" unique_id=1652988537]
-
-[node name="SensorViewLaser3D" type="Node" parent="Node3D/LaserModule/Code" unique_id=314964554 node_paths=PackedStringArray("ray_cast_3d", "sphere_point_start_node", "sphere_point_end_node", "cylinder_ray_node")]
-script = ExtResource("2_8djok")
-ray_cast_3d = NodePath("../../RayCast3D")
-sphere_point_start_node = NodePath("../../SpherePointStart")
-sphere_point_end_node = NodePath("../../SpherePointEnd")
-cylinder_ray_node = NodePath("../../CylinderRay")
-laser_radius = 0.01
-to_point = Vector3(-2, -2, -2)
-metadata/_custom_type_script = "uid://b8j6q6ckcskdo"
-
-[node name="Mesh" type="Node3D" parent="Node3D/LaserModule" unique_id=2013362880]
-
-[node name="RayCast3D" type="RayCast3D" parent="Node3D/LaserModule" unique_id=1668406498]
-target_position = Vector3(0, 0, -20)
-debug_shape_custom_color = Color(0.676088, 0, 0.102993585, 1)
-
-[node name="CylinderRay" type="Node3D" parent="Node3D/LaserModule" unique_id=1514892711]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
-
-[node name="MeshInstanceCube" type="MeshInstance3D" parent="Node3D/LaserModule/CylinderRay" unique_id=1185690749]
-visible = false
-mesh = SubResource("BoxMesh_8djok")
-surface_material_override/0 = ExtResource("3_8djok")
-
-[node name="MeshInstanceCylinder" type="MeshInstance3D" parent="Node3D/LaserModule/CylinderRay" unique_id=1266617058]
-transform = Transform3D(1, 0, 0, 0, -2.1855694e-08, -1, 0, 0.5, -4.371139e-08, 0, 0, 0)
-mesh = SubResource("CylinderMesh_h8kor")
-surface_material_override/0 = ExtResource("3_8djok")
-
-[node name="SpherePointEnd" type="Node3D" parent="Node3D/LaserModule" unique_id=1556109071]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0.9108887, 0)
-
-[node name="MeshInstanceSphere" type="MeshInstance3D" parent="Node3D/LaserModule/SpherePointEnd" unique_id=1777208867]
-mesh = SubResource("SphereMesh_yyw4y")
-surface_material_override/0 = ExtResource("3_8djok")
-
-[node name="MeshInstanceSphere2" type="MeshInstance3D" parent="Node3D/LaserModule/SpherePointEnd" unique_id=321878583]
-transform = Transform3D(0.18552297, 0, 0, 0, -0.25892222, 0, 0, 0, 1.1557697, -0.023620605, 0.095184326, -0.89901733)
-mesh = SubResource("BoxMesh_h8kor")
-
-[node name="SpherePointStart" type="Node3D" parent="Node3D/LaserModule" unique_id=765926039]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0.9108887, 0)
-
-[node name="MeshInstanceSphere" type="MeshInstance3D" parent="Node3D/LaserModule/SpherePointStart" unique_id=58533736]
-mesh = SubResource("SphereMesh_yyw4y")
-surface_material_override/0 = ExtResource("3_8djok")
-
-[node name="MeshInstanceSphere2" type="MeshInstance3D" parent="Node3D/LaserModule/SpherePointStart" unique_id=636990165]
-transform = Transform3D(0.18552297, 0, 0, 0, -0.25892222, 0, 0, 0, 1.1557697, -0.023620605, 0.095184326, -0.89901733)
-mesh = SubResource("BoxMesh_h8kor")
+[node name="LaserModule" parent="Node3D" unique_id=898768969 instance=ExtResource("2_3u3a1")]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=656138596]
 transform = Transform3D(1, 0, 0, 0, 0.88166606, 0.47187382, 0, -0.47187382, 0.88166606, 0, 0.93426514, 1.0794678)

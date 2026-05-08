@@ -1,0 +1,334 @@
+[gd_scene format=3 uid="uid://dce25hri7xxr"]
+
+[ext_resource type="PackedScene" uid="uid://dhmcaqji5db7v" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/scene/basic_ks_4036_character.tscn" id="1_1j8m0"]
+[ext_resource type="Script" uid="uid://d15m06gdhuelr" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_developer_note.gd" id="2_0s11h"]
+[ext_resource type="PackedScene" uid="uid://3dj30wc08s0n" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/laser_module/scene/laser_module.tscn" id="3_0s11h"]
+[ext_resource type="Script" uid="uid://dpoqw05ekkmr8" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_tool_quick_follow_it.gd" id="3_bmqt2"]
+[ext_resource type="PackedScene" uid="uid://52xhpyq5s6ll" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ultra_sonic/scene/ultra_sonic.tscn" id="4_bmqt2"]
+[ext_resource type="ArrayMesh" uid="uid://x6n7olq1b3xp" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/light_resistor/3d/light_resistor.obj" id="5_jie8c"]
+[ext_resource type="Script" uid="uid://dwlcea3drm1fe" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color/code/rgb/sensor_view_led_rgb_color.gd" id="5_krj0c"]
+[ext_resource type="Script" uid="uid://cbnnr8qqyn81p" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/script/sensor_ir_receiver_square.gd" id="5_p1oyl"]
+[ext_resource type="Script" uid="uid://d1hp3x3n7pugx" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_view_set_color_mesh_instance_3d.gd" id="6_2nbm2"]
+[ext_resource type="Material" uid="uid://6s5dom5qf5bv" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/light_resistor/3d/mat_light_resistor.tres" id="6_c6s14"]
+[ext_resource type="Script" uid="uid://dhnm21l0sdy11" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/ui/sensor_parse_primitive_to_text_format.gd" id="6_svd3l"]
+[ext_resource type="Script" uid="uid://c0uebggh21kfd" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/light_resistor/script/sensor_light_resistor_listener.gd" id="7_c6s14"]
+[ext_resource type="PackedScene" uid="uid://bhntv5148n7tp" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/scene/infra_red_remote_keye.tscn" id="9_2nbm2"]
+
+[sub_resource type="WorldBoundaryShape3D" id="WorldBoundaryShape3D_kh3r6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_svd3l"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_vpdw4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_svd3l"]
+albedo_color = Color(0.748873, 0.46882093, 1.92523e-07, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o0qgm"]
+size = Vector3(2.4414063, 0.07373047, 2.4611816)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_o0qgm"]
+albedo_color = Color(0.3535207, 0.7889606, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0s11h"]
+size = Vector3(2.7792969, 0.08401489, 2.6845398)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_krj0c"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2nbm2"]
+albedo_color = Color(0.91666675, 1, 0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p1oyl"]
+albedo_color = Color(0.91764706, 1, 0, 1)
+
+[node name="DemoKs4036WheelMove" type="Node3D" unique_id=23239508]
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." unique_id=1780663545]
+transform = Transform3D(1, 0, 0, 0, 0.7543431, 0.6564805, 0, -0.6564805, 0.7543431, 0, 0.49609375, 1.0858154)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=128713891]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.20019531, 0.79797363, -1.3938293)
+omni_range = 1.2713741
+
+[node name="Size" type="Node3D" parent="." unique_id=731204862]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=1843089612]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.040020585, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1751157148]
+shape = SubResource("WorldBoundaryShape3D_kh3r6")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=70886104]
+transform = Transform3D(1, 0, 0, 0, 0.95276755, 0.30370048, 0, -0.30370048, 0.95276755, 0, 0.5354973, 1.3020788)
+
+[node name="StaticBody3D Colored Cube" type="StaticBody3D" parent="." unique_id=910174606]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3262024, -3.1750793)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D Colored Cube" unique_id=762365721]
+shape = SubResource("BoxShape3D_svd3l")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D Colored Cube" unique_id=358807930]
+mesh = SubResource("BoxMesh_vpdw4")
+surface_material_override/0 = SubResource("StandardMaterial3D_svd3l")
+
+[node name="StaticBody3D Green Ground" type="StaticBody3D" parent="." unique_id=1751985910]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.04519993, -0.024506092)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D Green Ground" unique_id=1084469239]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.014038086, 0.0105896, 0.00079345703)
+shape = SubResource("BoxShape3D_o0qgm")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D Green Ground" unique_id=1697252233]
+transform = Transform3D(2.5, 0, 0, 0, 0.1, 0, 0, 0, 2.5, 0, 0, 0)
+mesh = SubResource("BoxMesh_vpdw4")
+surface_material_override/0 = SubResource("StandardMaterial3D_o0qgm")
+
+[node name="StaticBody3D Black Border" type="StaticBody3D" parent="." unique_id=232521901]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.048038065, -0.024506092)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D Black Border" unique_id=1963336956]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.014404297, 0.0010528564, 0.00065612793)
+shape = SubResource("BoxShape3D_0s11h")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D Black Border" unique_id=65374531]
+transform = Transform3D(2.7753913, 0, 0, 0, 0.1, 0, 0, 0, 2.6835945, 0, 0, 0)
+mesh = SubResource("BoxMesh_vpdw4")
+surface_material_override/0 = SubResource("StandardMaterial3D_krj0c")
+
+[node name="KS4036WithSensor" type="Node3D" parent="." unique_id=364074091]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.029907227, 0)
+
+[node name="ModdingInjector" type="Node3D" parent="KS4036WithSensor" unique_id=703110265]
+
+[node name="Modding What ?" type="Node" parent="KS4036WithSensor/ModdingInjector" unique_id=1044053604]
+script = ExtResource("2_0s11h")
+developer_note = "A code in the app is going to create a Node with some script somewhere. We don’t care about that. All we want is to receive a node. Once we have the node, broadcast the information of the current KS4036 with variables, methods, and listeners for requests and signals, if they exist."
+metadata/_custom_type_script = "uid://d15m06gdhuelr"
+
+[node name="Laser" type="Node3D" parent="KS4036WithSensor" unique_id=617159790 node_paths=PackedStringArray("what_to_move", "what_to_follow")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02331543, -0.055999756)
+script = ExtResource("3_bmqt2")
+what_to_move = NodePath(".")
+what_to_follow = NodePath("../KS4036/Mesh/AnchorUltraIn")
+
+[node name="LaserModule" parent="KS4036WithSensor/Laser" unique_id=898768969 instance=ExtResource("3_0s11h")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.014343262)
+
+[node name="SensorViewLaser3D" parent="KS4036WithSensor/Laser/LaserModule/Code" parent_id_path=PackedInt32Array(898768969, 1265951628) index="0" unique_id=628242228]
+laser_radius = 0.08
+
+[node name="CylinderRay" parent="KS4036WithSensor/Laser/LaserModule" index="3" unique_id=1439296865]
+visible = false
+
+[node name="SpherePointStart" parent="KS4036WithSensor/Laser/LaserModule" index="5" unique_id=1267807805]
+visible = false
+
+[node name="Utrasonic" type="Node3D" parent="KS4036WithSensor" unique_id=2123889017 node_paths=PackedStringArray("what_to_move", "what_to_follow")]
+script = ExtResource("3_bmqt2")
+what_to_move = NodePath(".")
+what_to_follow = NodePath("../KS4036/Mesh/AnchorUltraIn/AnchorUltraSonicSensor")
+
+[node name="UltraSonic" parent="KS4036WithSensor/Utrasonic" unique_id=2073551514 instance=ExtResource("4_bmqt2")]
+
+[node name="LineLeft" type="Node3D" parent="KS4036WithSensor" unique_id=437767765 node_paths=PackedStringArray("what_to_move", "what_to_follow")]
+script = ExtResource("3_bmqt2")
+what_to_move = NodePath(".")
+what_to_follow = NodePath("../KS4036/Mesh/AnchorLineSensor/AnchorLineSensorLeft")
+
+[node name="UltraSonic" parent="KS4036WithSensor/LineLeft" unique_id=795905762 instance=ExtResource("4_bmqt2")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+
+[node name="LineRight" type="Node3D" parent="KS4036WithSensor" unique_id=1537678645 node_paths=PackedStringArray("what_to_move", "what_to_follow")]
+script = ExtResource("3_bmqt2")
+what_to_move = NodePath(".")
+what_to_follow = NodePath("../KS4036/Mesh/AnchorLineSensor/AnchorLineSensorRight")
+
+[node name="UltraSonic" parent="KS4036WithSensor/LineRight" unique_id=2066014553 instance=ExtResource("4_bmqt2")]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+
+[node name="LightResistanceLeft" type="Node3D" parent="KS4036WithSensor" unique_id=1192742605 node_paths=PackedStringArray("what_to_move", "what_to_follow")]
+script = ExtResource("3_bmqt2")
+what_to_move = NodePath(".")
+what_to_follow = NodePath("../KS4036/Mesh/AnchorLightResistorLeft")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="KS4036WithSensor/LightResistanceLeft" unique_id=1853271071]
+mesh = ExtResource("5_jie8c")
+surface_material_override/0 = ExtResource("6_c6s14")
+
+[node name="SensorLightResistorListener" type="Node" parent="KS4036WithSensor/LightResistanceLeft" unique_id=1818113075 node_paths=PackedStringArray("tracked_position")]
+script = ExtResource("7_c6s14")
+tracked_position = NodePath("..")
+metadata/_custom_type_script = "uid://c0uebggh21kfd"
+
+[node name="LightResistanceRight" type="Node3D" parent="KS4036WithSensor" unique_id=120407404 node_paths=PackedStringArray("what_to_move", "what_to_follow")]
+script = ExtResource("3_bmqt2")
+what_to_move = NodePath(".")
+what_to_follow = NodePath("../KS4036/Mesh/AnchorLightResistorRight")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="KS4036WithSensor/LightResistanceRight" unique_id=356154635]
+mesh = ExtResource("5_jie8c")
+surface_material_override/0 = ExtResource("6_c6s14")
+
+[node name="SensorLightResistorListener" type="Node" parent="KS4036WithSensor/LightResistanceRight" unique_id=778879081 node_paths=PackedStringArray("tracked_position")]
+script = ExtResource("7_c6s14")
+tracked_position = NodePath("..")
+metadata/_custom_type_script = "uid://c0uebggh21kfd"
+
+[node name="ReceiverIR" type="Node3D" parent="KS4036WithSensor" unique_id=1282092029 node_paths=PackedStringArray("what_to_move", "what_to_follow")]
+script = ExtResource("3_bmqt2")
+what_to_move = NodePath(".")
+what_to_follow = NodePath("../KS4036/Mesh/AnchorReceiverIR")
+
+[node name="SensorIrReceiverSquare" type="Node" parent="KS4036WithSensor/ReceiverIR" unique_id=882283727 node_paths=PackedStringArray("ir_forward_direction")]
+script = ExtResource("5_p1oyl")
+ir_forward_direction = NodePath("../ReceiverDirection")
+metadata/_custom_type_script = "uid://cbnnr8qqyn81p"
+
+[node name="ReceiverDirection" type="Node3D" parent="KS4036WithSensor/ReceiverIR" unique_id=1349288226]
+
+[node name="LedLeftRGB" type="Node3D" parent="KS4036WithSensor" unique_id=1592045002 node_paths=PackedStringArray("what_to_move", "what_to_follow")]
+script = ExtResource("3_bmqt2")
+what_to_move = NodePath(".")
+what_to_follow = NodePath("../KS4036/Mesh/AnchorLightResistorRight")
+
+[node name="SensorViewLedRgbColor" type="Node" parent="KS4036WithSensor/LedLeftRGB" unique_id=430777671]
+script = ExtResource("5_krj0c")
+current_color = Color(0.9574165, 0, 0.12114673, 1)
+byte_green_255 = 255
+byte_blue_255 = 255
+metadata/_custom_type_script = "uid://dwlcea3drm1fe"
+
+[node name="SensorViewSetColorMeshInstance3D" type="Node" parent="KS4036WithSensor/LedLeftRGB" unique_id=88877599 node_paths=PackedStringArray("mesh_instance")]
+script = ExtResource("6_2nbm2")
+mesh_instance = NodePath("../../KS4036/Mesh/AnchorLedLeftRoot/AnchorLedLeftCenter/MeshLedColorLeft")
+metadata/_custom_type_script = "uid://d1hp3x3n7pugx"
+
+[node name="LedRightRGB" type="Node3D" parent="KS4036WithSensor" unique_id=1201217109 node_paths=PackedStringArray("what_to_move", "what_to_follow")]
+script = ExtResource("3_bmqt2")
+what_to_move = NodePath(".")
+what_to_follow = NodePath("../KS4036/Mesh/AnchorLightResistorRight")
+
+[node name="SensorViewLedRgbColor" type="Node" parent="KS4036WithSensor/LedRightRGB" unique_id=211431158]
+script = ExtResource("5_krj0c")
+current_color = Color(0.95686275, 0, 0.12156863, 1)
+byte_green_255 = 255
+byte_blue_255 = 255
+metadata/_custom_type_script = "uid://dwlcea3drm1fe"
+
+[node name="SensorViewSetColorMeshInstance3D" type="Node" parent="KS4036WithSensor/LedRightRGB" unique_id=691505193 node_paths=PackedStringArray("mesh_instance")]
+script = ExtResource("6_2nbm2")
+mesh_instance = NodePath("../../KS4036/Mesh/AnchorLedRightRoot/AnchorLedRightCenter/MeshLedColorRight")
+metadata/_custom_type_script = "uid://d1hp3x3n7pugx"
+
+[node name="KS4036" parent="KS4036WithSensor" unique_id=194435867 instance=ExtResource("1_1j8m0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="MeshLedColorLeft" parent="KS4036WithSensor/KS4036/Mesh/AnchorLedLeftRoot/AnchorLedLeftCenter" parent_id_path=PackedInt32Array(194435867, 425413049) index="0" unique_id=445311014]
+surface_material_override/0 = SubResource("StandardMaterial3D_2nbm2")
+
+[node name="MeshLedColorRight" parent="KS4036WithSensor/KS4036/Mesh/AnchorLedRightRoot/AnchorLedRightCenter" parent_id_path=PackedInt32Array(194435867, 373380337) index="0" unique_id=1064550869]
+surface_material_override/0 = SubResource("StandardMaterial3D_p1oyl")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=964490644]
+
+[node name="HBox" type="HBoxContainer" parent="CanvasLayer" unique_id=493982745]
+anchors_preset = -1
+anchor_right = 1.001
+anchor_bottom = 0.080000006
+offset_right = -0.15209961
+offset_bottom = 6.159996
+
+[node name="Label" type="Label" parent="CanvasLayer/HBox" unique_id=1953209674]
+custom_minimum_size = Vector2(50, 10)
+layout_mode = 2
+
+[node name="SensorParsePrimitiveToTextFormat" type="Node" parent="CanvasLayer/HBox/Label" unique_id=1178725292]
+script = ExtResource("6_svd3l")
+metadata/_custom_type_script = "uid://dhnm21l0sdy11"
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/HBox" unique_id=940634005]
+custom_minimum_size = Vector2(50, 10)
+layout_mode = 2
+
+[node name="CheckButton" type="CheckButton" parent="CanvasLayer/HBox" unique_id=812564452]
+layout_mode = 2
+text = "Line Left"
+
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer/HBox" unique_id=2045553838]
+custom_minimum_size = Vector2(50, 10)
+layout_mode = 2
+
+[node name="CheckButton2" type="CheckButton" parent="CanvasLayer/HBox" unique_id=1288872252]
+layout_mode = 2
+text = "Line Right"
+
+[node name="ColorRect3" type="ColorRect" parent="CanvasLayer/HBox" unique_id=864441657]
+custom_minimum_size = Vector2(50, 10)
+layout_mode = 2
+
+[node name="Label Light Resistance" type="Label" parent="CanvasLayer/HBox" unique_id=725866581]
+custom_minimum_size = Vector2(50, 10)
+layout_mode = 2
+
+[node name="SensorParsePrimitiveToTextFormat" type="Node" parent="CanvasLayer/HBox/Label Light Resistance" unique_id=1580663190]
+script = ExtResource("6_svd3l")
+float_format = "%.4f"
+metadata/_custom_type_script = "uid://dhnm21l0sdy11"
+
+[node name="Label Light Resistance2" type="Label" parent="CanvasLayer/HBox" unique_id=138677249]
+custom_minimum_size = Vector2(50, 10)
+layout_mode = 2
+
+[node name="SensorParsePrimitiveToTextFormat" type="Node" parent="CanvasLayer/HBox/Label Light Resistance2" unique_id=861771871]
+script = ExtResource("6_svd3l")
+float_format = "%.4f"
+metadata/_custom_type_script = "uid://dhnm21l0sdy11"
+
+[node name="Label Light Precent" type="Label" parent="CanvasLayer/HBox" unique_id=1985000998]
+custom_minimum_size = Vector2(50, 10)
+layout_mode = 2
+
+[node name="SensorParsePrimitiveToTextFormat" type="Node" parent="CanvasLayer/HBox/Label Light Precent" unique_id=1541168086]
+script = ExtResource("6_svd3l")
+metadata/_custom_type_script = "uid://dhnm21l0sdy11"
+
+[node name="IR Remote" type="Node3D" parent="." unique_id=2071442926]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.29156494, 1.0372925)
+
+[node name="InfraRedRemote" parent="IR Remote" unique_id=241128567 instance=ExtResource("9_2nbm2")]
+
+[node name="Timer" type="Timer" parent="IR Remote/InfraRedRemote/Code" parent_id_path=PackedInt32Array(241128567, 47105424) index="2" unique_id=1019819252]
+wait_time = 2.0
+autostart = true
+
+[node name="ConeAnglePoint" parent="IR Remote/InfraRedRemote/AnchorPointLight/ConeDirection" parent_id_path=PackedInt32Array(241128567, 811115527) index="0" unique_id=1205759617]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.375061, -2.0963135)
+
+[node name="ConeDistancePoint" parent="IR Remote/InfraRedRemote/AnchorPointLight/ConeDirection" parent_id_path=PackedInt32Array(241128567, 811115527) index="1" unique_id=2068444822]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.5881882)
+
+[connection signal="on_distance_updated" from="KS4036WithSensor/Utrasonic/UltraSonic/Code/SensorToolRaycastToDistance" to="CanvasLayer/HBox/Label/SensorParsePrimitiveToTextFormat" method="parse_float_to_text"]
+[connection signal="on_color_albedo_found" from="KS4036WithSensor/Utrasonic/UltraSonic/Code/Node To Mesh Color" to="CanvasLayer/HBox/ColorRect" method="set_color"]
+[connection signal="on_color_emission_found" from="KS4036WithSensor/Utrasonic/UltraSonic/Code/Node To Mesh Color" to="CanvasLayer/HBox/ColorRect" method="set_color"]
+[connection signal="on_no_color_found" from="KS4036WithSensor/Utrasonic/UltraSonic/Code/Node To Mesh Color" to="CanvasLayer/HBox/ColorRect" method="set_color" binds= [Color(0, 0, 0, 0)]]
+[connection signal="on_detecting_collision" from="KS4036WithSensor/LineLeft/UltraSonic/Code/SensorToolRaycastToDistance" to="CanvasLayer/HBox/CheckButton" method="set_pressed_no_signal"]
+[connection signal="on_color_albedo_found" from="KS4036WithSensor/LineLeft/UltraSonic/Code/Node To Mesh Color" to="CanvasLayer/HBox/ColorRect2" method="set_color"]
+[connection signal="on_detecting_collision" from="KS4036WithSensor/LineRight/UltraSonic/Code/SensorToolRaycastToDistance" to="CanvasLayer/HBox/CheckButton2" method="set_pressed_no_signal"]
+[connection signal="on_color_albedo_found" from="KS4036WithSensor/LineRight/UltraSonic/Code/Node To Mesh Color" to="CanvasLayer/HBox/ColorRect3" method="set_color"]
+[connection signal="on_light_intensity_percent_updated" from="KS4036WithSensor/LightResistanceLeft/SensorLightResistorListener" to="CanvasLayer/HBox/Label Light Precent/SensorParsePrimitiveToTextFormat" method="parse_float_to_text"]
+[connection signal="on_light_intensity_updated" from="KS4036WithSensor/LightResistanceLeft/SensorLightResistorListener" to="CanvasLayer/HBox/Label Light Resistance/SensorParsePrimitiveToTextFormat" method="parse_float_to_text"]
+[connection signal="on_light_intensity_updated" from="KS4036WithSensor/LightResistanceRight/SensorLightResistorListener" to="CanvasLayer/HBox/Label Light Resistance2/SensorParsePrimitiveToTextFormat" method="parse_float_to_text"]
+[connection signal="on_color_updated" from="KS4036WithSensor/LedLeftRGB/SensorViewLedRgbColor" to="KS4036WithSensor/LedLeftRGB/SensorViewSetColorMeshInstance3D" method="set_color"]
+[connection signal="on_color_updated" from="KS4036WithSensor/LedRightRGB/SensorViewLedRgbColor" to="KS4036WithSensor/LedRightRGB/SensorViewSetColorMeshInstance3D" method="set_color"]
+[connection signal="on_parse_as_text" from="CanvasLayer/HBox/Label/SensorParsePrimitiveToTextFormat" to="CanvasLayer/HBox/Label" method="set_text"]
+[connection signal="on_parse_as_text" from="CanvasLayer/HBox/Label Light Resistance/SensorParsePrimitiveToTextFormat" to="CanvasLayer/HBox/Label Light Resistance" method="set_text"]
+[connection signal="on_parse_as_text" from="CanvasLayer/HBox/Label Light Resistance2/SensorParsePrimitiveToTextFormat" to="CanvasLayer/HBox/Label Light Resistance2" method="set_text"]
+[connection signal="on_parse_as_text" from="CanvasLayer/HBox/Label Light Precent/SensorParsePrimitiveToTextFormat" to="CanvasLayer/HBox/Label Light Precent" method="set_text"]
+[connection signal="timeout" from="IR Remote/InfraRedRemote/Code/Timer" to="IR Remote/InfraRedRemote/Code/Send IR Integer" method="push_ir_keye_ok"]
+
+[editable path="KS4036WithSensor/Laser/LaserModule"]
+[editable path="KS4036WithSensor/Utrasonic/UltraSonic"]
+[editable path="KS4036WithSensor/LineLeft/UltraSonic"]
+[editable path="KS4036WithSensor/LineRight/UltraSonic"]
+[editable path="KS4036WithSensor/KS4036"]
+[editable path="IR Remote/InfraRedRemote"]

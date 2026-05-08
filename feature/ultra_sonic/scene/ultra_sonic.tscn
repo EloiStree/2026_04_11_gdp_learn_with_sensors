@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://52xhpyq5s6ll"]
+
+[ext_resource type="Script" uid="uid://ctigbt6amwx3e" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_tool_raycast_to_distance.gd" id="1_pdppj"]
+[ext_resource type="Script" uid="uid://ujgtwk186wro" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_tool_node_to_mesh_3d_color.gd" id="2_djnef"]
+
+[node name="UltraSonic" type="Node3D" unique_id=2073551514]
+
+[node name="Code" type="Node" parent="." unique_id=1648157610]
+
+[node name="SensorToolRaycastToDistance" type="Node3D" parent="Code" unique_id=1827434095 node_paths=PackedStringArray("ray_cast_to_use")]
+script = ExtResource("1_pdppj")
+ray_cast_to_use = NodePath("../../RayCast3D")
+value_to_convert_in_percent_distance = 5.0
+metadata/_custom_type_script = "uid://ctigbt6amwx3e"
+
+[node name="Node To Mesh Color" type="Node" parent="Code" unique_id=275173485]
+script = ExtResource("2_djnef")
+metadata/_custom_type_script = "uid://ujgtwk186wro"
+
+[node name="RayCast3D" type="RayCast3D" parent="." unique_id=246526840]
+target_position = Vector3(0, 0, -10)
+
+[connection signal="on_node_hit_changed" from="Code/SensorToolRaycastToDistance" to="Code/Node To Mesh Color" method="push_node_in"]
+[connection signal="on_stop_collision" from="Code/SensorToolRaycastToDistance" to="Code/Node To Mesh Color" method="clear_with_no_node"]

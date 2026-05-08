@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://6s5dom5qf5bv"]
+
+[ext_resource type="Texture2D" uid="uid://dq17hwwq57mpr" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/light_resistor/3d/light_resistor_uv_color.png" id="1_x0usi"]
+
+[resource]
+albedo_texture = ExtResource("1_x0usi")

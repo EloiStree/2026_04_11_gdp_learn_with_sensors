@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://dwv04rowjdy0c"]
 
-[ext_resource type="Script" uid="uid://ctigbt6amwx3e" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_tool_raycast_to_distance.gd" id="1_8eok5"]
 [ext_resource type="Script" uid="uid://bxa4yxo11gfur" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_tool_quick_rotate_for_debug.gd" id="1_caehj"]
-[ext_resource type="Script" uid="uid://ujgtwk186wro" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_tool_node_to_mesh_3d_color.gd" id="3_0caa6"]
+[ext_resource type="PackedScene" uid="uid://52xhpyq5s6ll" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ultra_sonic/scene/ultra_sonic.tscn" id="2_f8k7k"]
 [ext_resource type="Script" uid="uid://dhnm21l0sdy11" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/ui/sensor_parse_primitive_to_text_format.gd" id="4_0caa6"]
 [ext_resource type="Material" uid="uid://b3rhoi5clu5x8" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ultra_sonic/material/mat_standard_color_read_albedo.tres" id="4_jfa7c"]
 [ext_resource type="Material" uid="uid://b7sex6iuo561k" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ultra_sonic/material/mat_standard_color_read_emissive.tres" id="5_iu1v8"]
@@ -27,22 +26,7 @@ script = ExtResource("1_caehj")
 what_to_rotate = NodePath("..")
 metadata/_custom_type_script = "uid://bxa4yxo11gfur"
 
-[node name="UltraSonic" type="Node3D" parent="RotationAngle" unique_id=1518896375]
-
-[node name="Code" type="Node" parent="RotationAngle/UltraSonic" unique_id=72479261]
-
-[node name="SensorToolRaycastToDistance" type="Node3D" parent="RotationAngle/UltraSonic/Code" unique_id=238759628 node_paths=PackedStringArray("ray_cast_to_use")]
-script = ExtResource("1_8eok5")
-ray_cast_to_use = NodePath("../../RayCast3D")
-value_to_convert_in_percent_distance = 5.0
-metadata/_custom_type_script = "uid://ctigbt6amwx3e"
-
-[node name="Node To Mesh Color" type="Node" parent="RotationAngle/UltraSonic/Code" unique_id=1549606081]
-script = ExtResource("3_0caa6")
-metadata/_custom_type_script = "uid://ujgtwk186wro"
-
-[node name="RayCast3D" type="RayCast3D" parent="RotationAngle/UltraSonic" unique_id=57933780]
-target_position = Vector3(0, 0, -10)
+[node name="UltraSonic" parent="RotationAngle" unique_id=2073551514 instance=ExtResource("2_f8k7k")]
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1349643992]
 transform = Transform3D(1, 0, 0, 0, 0.6798894, 0.7333147, 0, -0.7333147, 0.6798894, 0, 1.3857448, 2.2001076)
@@ -137,15 +121,6 @@ metadata/_custom_type_script = "uid://dhnm21l0sdy11"
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 
-[connection signal="on_detecting_collision" from="RotationAngle/UltraSonic/Code/SensorToolRaycastToDistance" to="CanvasLayer/HBoxContainer/CheckButton" method="set_pressed_no_signal"]
-[connection signal="on_distance_as_percent_updated" from="RotationAngle/UltraSonic/Code/SensorToolRaycastToDistance" to="CanvasLayer/HBoxContainer/Label Distance Percent/SensorParsePrimitiveToTextFormat" method="parse_float_to_text"]
-[connection signal="on_distance_updated" from="RotationAngle/UltraSonic/Code/SensorToolRaycastToDistance" to="CanvasLayer/HBoxContainer/Label Distance/SensorParsePrimitiveToTextFormat" method="parse_float_to_text"]
-[connection signal="on_node_hit_changed" from="RotationAngle/UltraSonic/Code/SensorToolRaycastToDistance" to="RotationAngle/UltraSonic/Code/Node To Mesh Color" method="push_node_in"]
-[connection signal="on_node_hit_changed" from="RotationAngle/UltraSonic/Code/SensorToolRaycastToDistance" to="CanvasLayer/HBoxContainer/Label Node Hit/SensorParsePrimitiveToTextFormat" method="parse_node_name_to_text"]
-[connection signal="on_stop_collision" from="RotationAngle/UltraSonic/Code/SensorToolRaycastToDistance" to="RotationAngle/UltraSonic/Code/Node To Mesh Color" method="clear_with_no_node"]
-[connection signal="on_color_albedo_found" from="RotationAngle/UltraSonic/Code/Node To Mesh Color" to="CanvasLayer/HBoxContainer/ColorRect" method="set_color"]
-[connection signal="on_color_emission_found" from="RotationAngle/UltraSonic/Code/Node To Mesh Color" to="CanvasLayer/HBoxContainer/ColorRect" method="set_color"]
-[connection signal="on_no_color_found" from="RotationAngle/UltraSonic/Code/Node To Mesh Color" to="CanvasLayer/HBoxContainer/ColorRect" method="set_color" binds= [Color(1, 0, 0.916667, 1)]]
 [connection signal="on_parse_as_text" from="CanvasLayer/HBoxContainer/Label Distance/SensorParsePrimitiveToTextFormat" to="CanvasLayer/HBoxContainer/Label Distance" method="set_text"]
 [connection signal="on_parse_as_text" from="CanvasLayer/HBoxContainer/Label Distance Percent/SensorParsePrimitiveToTextFormat" to="CanvasLayer/HBoxContainer/Label Distance Percent" method="set_text"]
 [connection signal="on_parse_as_text" from="CanvasLayer/HBoxContainer/Label Node Hit/SensorParsePrimitiveToTextFormat" to="CanvasLayer/HBoxContainer/Label Node Hit" method="set_text"]

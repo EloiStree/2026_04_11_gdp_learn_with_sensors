@@ -64,6 +64,6 @@ func _process(delta: float) -> void:
 	if is_colliding:
 		end_point = ray_cast_to_use.get_collision_point()
 	
-	DebugDraw3D.draw_line(start_point, end_point, Color(1, 1, 0),0.05)
+	#DebugDraw3D.draw_line(start_point, end_point, Color(1, 1, 0),0.05)
 
 	
