@@ -1,20 +1,17 @@
 class_name SensorParsePrimitiveToTextFormat
 extends Node
 
-
 signal on_parse_as_text(value:String)
-
 
 @export var float_format: String = "%.2f"
 
 func parse_float_to_text(value: float):
 	var formatted_value := float_format % value
 	on_parse_as_text.emit(formatted_value)
-	
-	
+
 func parse_integer_to_text(value:int):
 	on_parse_as_text.emit(str(value))
-	
+		
 func parse_vector3_to_text(value:Vector3):
 	var xstring := float_format.format(value.x)
 	var ystring := float_format.format(value.y)

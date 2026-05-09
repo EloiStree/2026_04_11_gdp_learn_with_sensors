@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://oyf0ch50xmw8"]
+
+[ext_resource type="Texture2D" uid="uid://kuryf44fq8x1" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ultra_sonic/3d/ultra_sonic_sensor_uv_color.png" id="1_tou4w"]
+
+[resource]
+albedo_texture = ExtResource("1_tou4w")

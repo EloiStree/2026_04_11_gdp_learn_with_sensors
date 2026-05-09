@@ -1,0 +1,6 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://co1mwhaftr3kd"]
+
+[ext_resource type="Texture2D" uid="uid://djjk0u8gi8pfp" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/switch_on_off/3d/switch_hat_uv_color.png" id="1_d8auo"]
+
+[resource]
+albedo_texture = ExtResource("1_d8auo")

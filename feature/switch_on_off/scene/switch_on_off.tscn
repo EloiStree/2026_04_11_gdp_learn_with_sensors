@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://degclgks2lhsd"]
+
+[ext_resource type="ArrayMesh" uid="uid://b7yjjs7l75gqg" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/switch_on_off/3d/switch_body.obj" id="1_payvp"]
+[ext_resource type="Material" uid="uid://co1mwhaftr3kd" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/switch_on_off/3d/mat_switch_on_off.tres" id="2_rvjl1"]
+[ext_resource type="ArrayMesh" uid="uid://dvyotaxftovpy" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/switch_on_off/3d/switch_hat.obj" id="3_7yx65"]
+[ext_resource type="Script" uid="uid://5btsnv1p0f3u" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/switch_on_off/script/sensor_view_on_off_animation.gd" id="4_5aoqn"]
+
+[sub_resource type="Animation" id="Animation_pdmdn"]
+resource_name = "OFF"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnchorHat:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0.0030707866, 5.3542317e-05, 0), Vector3(0.003, 0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ajmd2"]
+resource_name = "ON"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnchorHat:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-0.0026146001, 5.3542317e-05, 0), Vector3(-0.0026146001, 5.3542317e-05, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_y8rnl"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnchorHat:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-0.0034006184, 5.3542317e-05, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_t1cje"]
+_data = {
+&"OFF": SubResource("Animation_pdmdn"),
+&"ON": SubResource("Animation_ajmd2"),
+&"RESET": SubResource("Animation_y8rnl")
+}
+
+[node name="SwitchOnOff" type="Node3D" unique_id=1904662743]
+
+[node name="SwitchBody" type="MeshInstance3D" parent="." unique_id=1957591828]
+transform = Transform3D(0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, -0.00038665772, 0.005618436, 0.00041655079)
+mesh = ExtResource("1_payvp")
+surface_material_override/0 = ExtResource("2_rvjl1")
+
+[node name="AnchorCenter" type="Node3D" parent="." unique_id=967222226]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00538102, 0)
+
+[node name="AnchorHat" type="Node3D" parent="AnchorCenter" unique_id=2090125899]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0034006184, 5.3542317e-05, 0)
+
+[node name="SwitchHat" type="MeshInstance3D" parent="AnchorCenter/AnchorHat" unique_id=1461177801]
+transform = Transform3D(0.95, 0, 0, 0, 0.95, 0, 0, 0, 0.95, -0.00038665772, 0.00018387381, 0.00041655079)
+mesh = ExtResource("3_7yx65")
+surface_material_override/0 = ExtResource("2_rvjl1")
+
+[node name="AnchorOn" type="Node3D" parent="AnchorCenter" unique_id=1079026730]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0036944305, -5.820766e-10, 0)
+
+[node name="AnchorOff" type="Node3D" parent="AnchorCenter" unique_id=1554912608]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0028912937, -5.820766e-10, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnchorCenter" unique_id=452707283]
+libraries/ = SubResource("AnimationLibrary_t1cje")
+
+[node name="On Off Animation" type="Node" parent="AnchorCenter/AnimationPlayer" unique_id=1495249199 node_paths=PackedStringArray("animation_player")]
+script = ExtResource("4_5aoqn")
+animation_player = NodePath("..")
+metadata/_custom_type_script = "uid://5btsnv1p0f3u"

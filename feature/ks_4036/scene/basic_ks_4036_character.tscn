@@ -12,14 +12,23 @@
 [ext_resource type="Material" uid="uid://dihjibhqcyn1b" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/body/mat_ks_4036_body_sphere.tres" id="8_mxu78"]
 [ext_resource type="ArrayMesh" uid="uid://dfwvieaagj7g0" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/body/ks_4036_body.obj" id="9_yqhes"]
 [ext_resource type="Texture2D" uid="uid://n5kmkxuvtyr7" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/body/ks_4036_body_uv_color.png" id="10_lr8qv"]
+[ext_resource type="ArrayMesh" uid="uid://b4t1l1vkw6pce" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/mini_motor/3d/mini_motor_gear_hide.obj" id="12_av0rd"]
 [ext_resource type="Material" uid="uid://j5jwh57v5a00" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/asset/material/mat_ks_4036_left_led.tres" id="12_co1xe"]
 [ext_resource type="ArrayMesh" uid="uid://cle2gnxktb1fd" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/led/ks4036_front_led.obj" id="12_k0o7b"]
+[ext_resource type="Material" uid="uid://genfpuvkr1av" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/mini_motor/3d/mat_mini_motor_body.tres" id="13_h6xot"]
 [ext_resource type="Material" uid="uid://cq3tlb0m0f32k" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/asset/material/mat_ks_4036_right_led.tres" id="13_k0o7b"]
+[ext_resource type="ArrayMesh" uid="uid://cgdvht26n4oxp" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/mini_motor/3d/mini_motor_gear.obj" id="14_5bvmk"]
+[ext_resource type="ArrayMesh" uid="uid://cmpg0ywcvcla3" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ultra_sonic/3d/ultra_sonic_sensor.obj" id="15_sya8l"]
+[ext_resource type="Material" uid="uid://b5wi24qrh22s0" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/mini_motor/3d/mat_mini_motor_body_hide.tres" id="15_xwgtc"]
 [ext_resource type="ArrayMesh" uid="uid://dksxo03gy11od" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/infra_red_receiver.obj" id="16_nck65"]
+[ext_resource type="Material" uid="uid://oyf0ch50xmw8" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ultra_sonic/3d/mat_ultra_sonic_sensor.tres" id="16_ucbcf"]
 [ext_resource type="Material" uid="uid://dpr18e83580y2" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/mat_infra_red_receiver.tres" id="17_kriqq"]
+[ext_resource type="PackedScene" uid="uid://degclgks2lhsd" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/switch_on_off/scene/switch_on_off.tscn" id="24_h6xot"]
+[ext_resource type="ArrayMesh" uid="uid://b8j266buh42i5" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/micro_bit_shape/3d/micro_bit_shape.obj" id="25_xwgtc"]
+[ext_resource type="Material" uid="uid://c81g7nwtek3x3" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/micro_bit_shape/3d/mat_micro_bit_shape.tres" id="26_qkec7"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_fim5i"]
-size = Vector3(0.06668091, 0.01550293, 0.09378052)
+size = Vector3(0.06668091, 0.012176514, 0.09378052)
 
 [sub_resource type="BoxMesh" id="BoxMesh_a1hwa"]
 
@@ -44,11 +53,19 @@ material = SubResource("StandardMaterial3D_fifoy")
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_qqwjn"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h6xot"]
+albedo_color = Color(0.62967473, 0.62967473, 0.6296747, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_5bvmk"]
+material = SubResource("StandardMaterial3D_h6xot")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wgp5y"]
 
-[sub_resource type="CylinderMesh" id="CylinderMesh_lr8qv"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sya8l"]
+albedo_color = Color(0.26293245, 0.26293245, 0.26293245, 1)
 
-[sub_resource type="BoxMesh" id="BoxMesh_1klnw"]
+[sub_resource type="BoxMesh" id="BoxMesh_ucbcf"]
+material = SubResource("StandardMaterial3D_sya8l")
 
 [sub_resource type="SphereMesh" id="SphereMesh_yqhes"]
 
@@ -56,7 +73,7 @@ material = SubResource("StandardMaterial3D_fifoy")
 transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, 0, 0)
 
 [node name="BasicCollisionShape" type="CollisionShape3D" parent="." unique_id=589150515]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00019836426, -0.007873535, -0.016921997)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00019836426, -0.010574341, -0.016921997)
 shape = SubResource("BoxShape3D_fim5i")
 
 [node name="Code" type="Node" parent="." unique_id=26895788]
@@ -85,16 +102,17 @@ script = ExtResource("2_ly3kf")
 [node name="Mesh" type="Node3D" parent="." unique_id=358469497]
 
 [node name="BodySize" type="MeshInstance3D" parent="Mesh" unique_id=1973182238]
-transform = Transform3D(0.066, 0, 0, 0, 0.01, 0, 0, 0, 0.094, 0, -0.0062573147, -0.017)
+transform = Transform3D(0.066, 0, 0, 0, 0.01, 0, 0, 0, 0.094, 0, -0.011288574, -0.017)
 visible = false
 mesh = SubResource("BoxMesh_a1hwa")
 
 [node name="KS4036Body" type="MeshInstance3D" parent="Mesh" unique_id=1616771827]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.004881056, 0)
 mesh = ExtResource("9_yqhes")
 surface_material_override/0 = SubResource("StandardMaterial3D_ktw5y")
 
 [node name="KS4036PlatformTop" type="MeshInstance3D" parent="Mesh" unique_id=1464662866]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.025030008, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.01984094, 0)
 mesh = ExtResource("6_lr8qv")
 surface_material_override/0 = ExtResource("7_ktw5y")
 
@@ -129,6 +147,19 @@ rotation_point_node = NodePath("..")
 inverse_rotation = true
 metadata/_custom_type_script = "uid://dxx6qc4k2yrh"
 
+[node name="NodeMotor" type="Node3D" parent="Mesh/Node3DLeftWheel" unique_id=16194595]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.0043691993, 0, -2.3147637e-11)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesh/Node3DLeftWheel/NodeMotor" unique_id=1263925628]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.011651321)
+mesh = ExtResource("12_av0rd")
+surface_material_override/0 = ExtResource("13_h6xot")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesh/Node3DLeftWheel/NodeMotor" unique_id=56992285]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.011651321)
+mesh = ExtResource("14_5bvmk")
+surface_material_override/0 = ExtResource("15_xwgtc")
+
 [node name="Node3DRightWheel" type="Node3D" parent="Mesh" unique_id=1812428394]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035, 0, 0)
 
@@ -158,10 +189,23 @@ rotation_point_node = NodePath("..")
 inverse_rotation = true
 metadata/_custom_type_script = "uid://dxx6qc4k2yrh"
 
+[node name="NodeMotor2" type="Node3D" parent="Mesh/Node3DRightWheel" unique_id=865116388]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.0039720437, 0, -1.7362353e-10)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesh/Node3DRightWheel/NodeMotor2" unique_id=563918854]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.011651321)
+mesh = ExtResource("12_av0rd")
+surface_material_override/0 = ExtResource("13_h6xot")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesh/Node3DRightWheel/NodeMotor2" unique_id=470256107]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.011651321)
+mesh = ExtResource("14_5bvmk")
+surface_material_override/0 = ExtResource("15_xwgtc")
+
 [node name="Node3DCenter" type="Node3D" parent="Mesh" unique_id=1441138236]
 
 [node name="AnchorLedLeftRoot" type="Node3D" parent="Mesh" unique_id=548553010]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017, 0, -0.047)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.017, -0.005150332, -0.047)
 
 [node name="AnchorLedLeftCenter" type="Node3D" parent="Mesh/AnchorLedLeftRoot" unique_id=425413049]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.005776107, 0.00024461385)
@@ -177,8 +221,12 @@ visible = false
 material_override = ExtResource("12_co1xe")
 mesh = SubResource("CylinderMesh_qqwjn")
 
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="Mesh/AnchorLedLeftRoot" unique_id=831815340]
+transform = Transform3D(0.005002946, 0, 0, 0, 0.0074741165, 0, 0, 0, 0.0028052842, 0, 0.0034445191, 0.0007889867)
+mesh = SubResource("BoxMesh_5bvmk")
+
 [node name="AnchorLedRightRoot" type="Node3D" parent="Mesh" unique_id=1381396189]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.017, 0, -0.047)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.017, -0.005150332, -0.047)
 
 [node name="AnchorLedRightCenter" type="Node3D" parent="Mesh/AnchorLedRightRoot" unique_id=373380337]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0.0055934605, 1.0519319e-10)
@@ -194,34 +242,34 @@ visible = false
 material_override = ExtResource("13_k0o7b")
 mesh = SubResource("CylinderMesh_qqwjn")
 
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="Mesh/AnchorLedRightRoot" unique_id=1750586705]
+transform = Transform3D(0.005002946, 0, 0, 0, 0.0074741165, 0, 0, 0, 0.0028052842, 0.00041657686, 0.0035013892, 0.0010910183)
+mesh = SubResource("BoxMesh_5bvmk")
+
 [node name="AnchorUltraIn" type="Node3D" parent="Mesh" unique_id=789662974]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.01, -0.046)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0048496677, -0.046)
 
 [node name="UltrasonicMockup" type="Node3D" parent="Mesh/AnchorUltraIn" unique_id=1706493245]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.014755858, -0.0012110136)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.01144452, -0.0012110136)
 
-[node name="LeftSonar" type="MeshInstance3D" parent="Mesh/AnchorUltraIn/UltrasonicMockup" unique_id=258493038]
-transform = Transform3D(0.016, 0, 0, 0, -2.6226832e-10, 0.016, 0, -0.006, -6.993822e-10, 0.015062247, -0.0018173214, -0.0049910843)
-mesh = SubResource("CylinderMesh_lr8qv")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesh/AnchorUltraIn/UltrasonicMockup" unique_id=1679476427]
+mesh = ExtResource("15_sya8l")
+surface_material_override/0 = ExtResource("16_ucbcf")
 
-[node name="RightSonar" type="MeshInstance3D" parent="Mesh/AnchorUltraIn/UltrasonicMockup" unique_id=1894837741]
-transform = Transform3D(0.016, 0, 0, 0, -2.6226832e-10, 0.016, 0, -0.006, -6.993822e-10, -0.015, -0.0017558578, -0.0047889873)
-mesh = SubResource("CylinderMesh_lr8qv")
-
-[node name="BoardSonar" type="MeshInstance3D" parent="Mesh/AnchorUltraIn/UltrasonicMockup" unique_id=1668636195]
-transform = Transform3D(0.049999997, 0, 0, 0, 0.020999998, 0, 0, 0, 0.001, 0, -0.0018173214, 0.0012110136)
-mesh = SubResource("BoxMesh_1klnw")
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="Mesh/AnchorUltraIn/UltrasonicMockup" unique_id=2120835426]
+transform = Transform3D(0.01, 0, 0, 0, 0.014715607, 0, 0, 0, 0.0028052842, 0, -0.014690031, 0.0013020326)
+mesh = SubResource("BoxMesh_ucbcf")
 
 [node name="AnchorUltraSonicSensor" type="Node3D" parent="Mesh/AnchorUltraIn" unique_id=653540339]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.014755859, -0.0012110138)
 
 [node name="SphereFront" type="MeshInstance3D" parent="Mesh" unique_id=1530671121]
-transform = Transform3D(0.009, 0, 0, 0, 0.009, 0, 0, 0, 0.009, 0, -0.01098584, -0.05369065)
+transform = Transform3D(0.009, 0, 0, 0, 0.009, 0, 0, 0, 0.009, 0, -0.012488609, -0.05369065)
 material_override = ExtResource("8_mxu78")
 mesh = SubResource("SphereMesh_yqhes")
 
 [node name="AnchorLineSensor" type="Node3D" parent="Mesh" unique_id=855771689]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0023184645, -0.044491574)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0074687963, -0.044491574)
 
 [node name="AnchorLineSensorLeft" type="Node3D" parent="Mesh/AnchorLineSensor" unique_id=1825817663]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.008360719, 0, 0)
@@ -230,20 +278,32 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.008360719, 0, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.008, 0, 0)
 
 [node name="AnchorLightResistorLeft" type="Node3D" parent="Mesh" unique_id=1696310750]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.026055729, 0, -0.04941376)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.026055729, -0.005150332, -0.04941376)
 
 [node name="AnchorLightResistorRight" type="Node3D" parent="Mesh" unique_id=1559536229]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.026, 0, -0.049)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.026, -0.005150332, -0.049)
 
 [node name="AnchorReceiverIR" type="Node3D" parent="Mesh" unique_id=39124415]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018327484, 7.810428e-05, 0.027689623)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.018327484, -0.0050722277, 0.027689623)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Mesh/AnchorReceiverIR" unique_id=105057250]
 mesh = ExtResource("16_nck65")
 surface_material_override/0 = ExtResource("17_kriqq")
 
 [node name="AnchorOnOff" type="Node3D" parent="Mesh" unique_id=1300367636]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0010153559, 0.025737014)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0041349763, 0.025737014)
+
+[node name="SwitchOnOff" parent="Mesh/AnchorOnOff" unique_id=1904662743 instance=ExtResource("24_h6xot")]
+
+[node name="AnchorMicroBit" type="Node3D" parent="Mesh" unique_id=1235786153]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.032064326)
+
+[node name="MicroBitShape" type="Node3D" parent="Mesh/AnchorMicroBit" unique_id=978012728]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Mesh/AnchorMicroBit/MicroBitShape" unique_id=225877067]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0.020824026, 0)
+mesh = ExtResource("25_xwgtc")
+surface_material_override/0 = ExtResource("26_qkec7")
 
 [connection signal="on_left_wheel_current_rotation_updated" from="Code/Move/SensorMoveKS4036" to="Mesh/Node3DLeftWheel/SensorViewWheel" method="set_rotation_in_degree"]
 [connection signal="on_right_wheel_current_rotation_updated" from="Code/Move/SensorMoveKS4036" to="Mesh/Node3DRightWheel/SensorViewWheel2" method="set_rotation_in_degree"]
