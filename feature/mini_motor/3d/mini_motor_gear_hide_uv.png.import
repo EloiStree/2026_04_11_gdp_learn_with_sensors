@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://c50dc4g6kptgx"
 path.s3tc="res://.godot/imported/mini_motor_gear_hide_uv.png-061769f3be7a7d7a64cdabb635220f59.s3tc.ctex"
+path.etc2="res://.godot/imported/mini_motor_gear_hide_uv.png-061769f3be7a7d7a64cdabb635220f59.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/mini_motor/3d/mini_motor_gear_hide_uv.png"
-dest_files=["res://.godot/imported/mini_motor_gear_hide_uv.png-061769f3be7a7d7a64cdabb635220f59.s3tc.ctex"]
+dest_files=["res://.godot/imported/mini_motor_gear_hide_uv.png-061769f3be7a7d7a64cdabb635220f59.s3tc.ctex", "res://.godot/imported/mini_motor_gear_hide_uv.png-061769f3be7a7d7a64cdabb635220f59.etc2.ctex"]
 
 [params]
 

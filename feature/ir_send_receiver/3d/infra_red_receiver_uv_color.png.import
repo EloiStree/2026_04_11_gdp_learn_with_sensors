@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://oxthawugajqu"
 path.s3tc="res://.godot/imported/infra_red_receiver_uv_color.png-d054c4c459dabdc834404049cc1ed3ae.s3tc.ctex"
+path.etc2="res://.godot/imported/infra_red_receiver_uv_color.png-d054c4c459dabdc834404049cc1ed3ae.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/infra_red_receiver_uv_color.png"
-dest_files=["res://.godot/imported/infra_red_receiver_uv_color.png-d054c4c459dabdc834404049cc1ed3ae.s3tc.ctex"]
+dest_files=["res://.godot/imported/infra_red_receiver_uv_color.png-d054c4c459dabdc834404049cc1ed3ae.s3tc.ctex", "res://.godot/imported/infra_red_receiver_uv_color.png-d054c4c459dabdc834404049cc1ed3ae.etc2.ctex"]
 
 [params]
 

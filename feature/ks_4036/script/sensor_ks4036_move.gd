@@ -106,12 +106,11 @@ func _physics_process(delta: float) -> void:
 	# === Apply rotation ===
 	character_to_move.rotation.y += angular_velocity * delta
 	
-	# === Apply forward movement ===
-	# Most vehicle/robot models face -Z in Godot
-	var forward_direction = -character_to_move.transform.basis.z
-	character_to_move.velocity = forward_direction * linear_velocity
-
-
+	# Apply linear velocity in forward direction
+	var forward_direction = -character_to_move.global_transform.basis.z
+	character_to_move.velocity.x = forward_direction.x * linear_velocity
+	character_to_move.velocity.z = forward_direction.z * linear_velocity
+	
 	## add a fake gravity of linear
 	character_to_move.velocity.y -= fake_gravity
 
