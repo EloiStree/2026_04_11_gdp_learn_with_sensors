@@ -2,10 +2,12 @@
 
 [ext_resource type="Script" uid="uid://c58liawrwxh13" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/script/sensor_ks_4036_reset_scale_1.gd" id="1_1klnw"]
 [ext_resource type="Script" uid="uid://dn1231hof4ooj" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/script/sensor_ks_4036_move.gd" id="1_wmbwk"]
-[ext_resource type="Script" uid="uid://b5wnjmie8e6wf" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/script/sensor_ks_4036_input_map_for.gd" id="2_ly3kf"]
 [ext_resource type="Script" uid="uid://dxx6qc4k2yrh" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/wheels/sensor_view_wheel.gd" id="2_ostvo"]
 [ext_resource type="Texture2D" uid="uid://boqrb1432pf6h" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/2d/board.png" id="3_ly3kf"]
+[ext_resource type="Script" uid="uid://b5wlcdssy5mqp" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/script/sensor_ks_4036_input_map_vertical_joysticks.gd" id="3_pdmdn"]
 [ext_resource type="ArrayMesh" uid="uid://dyxmwr46idk40" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/wheel/ks_4036_wheel.obj" id="4_4mdeb"]
+[ext_resource type="Script" uid="uid://d3uhumfpmfrxs" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/script/sensor_ks_4036_input_map_four_buttons.gd" id="4_pdmdn"]
+[ext_resource type="Script" uid="uid://db1vwx6q4t2ww" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/script/sensor_ks_4036_input_map_joysticks.gd" id="5_ajmd2"]
 [ext_resource type="Material" uid="uid://d0uhahsnc7kwl" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/wheel/mat_ks_4036_wheel_black.tres" id="5_flaa4"]
 [ext_resource type="ArrayMesh" uid="uid://dcp3drqm6juuu" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/top/ks_4036_top_platform.obj" id="6_lr8qv"]
 [ext_resource type="Material" uid="uid://b8dso1a17k6o5" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/top/mat_ks_4036_platform.tres" id="7_ktw5y"]
@@ -96,8 +98,19 @@ metadata/_custom_type_script = "uid://dn1231hof4ooj"
 
 [node name="Node" type="Node" parent="Code" unique_id=466974326]
 
-[node name="SensorInputMapForKS4036" type="Node" parent="Code/Node" unique_id=1610748396]
-script = ExtResource("2_ly3kf")
+[node name="Double Vertical Joysticks" type="Node" parent="Code/Node" unique_id=1427810804]
+script = ExtResource("3_pdmdn")
+use_input = false
+metadata/_custom_type_script = "uid://b5wlcdssy5mqp"
+
+[node name="Four Buttons" type="Node" parent="Code/Node" unique_id=214392896]
+script = ExtResource("4_pdmdn")
+use_input = false
+metadata/_custom_type_script = "uid://d3uhumfpmfrxs"
+
+[node name="Single Joystick" type="Node" parent="Code/Node" unique_id=149886370]
+script = ExtResource("5_ajmd2")
+metadata/_custom_type_script = "uid://db1vwx6q4t2ww"
 
 [node name="Mesh" type="Node3D" parent="." unique_id=358469497]
 
@@ -307,4 +320,6 @@ surface_material_override/0 = ExtResource("26_qkec7")
 
 [connection signal="on_left_wheel_current_rotation_updated" from="Code/Move/SensorMoveKS4036" to="Mesh/Node3DLeftWheel/SensorViewWheel" method="set_rotation_in_degree"]
 [connection signal="on_right_wheel_current_rotation_updated" from="Code/Move/SensorMoveKS4036" to="Mesh/Node3DRightWheel/SensorViewWheel2" method="set_rotation_in_degree"]
-[connection signal="on_both_wheels_percent_power_updated" from="Code/Node/SensorInputMapForKS4036" to="Code/Move/SensorMoveKS4036" method="set_both_wheels_percent_power"]
+[connection signal="on_both_wheels_percent_power_changed" from="Code/Node/Double Vertical Joysticks" to="Code/Move/SensorMoveKS4036" method="set_both_wheels_percent_power"]
+[connection signal="on_four_buttons_changed" from="Code/Node/Four Buttons" to="Code/Move/SensorMoveKS4036" method="set_with_four_buttons"]
+[connection signal="on_single_joystick_changed" from="Code/Node/Single Joystick" to="Code/Move/SensorMoveKS4036" method="set_with_one_joystick"]

@@ -22,21 +22,21 @@ albedo_color = Color(0.91764706, 1, 0, 1)
 
 [node name="KS4036WithSensor" type="Node3D" unique_id=800150235]
 
-[node name="ModdingInjector" type="Node3D" parent="." unique_id=845613292]
+[node name="Modding" type="Node3D" parent="." unique_id=845613292]
 
-[node name="Modding What ?" type="Node" parent="ModdingInjector" unique_id=1477521942]
+[node name="Modding What ?" type="Node" parent="Modding" unique_id=1477521942]
 script = ExtResource("1_udg2a")
 developer_note = "A code in the app is going to create a Node with some script somewhere. We don’t care about that. All we want is to receive a node. Once we have the node, broadcast the information of the current KS4036 with variables, methods, and listeners for requests and signals, if they exist."
 metadata/_custom_type_script = "uid://d15m06gdhuelr"
 
-[node name="Code" type="Node" parent="ModdingInjector" unique_id=660542033]
+[node name="Code" type="Node" parent="Modding" unique_id=660542033]
 
-[node name="KS4036Input" type="Node" parent="ModdingInjector/Code" unique_id=1531621862]
+[node name="KS4036Input" type="Node" parent="Modding/Code" unique_id=1531621862]
 unique_name_in_owner = true
 script = ExtResource("2_5j0ru")
 metadata/_custom_type_script = "uid://dlwssyi8lwj3e"
 
-[node name="KS4036Read" type="Node" parent="ModdingInjector/Code" unique_id=1799250262 node_paths=PackedStringArray("center_wheels_direction_forward")]
+[node name="KS4036Read" type="Node" parent="Modding/Code" unique_id=1799250262 node_paths=PackedStringArray("center_wheels_direction_forward")]
 unique_name_in_owner = true
 script = ExtResource("3_hol4p")
 center_wheels_direction_forward = NodePath("../../../KS4036")
@@ -175,16 +175,15 @@ surface_material_override/0 = SubResource("StandardMaterial3D_2nbm2")
 [node name="MeshLedColorRight" parent="KS4036/Mesh/AnchorLedRightRoot/AnchorLedRightCenter" parent_id_path=PackedInt32Array(606764428, 373380337) index="0" unique_id=1064550869]
 surface_material_override/0 = SubResource("StandardMaterial3D_p1oyl")
 
-[connection signal="on_color_led_front_left_updated" from="ModdingInjector/Code/KS4036Input" to="LedLeftRGB/SensorViewLedRgbColor" method="set_rgb_with_color"]
-[connection signal="on_color_led_front_right_updated" from="ModdingInjector/Code/KS4036Input" to="LedRightRGB/SensorViewLedRgbColor" method="set_rgb_with_color"]
-[connection signal="on_human_debug_input_enable" from="ModdingInjector/Code/KS4036Input" to="KS4036/Code/Node/SensorInputMapForKS4036" method="set_as_using_input"]
-[connection signal="on_wheels_input_received" from="ModdingInjector/Code/KS4036Input" to="KS4036/Code/Move/SensorMoveKS4036" method="set_both_wheels_percent_power"]
-[connection signal="on_distance_updated" from="Utrasonic/UltraSonic/Code/SensorToolRaycastToDistance" to="ModdingInjector/Code/KS4036Read" method="notify_ultrasonic_distance_in_meter"]
-[connection signal="on_detecting_collision" from="LineLeft/UltraSonic/Code/SensorToolRaycastToDistance" to="ModdingInjector/Code/KS4036Read" method="notify_line_sensor_left_as"]
-[connection signal="on_colliding_point_updated" from="LineRight/UltraSonic/Code/SensorToolRaycastToDistance" to="ModdingInjector/Code/KS4036Read" method="notify_line_sensor_right_as"]
-[connection signal="on_light_intensity_updated" from="LightResistanceLeft/SensorLightResistorListener" to="ModdingInjector/Code/KS4036Read" method="notify_light_intensity_left"]
-[connection signal="on_light_intensity_updated" from="LightResistanceRight/SensorLightResistorListener" to="ModdingInjector/Code/KS4036Read" method="notify_light_intensity_right"]
-[connection signal="on_ir_integer_message_received" from="ReceiverIR/SensorIrReceiverSquare" to="ModdingInjector/Code/KS4036Read" method="notify_infrared_light_message_received"]
+[connection signal="on_color_led_front_left_updated" from="Modding/Code/KS4036Input" to="LedLeftRGB/SensorViewLedRgbColor" method="set_rgb_with_color"]
+[connection signal="on_color_led_front_right_updated" from="Modding/Code/KS4036Input" to="LedRightRGB/SensorViewLedRgbColor" method="set_rgb_with_color"]
+[connection signal="on_wheels_input_received" from="Modding/Code/KS4036Input" to="KS4036/Code/Move/SensorMoveKS4036" method="set_both_wheels_percent_power"]
+[connection signal="on_distance_updated" from="Utrasonic/UltraSonic/Code/SensorToolRaycastToDistance" to="Modding/Code/KS4036Read" method="notify_ultrasonic_distance_in_meter"]
+[connection signal="on_detecting_collision" from="LineLeft/UltraSonic/Code/SensorToolRaycastToDistance" to="Modding/Code/KS4036Read" method="notify_line_sensor_left_as"]
+[connection signal="on_colliding_point_updated" from="LineRight/UltraSonic/Code/SensorToolRaycastToDistance" to="Modding/Code/KS4036Read" method="notify_line_sensor_right_as"]
+[connection signal="on_light_intensity_updated" from="LightResistanceLeft/SensorLightResistorListener" to="Modding/Code/KS4036Read" method="notify_light_intensity_left"]
+[connection signal="on_light_intensity_updated" from="LightResistanceRight/SensorLightResistorListener" to="Modding/Code/KS4036Read" method="notify_light_intensity_right"]
+[connection signal="on_ir_integer_message_received" from="ReceiverIR/SensorIrReceiverSquare" to="Modding/Code/KS4036Read" method="notify_infrared_light_message_received"]
 [connection signal="on_color_updated" from="LedLeftRGB/SensorViewLedRgbColor" to="LedLeftRGB/SensorViewSetColorMeshInstance3D" method="set_color"]
 [connection signal="on_color_updated" from="LedRightRGB/SensorViewLedRgbColor" to="LedRightRGB/SensorViewSetColorMeshInstance3D" method="set_color"]
 
