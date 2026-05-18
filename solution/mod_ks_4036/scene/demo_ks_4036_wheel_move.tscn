@@ -160,11 +160,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.375061, -2.0963135)
 [node name="ConeDistancePoint" parent="IR Remote/InfraRedRemote/AnchorPointLight/ConeDirection" parent_id_path=PackedInt32Array(241128567, 811115527) index="1" unique_id=2068444822]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.5881882)
 
+[connection signal="on_joystick_input_received" from="KS4036WithSensor/Modding/Code/KS4036Input" to="KS4036WithSensor/KS4036/Code/Move/SensorMoveKS4036" method="set_with_one_joystick"]
+[connection signal="on_wheels_input_received" from="KS4036WithSensor/Modding/Code/KS4036Input" to="KS4036WithSensor/KS4036/Code/Move/SensorMoveKS4036" method="set_both_wheels_percent_power"]
+[connection signal="on_wheels_motors_input_received" from="KS4036WithSensor/Modding/Code/KS4036Input" to="KS4036WithSensor/KS4036/Code/Move/SensorMoveKS4036" method="set_with_four_buttons"]
+[connection signal="on_distance_updated" from="KS4036WithSensor/Utrasonic/UltraSonic/Code/SensorToolRaycastToDistance" to="KS4036WithSensor/Modding/Code/KS4036Read" method="notify_ultrasonic_distance_in_meter"]
 [connection signal="on_distance_updated" from="KS4036WithSensor/Utrasonic/UltraSonic/Code/SensorToolRaycastToDistance" to="CanvasLayer/HBox/Label/SensorParsePrimitiveToTextFormat" method="parse_float_to_text"]
 [connection signal="on_color_albedo_found" from="KS4036WithSensor/Utrasonic/UltraSonic/Code/Node To Mesh Color" to="CanvasLayer/HBox/ColorRect" method="set_color"]
 [connection signal="on_no_color_found" from="KS4036WithSensor/Utrasonic/UltraSonic/Code/Node To Mesh Color" to="CanvasLayer/HBox/ColorRect" method="set_color" binds= [Color(0, 0, 0, 0)]]
+[connection signal="on_detecting_collision" from="KS4036WithSensor/LineLeft/UltraSonic/Code/SensorToolRaycastToDistance" to="KS4036WithSensor/Modding/Code/KS4036Read" method="notify_line_sensor_left_as"]
 [connection signal="on_detecting_collision" from="KS4036WithSensor/LineLeft/UltraSonic/Code/SensorToolRaycastToDistance" to="CanvasLayer/HBox/CheckButton" method="set_pressed_no_signal"]
 [connection signal="on_color_albedo_found" from="KS4036WithSensor/LineLeft/UltraSonic/Code/Node To Mesh Color" to="CanvasLayer/HBox/ColorRect2" method="set_color"]
+[connection signal="on_colliding_point_updated" from="KS4036WithSensor/LineRight/UltraSonic/Code/SensorToolRaycastToDistance" to="KS4036WithSensor/Modding/Code/KS4036Read" method="notify_line_sensor_right_as"]
 [connection signal="on_detecting_collision" from="KS4036WithSensor/LineRight/UltraSonic/Code/SensorToolRaycastToDistance" to="CanvasLayer/HBox/CheckButton2" method="set_pressed_no_signal"]
 [connection signal="on_color_albedo_found" from="KS4036WithSensor/LineRight/UltraSonic/Code/Node To Mesh Color" to="CanvasLayer/HBox/ColorRect3" method="set_color"]
 [connection signal="on_light_intensity_updated" from="KS4036WithSensor/LightResistanceLeft/SensorLightResistorListener" to="CanvasLayer/HBox/Label Light Resistance/SensorParsePrimitiveToTextFormat" method="parse_float_to_text"]

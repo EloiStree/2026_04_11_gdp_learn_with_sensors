@@ -65,6 +65,12 @@ func notify_infrared_light_message_received(light_integer_command: int) -> void:
 func notify_center_wheels_direction_node(center_wheels_direction_forward_node: Node3D) -> void:
 	center_wheels_direction_forward = center_wheels_direction_forward_node
 
+func notify_color_line_sensor_left_as(color:Color):
+	self.line_sensor_left_color_detected = color
+
+func notify_color_line_sensor_right_as(color:Color):
+	self.line_sensor_right_color_detected = color
+
 
 func is_left_line_on() -> bool:
 	return line_sensor_left_found_line
@@ -89,7 +95,6 @@ func get_color_line_right() -> Color:
 
 func is_power_on() -> bool:
 	return is_power_switch_on
-
 
 
 func get_global_position() -> Vector3:

@@ -15,7 +15,6 @@ signal on_color_led_front_left_updated(color: Color)
 signal on_color_led_front_right_updated(color: Color)
 signal on_color_led_under_car_updated(color_front_left: Color, color_front_right: Color, color_back_left: Color, color_back_right: Color)
 
-signal on_human_debug_input_enable(enable_input: bool)
 
 func _ready() -> void:
 	instance_in_scene = self
@@ -27,12 +26,6 @@ func clamp_percent(percent: float) -> float:
 	return clamp(percent, -1.0, 1.0)
 
 
-
-func set_human_input_enabled(is_enabled: bool) -> void:
-	on_human_debug_input_enable.emit(is_enabled)
-
-func disable_human_input():
-	set_human_input_enabled(false)
 
 #region Joystick Input
 @export_group("Joystick Input")
