@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://c01d0uud6l74e"]
 
 [ext_resource type="Script" uid="uid://d15m06gdhuelr" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_developer_note.gd" id="1_udg2a"]
+[ext_resource type="Script" uid="uid://dlwssyi8lwj3e" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/script/sensor_ks_4036_input_relay.gd" id="2_5j0ru"]
 [ext_resource type="Script" uid="uid://dpoqw05ekkmr8" path="res://addons/2026_04_11_gdp_learn_with_sensors/global_script/sensor_tool_quick_follow_it.gd" id="2_b30y5"]
 [ext_resource type="PackedScene" uid="uid://3dj30wc08s0n" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/laser_module/scene/laser_module.tscn" id="3_5j0ru"]
+[ext_resource type="Script" uid="uid://e0edhsg3vfuu" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/script/sensor_ks_4036_read_sensors.gd" id="3_hol4p"]
 [ext_resource type="PackedScene" uid="uid://52xhpyq5s6ll" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ultra_sonic/scene/ultra_sonic.tscn" id="4_hol4p"]
 [ext_resource type="ArrayMesh" uid="uid://x6n7olq1b3xp" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/light_resistor/3d/light_resistor.obj" id="5_dqfrs"]
 [ext_resource type="Material" uid="uid://6s5dom5qf5bv" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/light_resistor/3d/mat_light_resistor.tres" id="6_2f3qf"]
@@ -26,6 +28,19 @@ albedo_color = Color(0.91764706, 1, 0, 1)
 script = ExtResource("1_udg2a")
 developer_note = "A code in the app is going to create a Node with some script somewhere. We don’t care about that. All we want is to receive a node. Once we have the node, broadcast the information of the current KS4036 with variables, methods, and listeners for requests and signals, if they exist."
 metadata/_custom_type_script = "uid://d15m06gdhuelr"
+
+[node name="Code" type="Node" parent="ModdingInjector" unique_id=660542033]
+
+[node name="KS4036Input" type="Node" parent="ModdingInjector/Code" unique_id=1531621862]
+unique_name_in_owner = true
+script = ExtResource("2_5j0ru")
+metadata/_custom_type_script = "uid://dlwssyi8lwj3e"
+
+[node name="KS4036Read" type="Node" parent="ModdingInjector/Code" unique_id=1799250262 node_paths=PackedStringArray("center_wheels_direction_forward")]
+unique_name_in_owner = true
+script = ExtResource("3_hol4p")
+center_wheels_direction_forward = NodePath("../../../KS4036")
+metadata/_custom_type_script = "uid://e0edhsg3vfuu"
 
 [node name="Laser" type="Node3D" parent="." unique_id=690667505 node_paths=PackedStringArray("what_to_move", "what_to_follow")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.02331543, -0.055999756)
@@ -160,6 +175,16 @@ surface_material_override/0 = SubResource("StandardMaterial3D_2nbm2")
 [node name="MeshLedColorRight" parent="KS4036/Mesh/AnchorLedRightRoot/AnchorLedRightCenter" parent_id_path=PackedInt32Array(606764428, 373380337) index="0" unique_id=1064550869]
 surface_material_override/0 = SubResource("StandardMaterial3D_p1oyl")
 
+[connection signal="on_color_led_front_left_updated" from="ModdingInjector/Code/KS4036Input" to="LedLeftRGB/SensorViewLedRgbColor" method="set_rgb_with_color"]
+[connection signal="on_color_led_front_right_updated" from="ModdingInjector/Code/KS4036Input" to="LedRightRGB/SensorViewLedRgbColor" method="set_rgb_with_color"]
+[connection signal="on_human_debug_input_enable" from="ModdingInjector/Code/KS4036Input" to="KS4036/Code/Node/SensorInputMapForKS4036" method="set_as_using_input"]
+[connection signal="on_wheels_input_received" from="ModdingInjector/Code/KS4036Input" to="KS4036/Code/Move/SensorMoveKS4036" method="set_both_wheels_percent_power"]
+[connection signal="on_distance_updated" from="Utrasonic/UltraSonic/Code/SensorToolRaycastToDistance" to="ModdingInjector/Code/KS4036Read" method="notify_ultrasonic_distance_in_meter"]
+[connection signal="on_detecting_collision" from="LineLeft/UltraSonic/Code/SensorToolRaycastToDistance" to="ModdingInjector/Code/KS4036Read" method="notify_line_sensor_left_as"]
+[connection signal="on_colliding_point_updated" from="LineRight/UltraSonic/Code/SensorToolRaycastToDistance" to="ModdingInjector/Code/KS4036Read" method="notify_line_sensor_right_as"]
+[connection signal="on_light_intensity_updated" from="LightResistanceLeft/SensorLightResistorListener" to="ModdingInjector/Code/KS4036Read" method="notify_light_intensity_left"]
+[connection signal="on_light_intensity_updated" from="LightResistanceRight/SensorLightResistorListener" to="ModdingInjector/Code/KS4036Read" method="notify_light_intensity_right"]
+[connection signal="on_ir_integer_message_received" from="ReceiverIR/SensorIrReceiverSquare" to="ModdingInjector/Code/KS4036Read" method="notify_infrared_light_message_received"]
 [connection signal="on_color_updated" from="LedLeftRGB/SensorViewLedRgbColor" to="LedLeftRGB/SensorViewSetColorMeshInstance3D" method="set_color"]
 [connection signal="on_color_updated" from="LedRightRGB/SensorViewLedRgbColor" to="LedRightRGB/SensorViewSetColorMeshInstance3D" method="set_color"]
 
