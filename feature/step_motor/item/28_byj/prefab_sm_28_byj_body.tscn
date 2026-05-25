@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://drbtxia3cj2ct"]
+
+[ext_resource type="ArrayMesh" uid="uid://dwhigwx8ksg1h" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/step_motor/item/28_byj/sm_28byj_body.obj" id="1_cepe1"]
+[ext_resource type="ArrayMesh" uid="uid://bec45vgd0i3p5" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/step_motor/item/28_byj/sm_28byj_bit.obj" id="2_86523"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yvacg"]
+albedo_color = Color(0.7325953, 0.72244686, 0.718086, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ov3kb"]
+albedo_color = Color(0.64488083, 0.5298125, 0.0917161, 1)
+
+[node name="prefab_sm_28byj_body" type="Node3D" unique_id=1665543974]
+
+[node name="body" type="MeshInstance3D" parent="." unique_id=998244293]
+mesh = ExtResource("1_cepe1")
+surface_material_override/0 = SubResource("StandardMaterial3D_yvacg")
+
+[node name="Anchor" type="Node3D" parent="." unique_id=897894619]
+
+[node name="head" type="MeshInstance3D" parent="Anchor" unique_id=620706957]
+mesh = ExtResource("2_86523")
+surface_material_override/0 = SubResource("StandardMaterial3D_ov3kb")

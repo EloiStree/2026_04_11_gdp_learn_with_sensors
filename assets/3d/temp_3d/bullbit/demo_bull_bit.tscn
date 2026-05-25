@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://duewpi0t5wq1d"]
 
-[ext_resource type="PackedScene" uid="uid://dcjowb4hjs71i" path="res://addons/2026_04_11_gdp_learn_with_sensors/assets/3d/temp_3d/bullbit/laser_cut_bull_bit.glb" id="1_gmpny"]
+[ext_resource type="PackedScene" uid="uid://dcjowb4hjs71i" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/laser_module/laser_cut_bull_bit.glb" id="1_gmpny"]
 [ext_resource type="Script" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/script/sensor_view_servo_motor_angle_clamp.gd" id="2_grby2"]
 [ext_resource type="Material" uid="uid://bo5cl11nvyoa5" path="res://addons/2026_04_11_gdp_learn_with_sensors/assets/3d/temp_3d/bullbit/mat_bull_bit_main_color.tres" id="2_nde6h"]
 [ext_resource type="Material" uid="uid://c8wxs6eluht8m" path="res://addons/2026_04_11_gdp_learn_with_sensors/assets/3d/temp_3d/bullbit/mat_bull_bit_wheel_color.tres" id="3_grby2"]

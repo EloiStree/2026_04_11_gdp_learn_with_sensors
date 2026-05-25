@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://c1n3ruc3oyqmy"]
+
+[ext_resource type="ArrayMesh" uid="uid://6w67a40bfujw" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/mini_motor/3d/gear_holder_with_space/mini_motor_gear_show.obj" id="1_agrew"]
+[ext_resource type="Material" uid="uid://genfpuvkr1av" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/mini_motor/material/mat_mini_motor_body_space.tres" id="2_4q0rb"]
+[ext_resource type="ArrayMesh" uid="uid://b4t1l1vkw6pce" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/mini_motor/3d/gear_holder_hide/mini_motor_gear_hide.obj" id="3_vtwqv"]
+[ext_resource type="Material" uid="uid://b5wi24qrh22s0" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/mini_motor/material/mat_mini_motor_body_hide.tres" id="4_41t2m"]
+[ext_resource type="ArrayMesh" uid="uid://cgdvht26n4oxp" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/mini_motor/3d/mini_motor/mini_motor.obj" id="5_aql2h"]
+[ext_resource type="Material" uid="uid://idtl4j4skiy" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/mini_motor/material/mat_mini_motor_body.tres" id="6_m02dd"]
+
+[node name="prefab_mini_motor" type="Node3D" unique_id=1725645563]
+
+[node name="holder_space" type="MeshInstance3D" parent="." unique_id=1446371899]
+mesh = ExtResource("1_agrew")
+surface_material_override/0 = ExtResource("2_4q0rb")
+
+[node name="holder_hide" type="MeshInstance3D" parent="." unique_id=1183756203]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0002746582)
+mesh = ExtResource("3_vtwqv")
+surface_material_override/0 = ExtResource("4_41t2m")
+
+[node name="mini_motor_body" type="MeshInstance3D" parent="." unique_id=2122612711]
+mesh = ExtResource("5_aql2h")
+surface_material_override/0 = ExtResource("6_m02dd")

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://la4if14u182s"]
+
+[ext_resource type="ArrayMesh" uid="uid://k4a3fyw1plk5" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/laser_module/3d/laser_module.obj" id="1_658hu"]
+[ext_resource type="Texture2D" uid="uid://dspy8i03wo12x" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/laser_module/3d/laser_module_uv_color.png" id="2_yha7y"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d6c38"]
+albedo_texture = ExtResource("2_yha7y")
+
+[node name="prefab_laser_module" type="Node3D" unique_id=1016990913]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=493549837]
+mesh = ExtResource("1_658hu")
+surface_material_override/0 = SubResource("StandardMaterial3D_d6c38")

@@ -1,6 +1,0 @@
-[gd_resource type="StandardMaterial3D" format=3 uid="uid://o37jnmpoqecj"]
-
-[ext_resource type="Texture2D" uid="uid://cb5epwur2lcvm" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/remote_controller_ir_uv_texture.png" id="1_7vq51"]
-
-[resource]
-albedo_texture = ExtResource("1_7vq51")

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://b6gdkxk1rly3"]
+
+[ext_resource type="ArrayMesh" uid="uid://bru3547v4chfu" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/sender/remote_controller_ir.obj" id="1_c7oqk"]
+[ext_resource type="Texture2D" uid="uid://cb5epwur2lcvm" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/sender/remote_controller_ir_uv_texture.png" id="2_cr0i7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kt3ji"]
+albedo_texture = ExtResource("2_cr0i7")
+
+[node name="prefab_remote_controller_ir" type="Node3D" unique_id=2021376822]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=923367028]
+mesh = ExtResource("1_c7oqk")
+surface_material_override/0 = SubResource("StandardMaterial3D_kt3ji")

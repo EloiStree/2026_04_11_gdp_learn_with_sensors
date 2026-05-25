@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://o4lbnmsom8lw" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/glb_sg_90.glb" id="1_jpimc"]
 [ext_resource type="PackedScene" uid="uid://b54q1w5gavxgl" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/glb_sg_90_blade_big_1.glb" id="2_deckh"]
-[ext_resource type="PackedScene" uid="uid://dy0c268rk2ct6" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/glb_sg_90_blade_big_2.glb" id="3_1g5hd"]
-[ext_resource type="PackedScene" uid="uid://c03j8hid37n1j" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/glb_sg_90_blade_big_cross_4.glb" id="4_qvj2i"]
-[ext_resource type="PackedScene" uid="uid://tst5mx57o674" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/glb_sg_90_blade_mix_cross_4.glb" id="5_gnduc"]
-[ext_resource type="PackedScene" uid="uid://dyhvt2rnx2sgg" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/glb_sg_90_blade_small_4.glb" id="6_h1jxf"]
+[ext_resource type="PackedScene" uid="uid://dy0c268rk2ct6" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/to_unwarp/glb_sg_90_blade_big_2.glb" id="3_1g5hd"]
+[ext_resource type="PackedScene" uid="uid://c03j8hid37n1j" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/to_unwarp/glb_sg_90_blade_big_cross_4.glb" id="4_qvj2i"]
+[ext_resource type="PackedScene" uid="uid://tst5mx57o674" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/to_unwarp/glb_sg_90_blade_mix_cross_4.glb" id="5_gnduc"]
+[ext_resource type="PackedScene" uid="uid://dyhvt2rnx2sgg" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/to_unwarp/glb_sg_90_blade_small_4.glb" id="6_h1jxf"]
 
 [node name="Demo" type="Node3D" unique_id=787737167]
 

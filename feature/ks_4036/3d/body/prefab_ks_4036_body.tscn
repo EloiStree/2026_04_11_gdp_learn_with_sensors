@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dgp2vfdgoxom5"]
+
+[ext_resource type="ArrayMesh" uid="uid://dcp3drqm6juuu" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/top/ks_4036_top_platform.obj" id="1_tyea6"]
+[ext_resource type="Material" uid="uid://b8dso1a17k6o5" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/top/mat_ks_4036_platform.tres" id="2_t2lpr"]
+[ext_resource type="ArrayMesh" uid="uid://dfwvieaagj7g0" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/body/ks_4036_body.obj" id="3_dra0u"]
+[ext_resource type="Material" uid="uid://cn4in8seqgn5l" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/body/mat_ks_4036_body.tres" id="4_geqgo"]
+
+[node name="prefab_ks_4036_body" type="Node3D" unique_id=1023931010]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1887446149]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.020812988, 0)
+mesh = ExtResource("1_tyea6")
+surface_material_override/0 = ExtResource("2_t2lpr")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="." unique_id=333714916]
+mesh = ExtResource("3_dra0u")
+surface_material_override/0 = ExtResource("4_geqgo")

@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://qelgkvf77wve"]
+
+[ext_resource type="ArrayMesh" uid="uid://dksxo03gy11od" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/receiver/infra_red_receiver.obj" id="1_p2ugy"]
+[ext_resource type="Texture2D" uid="uid://oxthawugajqu" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/receiver/infra_red_receiver_uv_color.png" id="2_8vfg1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ia67o"]
+albedo_texture = ExtResource("2_8vfg1")
+
+[node name="prefab_infra_red_receiver" type="Node3D" unique_id=1686501180]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1168783347]
+mesh = ExtResource("1_p2ugy")
+surface_material_override/0 = SubResource("StandardMaterial3D_ia67o")

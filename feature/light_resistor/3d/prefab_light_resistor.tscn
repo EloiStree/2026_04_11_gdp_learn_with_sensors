@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://chrhf563e4mfj"]
+
+[ext_resource type="ArrayMesh" uid="uid://x6n7olq1b3xp" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/light_resistor/3d/light_resistor.obj" id="1_6qoqm"]
+[ext_resource type="Texture2D" uid="uid://dq17hwwq57mpr" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/light_resistor/3d/light_resistor_uv_color.png" id="2_kym62"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y8l8p"]
+albedo_texture = ExtResource("2_kym62")
+
+[node name="prefab_light_resistor" type="Node3D" unique_id=50449268]
+transform = Transform3D(7.42, 0, 0, 0, 7.42, 0, 0, 0, 7.42, 0, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=264591348]
+mesh = ExtResource("1_6qoqm")
+surface_material_override/0 = SubResource("StandardMaterial3D_y8l8p")

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://v73ubojgokbb"]
+
+[ext_resource type="ArrayMesh" uid="uid://cle2gnxktb1fd" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/led/ks_4036_front_led.obj" id="1_o3la1"]
+[ext_resource type="Material" uid="uid://cy31mj56bsndy" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/led/mat_ks_4036_front_led.tres" id="2_vg51b"]
+
+[node name="prefab_ks_4036_front_led" type="Node3D" unique_id=1490844903]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=2034923983]
+mesh = ExtResource("1_o3la1")
+surface_material_override/0 = ExtResource("2_vg51b")

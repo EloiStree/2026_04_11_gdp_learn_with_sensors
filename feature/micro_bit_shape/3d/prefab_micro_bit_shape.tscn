@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cclqbwoxe4inb"]
+
+[ext_resource type="ArrayMesh" uid="uid://b8j266buh42i5" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/micro_bit_shape/3d/micro_bit_shape.obj" id="1_5gjyg"]
+[ext_resource type="Texture2D" uid="uid://dlpd8kadbxqu" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/micro_bit_shape/3d/micro_bit_shape_uv_textured.png" id="2_ipls5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8f5ua"]
+albedo_texture = ExtResource("2_ipls5")
+
+[node name="prefab_micro_bit_shape" type="Node3D" unique_id=1163567455]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=391927650]
+mesh = ExtResource("1_5gjyg")
+surface_material_override/0 = SubResource("StandardMaterial3D_8f5ua")

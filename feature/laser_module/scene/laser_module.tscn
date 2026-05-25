@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://3dj30wc08s0n"]
 
+[ext_resource type="PackedScene" uid="uid://la4if14u182s" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/laser_module/3d/prefab_laser_module.tscn" id="1_dcfgc"]
 [ext_resource type="Script" uid="uid://b8j6q6ckcskdo" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/laser_module/script/sensor_view_laser_3d.gd" id="1_jnaao"]
 [ext_resource type="Material" uid="uid://cnwe1ugu2k7yu" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/laser_module/mat_sensor_red_laser_default.tres" id="2_dcfgc"]
 
@@ -10,6 +11,8 @@
 [sub_resource type="SphereMesh" id="SphereMesh_yyw4y"]
 
 [node name="LaserModule" type="Node3D" unique_id=898768969]
+
+[node name="prefab_laser_module" parent="." unique_id=1016990913 instance=ExtResource("1_dcfgc")]
 
 [node name="Code" type="Node" parent="." unique_id=1265951628]
 
@@ -45,14 +48,14 @@ mesh = SubResource("CylinderMesh_h8kor")
 surface_material_override/0 = ExtResource("2_dcfgc")
 
 [node name="SpherePointEnd" type="Node3D" parent="." unique_id=1350055696]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0.9108887, 0)
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, -0.00079345703, -0.040283203)
 
 [node name="MeshInstanceSphere" type="MeshInstance3D" parent="SpherePointEnd" unique_id=2050903215]
 mesh = SubResource("SphereMesh_yyw4y")
 surface_material_override/0 = ExtResource("2_dcfgc")
 
 [node name="SpherePointStart" type="Node3D" parent="." unique_id=1267807805]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0.9108887, 0)
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0.00018310547, 0.04425049)
 
 [node name="MeshInstanceSphere" type="MeshInstance3D" parent="SpherePointStart" unique_id=302347855]
 mesh = SubResource("SphereMesh_yyw4y")

@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://bhntv5148n7tp"]
 
-[ext_resource type="ArrayMesh" uid="uid://bru3547v4chfu" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/remote_controller_ir.obj" id="1_7llxf"]
+[ext_resource type="ArrayMesh" uid="uid://bru3547v4chfu" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/sender/remote_controller_ir.obj" id="1_7llxf"]
 [ext_resource type="Script" uid="uid://cce3dvjbebln4" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/script/sensor_ir_sender.gd" id="1_j6s3k"]
 [ext_resource type="Script" uid="uid://crouqdqdltk2t" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/script/sensor_ir_sender_cone.gd" id="1_uirap"]
-[ext_resource type="Material" uid="uid://o37jnmpoqecj" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/mat_remote_controlelr_ir.tres" id="2_uirap"]
+[ext_resource type="Material" uid="uid://o37jnmpoqecj" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/sender/mat_remote_controlelr_ir.tres" id="2_uirap"]
 
 [node name="InfraRedRemote" type="Node3D" unique_id=241128567]
 
