@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://cb5epwur2lcvm"
 path.s3tc="res://.godot/imported/remote_controller_ir_uv_texture.png-ebbc2e531134d73c32d16bd7ef26fc26.s3tc.ctex"
-path.etc2="res://.godot/imported/remote_controller_ir_uv_texture.png-ebbc2e531134d73c32d16bd7ef26fc26.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ir_send_receiver/3d/sender/remote_controller_ir_uv_texture.png"
-dest_files=["res://.godot/imported/remote_controller_ir_uv_texture.png-ebbc2e531134d73c32d16bd7ef26fc26.s3tc.ctex", "res://.godot/imported/remote_controller_ir_uv_texture.png-ebbc2e531134d73c32d16bd7ef26fc26.etc2.ctex"]
+dest_files=["res://.godot/imported/remote_controller_ir_uv_texture.png-ebbc2e531134d73c32d16bd7ef26fc26.s3tc.ctex"]
 
 [params]
 

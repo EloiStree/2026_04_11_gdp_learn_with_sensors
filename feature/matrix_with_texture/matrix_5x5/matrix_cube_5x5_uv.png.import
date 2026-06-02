@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dp4u53a2307vb"
 path.s3tc="res://.godot/imported/matrix_cube_5x5_uv.png-c11dbb4cf7e4ae00eecdcf61b6f9e033.s3tc.ctex"
-path.etc2="res://.godot/imported/matrix_cube_5x5_uv.png-c11dbb4cf7e4ae00eecdcf61b6f9e033.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/matrix_with_texture/matrix_5x5/matrix_cube_5x5_uv.png"
-dest_files=["res://.godot/imported/matrix_cube_5x5_uv.png-c11dbb4cf7e4ae00eecdcf61b6f9e033.s3tc.ctex", "res://.godot/imported/matrix_cube_5x5_uv.png-c11dbb4cf7e4ae00eecdcf61b6f9e033.etc2.ctex"]
+dest_files=["res://.godot/imported/matrix_cube_5x5_uv.png-c11dbb4cf7e4ae00eecdcf61b6f9e033.s3tc.ctex"]
 
 [params]
 

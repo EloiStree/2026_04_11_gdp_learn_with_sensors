@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dffwwbvjl2p8i"
 path.s3tc="res://.godot/imported/glb_sg_90_uv_color.png-5ad52a94effe143e2d062fd335466bc9.s3tc.ctex"
-path.etc2="res://.godot/imported/glb_sg_90_uv_color.png-5ad52a94effe143e2d062fd335466bc9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/servo_motor/servo_motor_clamp/item/sg90/glb/glb_sg_90_uv_color.png"
-dest_files=["res://.godot/imported/glb_sg_90_uv_color.png-5ad52a94effe143e2d062fd335466bc9.s3tc.ctex", "res://.godot/imported/glb_sg_90_uv_color.png-5ad52a94effe143e2d062fd335466bc9.etc2.ctex"]
+dest_files=["res://.godot/imported/glb_sg_90_uv_color.png-5ad52a94effe143e2d062fd335466bc9.s3tc.ctex"]
 
 [params]
 

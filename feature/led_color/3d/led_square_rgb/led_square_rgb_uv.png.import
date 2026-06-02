@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://xlx7vc6rofjb"
 path.s3tc="res://.godot/imported/led_square_rgb_uv.png-9aa549073219b852cf2b580d96fc5ff9.s3tc.ctex"
-path.etc2="res://.godot/imported/led_square_rgb_uv.png-9aa549073219b852cf2b580d96fc5ff9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/led_color/3d/led_square_rgb/led_square_rgb_uv.png"
-dest_files=["res://.godot/imported/led_square_rgb_uv.png-9aa549073219b852cf2b580d96fc5ff9.s3tc.ctex", "res://.godot/imported/led_square_rgb_uv.png-9aa549073219b852cf2b580d96fc5ff9.etc2.ctex"]
+dest_files=["res://.godot/imported/led_square_rgb_uv.png-9aa549073219b852cf2b580d96fc5ff9.s3tc.ctex"]
 
 [params]
 

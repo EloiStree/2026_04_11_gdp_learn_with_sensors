@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnyeehdlkxao"
 path.s3tc="res://.godot/imported/sm_28byj_bit_uv.png-81b1f1dd9104127d66306c0f52e20a14.s3tc.ctex"
-path.etc2="res://.godot/imported/sm_28byj_bit_uv.png-81b1f1dd9104127d66306c0f52e20a14.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/step_motor/item/28_byj/sm_28byj_bit_uv.png"
-dest_files=["res://.godot/imported/sm_28byj_bit_uv.png-81b1f1dd9104127d66306c0f52e20a14.s3tc.ctex", "res://.godot/imported/sm_28byj_bit_uv.png-81b1f1dd9104127d66306c0f52e20a14.etc2.ctex"]
+dest_files=["res://.godot/imported/sm_28byj_bit_uv.png-81b1f1dd9104127d66306c0f52e20a14.s3tc.ctex"]
 
 [params]
 

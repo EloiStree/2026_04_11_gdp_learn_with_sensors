@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://d7nlflcl8l13"
 path.s3tc="res://.godot/imported/ks_4036_wheel_uv_color.png-f4954d4d09e031ba73305733976c4415.s3tc.ctex"
-path.etc2="res://.godot/imported/ks_4036_wheel_uv_color.png-f4954d4d09e031ba73305733976c4415.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/wheel/ks_4036_wheel_uv_color.png"
-dest_files=["res://.godot/imported/ks_4036_wheel_uv_color.png-f4954d4d09e031ba73305733976c4415.s3tc.ctex", "res://.godot/imported/ks_4036_wheel_uv_color.png-f4954d4d09e031ba73305733976c4415.etc2.ctex"]
+dest_files=["res://.godot/imported/ks_4036_wheel_uv_color.png-f4954d4d09e031ba73305733976c4415.s3tc.ctex"]
 
 [params]
 

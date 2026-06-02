@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dbi14ogjpg53f"
 path.s3tc="res://.godot/imported/laser_module_uv.png-e27a42a31448e97c53408d0bdcd99df7.s3tc.ctex"
-path.etc2="res://.godot/imported/laser_module_uv.png-e27a42a31448e97c53408d0bdcd99df7.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/laser_module/3d/laser_module_uv.png"
-dest_files=["res://.godot/imported/laser_module_uv.png-e27a42a31448e97c53408d0bdcd99df7.s3tc.ctex", "res://.godot/imported/laser_module_uv.png-e27a42a31448e97c53408d0bdcd99df7.etc2.ctex"]
+dest_files=["res://.godot/imported/laser_module_uv.png-e27a42a31448e97c53408d0bdcd99df7.s3tc.ctex"]
 
 [params]
 

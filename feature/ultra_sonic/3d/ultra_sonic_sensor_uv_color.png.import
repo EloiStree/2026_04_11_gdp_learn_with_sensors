@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://kuryf44fq8x1"
 path.s3tc="res://.godot/imported/ultra_sonic_sensor_uv_color.png-20a0d86edae98098bd6a23c7f11de050.s3tc.ctex"
-path.etc2="res://.godot/imported/ultra_sonic_sensor_uv_color.png-20a0d86edae98098bd6a23c7f11de050.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ultra_sonic/3d/ultra_sonic_sensor_uv_color.png"
-dest_files=["res://.godot/imported/ultra_sonic_sensor_uv_color.png-20a0d86edae98098bd6a23c7f11de050.s3tc.ctex", "res://.godot/imported/ultra_sonic_sensor_uv_color.png-20a0d86edae98098bd6a23c7f11de050.etc2.ctex"]
+dest_files=["res://.godot/imported/ultra_sonic_sensor_uv_color.png-20a0d86edae98098bd6a23c7f11de050.s3tc.ctex"]
 
 [params]
 

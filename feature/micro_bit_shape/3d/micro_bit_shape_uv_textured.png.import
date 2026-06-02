@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlpd8kadbxqu"
 path.s3tc="res://.godot/imported/micro_bit_shape_uv_textured.png-8e0e626465667c51528309a07716c06e.s3tc.ctex"
-path.etc2="res://.godot/imported/micro_bit_shape_uv_textured.png-8e0e626465667c51528309a07716c06e.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/micro_bit_shape/3d/micro_bit_shape_uv_textured.png"
-dest_files=["res://.godot/imported/micro_bit_shape_uv_textured.png-8e0e626465667c51528309a07716c06e.s3tc.ctex", "res://.godot/imported/micro_bit_shape_uv_textured.png-8e0e626465667c51528309a07716c06e.etc2.ctex"]
+dest_files=["res://.godot/imported/micro_bit_shape_uv_textured.png-8e0e626465667c51528309a07716c06e.s3tc.ctex"]
 
 [params]
 

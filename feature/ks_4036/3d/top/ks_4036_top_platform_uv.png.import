@@ -4,16 +4,15 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://wp8comeimmwl"
 path.s3tc="res://.godot/imported/ks_4036_top_platform_uv.png-82d8f0235aac04955ac3538394d7b46a.s3tc.ctex"
-path.etc2="res://.godot/imported/ks_4036_top_platform_uv.png-82d8f0235aac04955ac3538394d7b46a.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/top/ks_4036_top_platform_uv.png"
-dest_files=["res://.godot/imported/ks_4036_top_platform_uv.png-82d8f0235aac04955ac3538394d7b46a.s3tc.ctex", "res://.godot/imported/ks_4036_top_platform_uv.png-82d8f0235aac04955ac3538394d7b46a.etc2.ctex"]
+dest_files=["res://.godot/imported/ks_4036_top_platform_uv.png-82d8f0235aac04955ac3538394d7b46a.s3tc.ctex"]
 
 [params]
 
