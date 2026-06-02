@@ -13,6 +13,8 @@
 [node name="LaserModule" type="Node3D" unique_id=898768969]
 
 [node name="prefab_laser_module" parent="." unique_id=1016990913 instance=ExtResource("1_dcfgc")]
+transform = Transform3D(-1, 0, 1.509958e-07, 0, 1, 0, -1.509958e-07, 0, -1, 0, 0, 0)
+visible = false
 
 [node name="Code" type="Node" parent="." unique_id=1265951628]
 
@@ -32,7 +34,6 @@ metadata/_custom_type_script = "uid://b8j6q6ckcskdo"
 [node name="RayCast3D" type="RayCast3D" parent="." unique_id=1419889535]
 target_position = Vector3(0, 0, -20)
 debug_shape_custom_color = Color(0.676088, 0, 0.102993585, 1)
-debug_shape_thickness = 1
 
 [node name="CylinderRay" type="Node3D" parent="." unique_id=1439296865]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
