@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cyyfk7rmhvtv0"]
+
+[ext_resource type="ArrayMesh" uid="uid://dq7bervqdp1fy" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/line_tracker_module/3d/solo_line_tracker_car_rc.obj" id="1_3dbyy"]
+[ext_resource type="Texture2D" uid="uid://duhsino5e0ixk" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/line_tracker_module/3d/solo_line_tracker_car_rc_color.png" id="2_ffclp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yreiw"]
+albedo_texture = ExtResource("2_ffclp")
+
+[node name="SoloLineTracker" type="MeshInstance3D" unique_id=244211926]
+mesh = ExtResource("1_3dbyy")
+surface_material_override/0 = SubResource("StandardMaterial3D_yreiw")
+
+[node name="Node3DEmitLight" type="Node3D" parent="." unique_id=1707700276]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0025154995)
+
+[node name="Node3DReceiveLight" type="Node3D" parent="." unique_id=1793735637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.0025917236)

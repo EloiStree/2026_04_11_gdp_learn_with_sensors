@@ -8,6 +8,7 @@ extends Node
 
 
 static var instance_in_scene: SensorKs4036ReadSensors = null
+
 static func get_instance():
 	return instance_in_scene
 

@@ -15,7 +15,3 @@ func _process(delta: float) -> void:
 		what_to_move.global_position = what_to_follow.global_position
 	if use_rotation:
 		what_to_move.global_rotation = what_to_follow.global_rotation
-
-
-
-
