@@ -287,3 +287,10 @@ func set_motors_off() -> void:
 	set_left_wheel_percent_power(0.0)
 	set_right_wheel_percent_power(0.0)
 	
+
+func get_motor_left_value_as_percent11():
+	return _left_wheel_percent_power
+
+func get_motor_righ_valuet_as_percent11():
+	return _right_wheel_percent_power
+	

@@ -29,19 +29,19 @@ extends Node
 func _process(delta: float) -> void:
 	in_out_facade._black_line_tracker_left = black_line_tracker_left_right.is_left_black(0.1)
 	in_out_facade._black_line_tracker_right = black_line_tracker_left_right.is_right_black(0.1)
-	in_out_facade._left_light_resistance_percent_01 = light_resistance_left._light_resistance_percent_01
-	in_out_facade._right_light_resistance_percent_01 = light_resistance_right._light_resistance_percent_01
-	in_out_facade._led_color_left_rgb = led_left._led_color_rgb
-	in_out_facade._led_color_right_rgb = led_right._led_color_rgb
-	in_out_facade._front_distance_in_meter = ultrasonic_sensor_front._distance_in_meter
-	in_out_facade._motor_left_percent_11 = motor_left_and_right._motor_left_percent_11
-	in_out_facade._motor_right_percent_11 = motor_left_and_right._motor_right_percent_11
-	in_out_facade._world_position_between_wheels = motor_left_and_right._world_position_between_wheels
-	in_out_facade._world_rotation_between_wheels = motor_left_and_right._world_rotation_between_wheels
-	in_out_facade._wheel_left_rotation_forward_0_360 = motor_left_and_right._wheel_left_rotation_forward_0_360
-	in_out_facade._wheel_right_rotation_forward_0_360 = motor_left_and_right._wheel_right_rotation_forward_0_360
-	in_out_facade._display_ssd1306_128x64 = motor_left_and_right._display_ssd1306_128x64
-	refresh_local_transforms()
+	in_out_facade._left_light_resistance_percent_01 = light_resistance_left.get_light_as_percent()
+	in_out_facade._right_light_resistance_percent_01 = light_resistance_right.get_light_as_percent()
+	in_out_facade._led_color_left_rgb = led_left.get_color_given()
+	in_out_facade._led_color_right_rgb = led_right.get_color_given()
+	in_out_facade._front_distance_in_meter = ultrasonic_sensor_front.get_distance_in_meter()
+	#in_out_facade._motor_left_percent_11 = motor_left_and_right.get_motor_state_as_percent_11()
+	#in_out_facade._motor_right_percent_11 = motor_left_and_right.get_motor_state_as_percent_11()
+	#in_out_facade._world_position_between_wheels = motor_left_and_right._world_position_between_wheels
+	#in_out_facade._world_rotation_between_wheels = motor_left_and_right._world_rotation_between_wheels
+	#in_out_facade._wheel_left_rotation_forward_0_360 = motor_left_and_right._wheel_left_rotation_forward_0_360
+	#in_out_facade._wheel_right_rotation_forward_0_360 = motor_left_and_right._wheel_right_rotation_forward_0_360
+	#in_out_facade._display_ssd1306_128x64 = motor_left_and_right._display_ssd1306_128x64
+	#refresh_local_transforms()
 
 
 func refresh_local_transforms() -> void:

@@ -21,6 +21,8 @@ signal on_node_hit_changed(node: Node)
 @export var hit_point_distance: float = 0.0
 @export var hit_node: Node = null
 
+func get_distance_in_meter():
+	return hit_point_distance
 
 func _process(delta: float) -> void:
 	if not ray_cast_to_use:

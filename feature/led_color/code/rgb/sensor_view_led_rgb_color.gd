@@ -122,7 +122,13 @@ func get_ff_value_in_decimal(hexa_color_string:String)->int:
 	var second_digit = get_f_value_in_decimal(hexa_color_string[1])
 	return first_digit*16 + second_digit
 
+func get_color_given():
+	return current_color
+	
+	
 #region RED
+
+
 
 
 func set_red_with_analog_1024(analog_value:int)->void:

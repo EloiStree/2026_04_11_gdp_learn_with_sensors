@@ -20,6 +20,7 @@ signal on_light_intensity_digital_updated(is_receiving_light: bool)
 
 @export_group("Debug")
 @export var intensity_value: float = 0.0
+@export var _light_intensity_percent:float
 @export var auto_update: bool = true
 
 var _update_timer: float = 0.0
@@ -47,7 +48,7 @@ func update_light_intensity() -> void:
 	intensity_value = intensity
 	
 	var percent := clampf(intensity / max_light_intensity, 0.0, 1.0)
-	
+	_light_intensity_percent=percent
 	# Emit signals (only when meaningfully changed)
 	if abs(intensity - _last_intensity) > 0.001:
 		_last_intensity = intensity
@@ -55,6 +56,9 @@ func update_light_intensity() -> void:
 		on_light_intensity_percent_updated.emit(percent)
 		on_light_intensity_digital_updated.emit(intensity >= digital_threshold)
 
+
+func get_light_as_percent():
+	return _light_intensity_percent
 
 
 func force_light_refresh_in_scene() -> void:
