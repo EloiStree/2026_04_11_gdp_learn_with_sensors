@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://dm8sxed60l4lc"
 path.s3tc="res://.godot/imported/switch_hat_uv.png-c69e4f847b208e45bd2aa6be9d82a2e9.s3tc.ctex"
+path.etc2="res://.godot/imported/switch_hat_uv.png-c69e4f847b208e45bd2aa6be9d82a2e9.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/switch_on_off/3d/switch_hat_uv.png"
-dest_files=["res://.godot/imported/switch_hat_uv.png-c69e4f847b208e45bd2aa6be9d82a2e9.s3tc.ctex"]
+dest_files=["res://.godot/imported/switch_hat_uv.png-c69e4f847b208e45bd2aa6be9d82a2e9.s3tc.ctex", "res://.godot/imported/switch_hat_uv.png-c69e4f847b208e45bd2aa6be9d82a2e9.etc2.ctex"]
 
 [params]
 

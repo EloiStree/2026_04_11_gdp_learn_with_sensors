@@ -4,15 +4,16 @@ importer="texture"
 type="CompressedTexture2D"
 uid="uid://duhsino5e0ixk"
 path.s3tc="res://.godot/imported/solo_line_tracker_car_rc_color.png-39b633f9427fd36490ff5f1fe2616c69.s3tc.ctex"
+path.etc2="res://.godot/imported/solo_line_tracker_car_rc_color.png-39b633f9427fd36490ff5f1fe2616c69.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
 
 [deps]
 
 source_file="res://addons/2026_04_11_gdp_learn_with_sensors/feature/line_tracker_module/3d/solo_line_tracker_car_rc_color.png"
-dest_files=["res://.godot/imported/solo_line_tracker_car_rc_color.png-39b633f9427fd36490ff5f1fe2616c69.s3tc.ctex"]
+dest_files=["res://.godot/imported/solo_line_tracker_car_rc_color.png-39b633f9427fd36490ff5f1fe2616c69.s3tc.ctex", "res://.godot/imported/solo_line_tracker_car_rc_color.png-39b633f9427fd36490ff5f1fe2616c69.etc2.ctex"]
 
 [params]
 
