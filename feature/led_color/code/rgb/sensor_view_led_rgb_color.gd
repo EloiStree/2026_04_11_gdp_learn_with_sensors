@@ -9,10 +9,13 @@ signal on_color_changed(color:Color)
 @export_range(0,255) var byte_green_255:int;
 @export_range(0,255) var byte_blue_255:int;
 
+@export var random_at_start:bool=true
 @export var emit_at_ready:bool=true
 @export var process_push:bool=false
-
 func _ready() -> void:
+	
+	if random_at_start:
+		current_color = Color(randf(),randf(),randf())
 	if emit_at_ready:
 		set_rgb_with_bytes_0_255(byte_red_255, byte_green_255, byte_blue_255)
 

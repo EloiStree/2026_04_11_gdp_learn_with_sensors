@@ -1,6 +1,13 @@
 class_name SensorKS4036InOutFacade
 extends Node3D
 
+static var instance_in_scene: SensorKS4036InOutFacade = null
+
+static func get_instance():
+	return instance_in_scene
+
+
+
 #region ABSTRACT SET SIGNAL INPUT
 ## Notify developer that player ask the motor to be in left percent power of -1 or 1.
 signal on_motor_left_percent_11_set(new_value_percent_11: float)
@@ -93,9 +100,17 @@ func set_display_ssd1306_128x64(value_top_left_down_right: Array[bool]) -> void:
 @export var _wheel_right_rotation_forward_0_360: float
 
 
+## Not on the KS4036 but for debugging the color of the left line tracker.
+@export var _line_tracker_color_left: Color
+## Not on the KS4036 but for debugging the color of the right line tracker.
+@export var _line_tracker_color_right: Color
+
+
 ## Content of the display debug screen as 128x64 pixels true or false.
 ## Representing a SSD1306 Display .
 @export var _display_ssd1306_128x64 : Array[bool] = []
+
+
 
 
 @export_group("Fixed Value")
@@ -112,15 +127,21 @@ func set_display_ssd1306_128x64(value_top_left_down_right: Array[bool]) -> void:
 
 @export_group("Fixed Local Position")
 
-@export var _local_left_line_sensor_from_center_wheel: Vector3
-@export var _local_right_line_sensor_from_center_wheel: Vector3
+@export var _local_left_line_tracker_from_center_wheel: Vector3
+@export var _local_right_line_tracker_from_center_wheel: Vector3
 @export var _local_left_light_resistor_from_center_wheel: Vector3
 @export var _local_right_light_resistor_from_center_wheel: Vector3
-@export var _local_center_ultrasonic_sensor_from_center_wheel: Vector3
+@export var _local_front_ultrasonic_sensor_from_center_wheel: Vector3
 @export var _local_left_led_from_center_wheel: Vector3
 @export var _local_right_led_from_center_wheel: Vector3
+@export var _local_left_wheel_from_center_wheel: Vector3
+@export var _local_right_wheel_from_center_wheel: Vector3
 
 #endregion
+
+
+func _ready() -> void:
+	instance_in_scene = self
 
 
 #region GET VARIABLE METHODS

@@ -288,9 +288,15 @@ func set_motors_off() -> void:
 	set_right_wheel_percent_power(0.0)
 	
 
-func get_motor_left_value_as_percent11():
+func get_motor_left_value_as_percent_11() -> float:
 	return _left_wheel_percent_power
 
-func get_motor_righ_valuet_as_percent11():
+func get_motor_right_value_as_percent_11() -> float:
 	return _right_wheel_percent_power
 	
+
+func get_motor_left_total_rotation_in_degree() -> float:
+	return left_rotation_in_degree_total
+
+func get_motor_right_total_rotation_in_degree() -> float:
+	return right_rotation_in_degree_total

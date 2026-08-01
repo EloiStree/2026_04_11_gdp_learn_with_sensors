@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://d3uhumfpmfrxs" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/script/sensor_ks_4036_input_map_four_buttons.gd" id="4_pdmdn"]
 [ext_resource type="Script" uid="uid://db1vwx6q4t2ww" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/script/sensor_ks_4036_input_map_joysticks.gd" id="5_ajmd2"]
 [ext_resource type="Material" uid="uid://d0uhahsnc7kwl" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/wheel/mat_ks_4036_wheel_black.tres" id="5_flaa4"]
+[ext_resource type="Script" uid="uid://3q8804vfwsg" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/script/sensor_ks_4036_wheel_angle_0_360.gd" id="6_ajmd2"]
 [ext_resource type="ArrayMesh" uid="uid://dcp3drqm6juuu" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/top/ks_4036_top_platform.obj" id="6_lr8qv"]
 [ext_resource type="Material" uid="uid://b8dso1a17k6o5" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/top/mat_ks_4036_platform.tres" id="7_ktw5y"]
 [ext_resource type="Material" uid="uid://dihjibhqcyn1b" path="res://addons/2026_04_11_gdp_learn_with_sensors/feature/ks_4036/3d/body/mat_ks_4036_body_sphere.tres" id="8_mxu78"]
@@ -113,6 +114,20 @@ metadata/_custom_type_script = "uid://d3uhumfpmfrxs"
 script = ExtResource("5_ajmd2")
 metadata/_custom_type_script = "uid://db1vwx6q4t2ww"
 
+[node name="WheelRotationState" type="Node" parent="Code" unique_id=231608285]
+
+[node name="RotationMarkLeft" type="Node" parent="Code/WheelRotationState" unique_id=11930829 node_paths=PackedStringArray("_center_wheel_anchor", "_wheel_mark_anchor")]
+script = ExtResource("6_ajmd2")
+_center_wheel_anchor = NodePath("../../../Mesh/Node3DLeftWheel")
+_wheel_mark_anchor = NodePath("../../../Mesh/Node3DLeftWheel/ToRotate/WheelTopMark")
+metadata/_custom_type_script = "uid://3q8804vfwsg"
+
+[node name="RotationMarkRight" type="Node" parent="Code/WheelRotationState" unique_id=769395245 node_paths=PackedStringArray("_center_wheel_anchor", "_wheel_mark_anchor")]
+script = ExtResource("6_ajmd2")
+_center_wheel_anchor = NodePath("../../../Mesh/Node3DRightWheel")
+_wheel_mark_anchor = NodePath("../../../Mesh/Node3DRightWheel/ToRotate2/WheelTopMark")
+metadata/_custom_type_script = "uid://3q8804vfwsg"
+
 [node name="Mesh" type="Node3D" parent="." unique_id=358469497]
 
 [node name="BodySize" type="MeshInstance3D" parent="Mesh" unique_id=1973182238]
@@ -153,6 +168,9 @@ mesh = SubResource("BoxMesh_fim5i")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Mesh/Node3DLeftWheel/ToRotate" unique_id=1483835656]
 mesh = ExtResource("4_4mdeb")
 surface_material_override/0 = ExtResource("5_flaa4")
+
+[node name="WheelTopMark" type="Node3D" parent="Mesh/Node3DLeftWheel/ToRotate" unique_id=1900251652]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.016375322, 0)
 
 [node name="SensorViewWheel" type="Node" parent="Mesh/Node3DLeftWheel" unique_id=1534793445 node_paths=PackedStringArray("what_to_rotate_node", "rotation_point_node")]
 script = ExtResource("2_ostvo")
@@ -195,6 +213,9 @@ mesh = SubResource("BoxMesh_fim5i")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Mesh/Node3DRightWheel/ToRotate2" unique_id=1020457660]
 mesh = ExtResource("4_4mdeb")
 surface_material_override/0 = ExtResource("5_flaa4")
+
+[node name="WheelTopMark" type="Node3D" parent="Mesh/Node3DRightWheel/ToRotate2" unique_id=1947356508]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.016491935, 0)
 
 [node name="SensorViewWheel2" type="Node" parent="Mesh/Node3DRightWheel" unique_id=1917328560 node_paths=PackedStringArray("what_to_rotate_node", "rotation_point_node")]
 script = ExtResource("2_ostvo")

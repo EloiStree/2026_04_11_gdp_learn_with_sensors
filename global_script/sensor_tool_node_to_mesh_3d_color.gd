@@ -26,6 +26,19 @@ func _clear_colors_info():
 
 func clear_with_no_node():
 	push_node_in(null)
+
+func is_color_black(threshold:float =0.2):
+	var color = get_any_color_found(Color.BLACK)
+	if color.r < threshold and color.g < threshold and color.b < threshold:
+		return true
+	return false
+
+func get_any_color_found(color_not_found:Color=Color.BLACK)->Color:
+	if albedo_color_found:
+		return material_albedo_color
+	if emission_color_found:
+		return material_emission_color
+	return color_not_found
 	
 
 func push_node_in(node:Node3D):
